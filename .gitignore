@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Build and output directories
+.output/
+.vercel/
+.netlify/
+.wrangler/
+.svelte-kit/
+# Allow GitHub Pages build output
+/build/*
+!/build/index.html
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite-related
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
