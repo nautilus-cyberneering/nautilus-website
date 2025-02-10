@@ -9,11 +9,10 @@ ol {
 		overflow-wrap: break-word;
 		white-space: normal;
 		list-style-type: disc;
-        list-style-position: inside;
+		list-style-position: inside;
 
 		&::marker {
 			color: var(--color--primary);
 		}
 	}
 }
-

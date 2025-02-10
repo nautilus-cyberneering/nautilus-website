@@ -1,7 +1,7 @@
 <script lang="ts">
-    import HeroWrapper from "$lib/components/atoms/HeroWrapper.svelte";
+	import HeroWrapper from '$lib/components/atoms/HeroWrapper.svelte';
 </script>
 
 <div>
-    <HeroWrapper title={'About our team'} />
+	<HeroWrapper title={'About our team'} />
 </div>

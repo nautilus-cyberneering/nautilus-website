@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Nautilus from '$lib/icons/nautilus.svelte';
+	import Nautilus from '$lib/icons/nautilus.svelte';
 	import { page } from '$app/stores';
 	import AnimatedHamburger from '$lib/components/molecules/AnimatedHamburger.svelte';
 
@@ -14,12 +14,12 @@
 
 <header>
 	<div class="header-wrapper">
-        <div class="logo-wrapper">
-            <a class="logo" href="/" aria-label="Site logo">
-                <Nautilus />
-            </a>
-            <p>Open Source, AI, and more</p>
-        </div>
+		<div class="logo-wrapper">
+			<a class="logo" href="/" aria-label="Site logo">
+				<Nautilus />
+			</a>
+			<p>Open Source, AI, and more</p>
+		</div>
 		<AnimatedHamburger {isMenuOpen} {toggleMenu}>
 			<div class="links-wrapper">
 				<ul class="links">
@@ -28,10 +28,8 @@
 						<a href="/" class={currentPath === '/' ? 'active' : ''} onclick={toggleMenu}>Home</a>
 					</li>
 					<li>
-						<a
-							href="/about"
-							class={currentPath === '/about' ? 'active' : ''}
-							onclick={toggleMenu}>About</a
+						<a href="/about" class={currentPath === '/about' ? 'active' : ''} onclick={toggleMenu}
+							>About</a
 						>
 					</li>
 					<li>
@@ -42,10 +40,8 @@
 						>
 					</li>
 					<li>
-						<a
-							href="/blog"
-							class={currentPath === '/blog' ? 'active' : ''}
-							onclick={toggleMenu}>Blog</a
+						<a href="/blog" class={currentPath === '/blog' ? 'active' : ''} onclick={toggleMenu}
+							>Blog</a
 						>
 					</li>
 					<li>
@@ -70,7 +66,7 @@
 		background-color: rgba(250, 250, 250, 0.8);
 		width: 100%;
 		padding: 1.5rem;
-        border-top: 8px solid rgba(238, 134, 97, 1);
+		border-top: 8px solid rgba(238, 134, 97, 1);
 
 		.header-wrapper {
 			display: flex;
@@ -85,15 +81,15 @@
 			}
 		}
 
-        .logo-wrapper{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 1.5rem;
-            font-size: 1rem;
-            color: rgba(10, 10, 10, 1);
-        }
+		.logo-wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 1.5rem;
+			font-size: 1rem;
+			color: rgba(10, 10, 10, 1);
+		}
 
 		ul {
 			display: flex;
@@ -120,7 +116,6 @@
 		.active {
 			color: rgba(238, 134, 97, 1) !important;
 		}
-
 
 		@include bp.for-phone-only {
 			.links-wrapper {
@@ -151,7 +146,7 @@
 			a {
 				text-decoration: none;
 				text-align: center;
-                color: rgba(10, 10, 10, 1);
+				color: rgba(10, 10, 10, 1);
 
 				&:hover {
 					filter: drop-shadow(0px 0px 3px var(--color--primary));

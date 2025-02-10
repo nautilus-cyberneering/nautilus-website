@@ -6,8 +6,7 @@ export const siteBaseUrl = 'https://nautilus.com';
 
 export const keywords = ['Nautilus'];
 
-export const description =
-	'';
+export const description = '';
 
 export const title = 'Nautilus';
 

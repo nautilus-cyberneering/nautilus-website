@@ -13,8 +13,14 @@ const config = {
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
-		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/nautilus-website' : ''
+		prerender: {
+			handleHttpError: ({ status, path, message }) => {
+				if (status === 404) {
+					console.warn(`Ignoring 404 for path: ${path}`);
+					return;
+				}
+				throw new Error(message);
+			}
 		}
 	},
 

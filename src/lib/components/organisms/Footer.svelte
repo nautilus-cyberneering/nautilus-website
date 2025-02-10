@@ -1,5 +1,5 @@
 <script lang="ts">
-	import NautilusBig from "$lib/icons/nautilusBig.svelte";
+	import NautilusBig from '$lib/icons/nautilusBig.svelte';
 </script>
 
 <footer>
@@ -33,13 +33,13 @@
 		border-bottom: 16px solid rgba(238, 134, 97, 1);
 		padding: 2rem 1.5rem;
 
-		.footer-wrapper-left{
+		.footer-wrapper-left {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			gap: 1.5rem;
 
-			@include bp.for-tablet-portrait-up{
+			@include bp.for-tablet-portrait-up {
 				flex-direction: row;
 				align-items: center;
 			}
@@ -54,7 +54,7 @@
 			padding: 1rem;
 			text-align: center;
 
-			a{
+			a {
 				color: rgba(238, 134, 97, 1);
 			}
 
