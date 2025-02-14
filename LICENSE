@@ -1,0 +1,17 @@
+# License Information
+
+This repository is dual-licensed. Different parts of the project are subject to different licensing terms:
+
+### 1. Code License – GNU AGPLv3
+All source code in this repository (server scripts, client-side JavaScript, HTML, etc.) is licensed under the **GNU Affero General Public License, version 3 (AGPLv3)**.  
+This ensures that any modified versions of the code—especially those used over a network—remain free and open.  
+
+For the full text of this license, see the [`LICENCE`](./LICENCE) file or visit [GNU AGPLv3 License](https://www.gnu.org/licenses/agpl-3.0.html).  
+
+### 2. Content License – GNU GFDL with Invariant Sections
+All non-code content in this repository (such as website text, design layouts, images, and other visual assets) is licensed under the **GNU Free Documentation License (GFDL) with designated Invariant Sections**.  
+Invariant sections (such as Design Credits or Branding Statements) must remain unchanged in any derivative works.  
+
+For the full text of this license, see the [`LICENCE-GFDL`](./LICENCE-GFDL) file or visit [GNU GFDL License](https://www.gnu.org/licenses/fdl-1.3.html).  
+
+By using or contributing to this repository, you agree to abide by these licenses.  
