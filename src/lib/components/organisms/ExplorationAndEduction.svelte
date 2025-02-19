@@ -29,6 +29,7 @@
 
 	h3 {
 		margin-top: 3rem;
+		padding-top: 3rem;
 		font-size: 36px;
 	}
 
