@@ -1,15 +1,15 @@
 ul,
 ol {
-	margin: 10px 0 10px 40px;
+	margin: 10px 0 10px 25px;
 
 	li {
 		margin: 6px 0;
 		word-wrap: break-word;
-		word-break: break-all;
+		word-break: keep-all;
 		overflow-wrap: break-word;
 		white-space: normal;
 		list-style-type: disc;
-		list-style-position: inside;
+		list-style-position: outside;
 
 		&::marker {
 			color: var(--color--primary);
