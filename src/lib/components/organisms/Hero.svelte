@@ -20,7 +20,7 @@
 		position: relative;
 		background-image:
 			radial-gradient(circle, rgba(250, 250, 250, 0.72), rgba(250, 250, 250, 1)),
-			url('images/nautilus-hero-bg.png');
+			url('/images/nautilus-hero-bg.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
