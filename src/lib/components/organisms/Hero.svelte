@@ -13,7 +13,9 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@use '$lib/scss/breakpoints.scss' as bp;
+
 	.svg-container {
 		position: relative;
 		background-image:
@@ -42,6 +44,10 @@
 			font-weight: 600;
 			line-height: 1.05;
 			padding-top: 9.5rem;
+
+			@include bp.for-tablet-portrait-up {
+				font-size: 3.75rem;
+			}
 		}
 
 		.hero-para {

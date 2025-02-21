@@ -2,81 +2,81 @@
 	import NautilusBig from '$lib/icons/nautilusBig.svelte';
 </script>
 
-<footer>
-	<div class="footer-wrapper">
-		<div class="footer-wrapper-left">
-			<div>
-				<a href="https://nautilus-cyberneering.de/" target="_blank" class="logo-container">
-					<NautilusBig />
-				</a>
-			</div>
-			<div>
-				<p>CC-BY-SA 4.0</p>
-				<p>Nautilus Cyberneering S.L.U. 2024</p>
-			</div>
+<footer class="footer-wrapper">
+	<div class="footer-wrapper-left">
+		<div class="logo-container">
+			<a href="https://nautilus-cyberneering.de/" target="_blank">
+				<NautilusBig />
+			</a>
 		</div>
-		<div>
-			<a href="/data-protection">Data protection</a>
+		<div class="footer-details">
+			<p>CC-BY-SA 4.0</p>
+			<p>Nautilus Cyberneering S.L.U. 2024</p>
 		</div>
+	</div>
+	<div class="data-protection-link">
+		<a href="/data-protection">Data protection</a>
 	</div>
 </footer>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints.scss' as bp;
 
-	footer {
-		background-color: rgba(250, 250, 250, 1);
-		color: rgba(10, 10, 10, 1);
+	.footer-wrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: rgba(250, 250, 250, 1);
+		color: rgba(10, 10, 10, 1);
 		border-bottom: 16px solid rgba(238, 134, 97, 1);
-		padding: 2rem 1.5rem;
+		padding: 3rem 1.5rem;
 
-		.footer-wrapper-left {
+		.logo-container {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 1.5rem;
+			justify-content: center;
+		}
 
-			@include bp.for-tablet-portrait-up {
-				flex-direction: row;
-				align-items: center;
+		.footer-details {
+			margin-top: 1.5rem;
+		}
+
+		.data-protection-link {
+			color: rgba(10, 10, 10, 1);
+			margin-top: 3rem;
+
+			a {
+				color: rgba(10, 10, 10, 1);
+			}
+
+			:hover {
+				color: rgba(238, 134, 97, 1);
 			}
 		}
 
-		.footer-wrapper {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+		@include bp.for-tablet-portrait-up {
+			flex-direction: row;
 			justify-content: space-between;
-			width: 100%;
-			padding: 1rem;
-			text-align: center;
 
-			a {
-				color: rgba(238, 134, 97, 1);
-			}
-
-			@include bp.for-tablet-portrait-up {
-				flex-direction: row;
+			.footer-wrapper-left {
+				display: flex;
 				align-items: center;
-				gap: 24px;
+				gap: 1.5rem;
+			}
+
+			.footer-details {
+				margin-top: 0;
 				text-align: left;
-				max-width: 2500px;
 			}
 
-			@include bp.for-desktop-up {
-				padding: 0rem;
-			}
-
-			div {
-				font-size: 16px;
+			.data-protection-link {
+				margin-top: 0;
 			}
 		}
 
 		@include bp.for-desktop-up {
-			padding-inline: 9rem;
+			padding: 4rem 1.5rem;
 		}
 	}
 </style>

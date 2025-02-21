@@ -13,7 +13,7 @@
 		position: relative;
 		background-image:
 			radial-gradient(circle, rgba(250, 250, 250, 0.72), rgba(250, 250, 250, 1)),
-			url('https://s3-alpha-sig.figma.com/img/e587/a55e/ea04ef86d8fa13f21055f6b2327c557b?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MXWWabS5GgZDoxej37lWJWdDuEfBKdOZQz4r~U64~11u0iTIb07YPhQ6Ar6VCts8TEGkRFKwYPL3kXd1aqC5vujN-52TNdCDlAAGohjhjLmpzwthLflUyVtIiqf19SNbagwFE07PEZukTU36AXALWLgX34fGkZYNueph71BIP8-TOT2TLQQ316a~JRtiC4rJrXAJMyEtbVhYCL5iV-JUiMPNUsc~CwQfFIJOjAMMuBzNVuuA9notDl4SVe57o23-snaqjdYSpEa1wShNgsbTz-oEclcVnapbAfohamKl0N~IzCknmmPfVrlZZuS5UGeMEGm7UZTCWrVxIXRA-~8RXg__');
+			url('images/nautilus-pages-bg.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;

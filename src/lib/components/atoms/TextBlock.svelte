@@ -22,10 +22,14 @@
 	}
 
 	.hero-heading {
-		font-size: 48px;
+		font-size: 2.25rem;
 		font-weight: 600;
 		line-height: 1.05;
 		padding-top: 6rem;
+
+		@include bp.for-desktop-up {
+			font-size: 3rem !important;
+		}
 	}
 
 	.hero-para {
@@ -35,8 +39,5 @@
 	p {
 		font-size: 20px;
 		max-width: 776px;
-	}
-
-	@include bp.for-tablet-portrait-up {
 	}
 </style>

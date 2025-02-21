@@ -29,14 +29,14 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
-		color: white;
+		color: rgba(26, 26, 26, 0.92);
 		transition: all 300ms ease-in-out;
 	}
 
 	.burger > div {
-		height: 1px;
+		height: 2px;
 		width: 20px;
-		background-color: white;
+		background-color: rgba(26, 26, 26, 0.92);
 		position: absolute;
 		transition: all 300ms ease-in-out;
 	}
