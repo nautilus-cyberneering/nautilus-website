@@ -1,10 +1,11 @@
 <script lang="ts">
-	let { title, slug, contributor, contributorSlug, date, coverImage, tags, children } = $props();
+	// re-add slug and tags
+	let { title, contributor, contributorSlug, date, coverImage, children } = $props();
 
 	import { formatDate } from '$lib/utils/date';
-	import Image from '$lib/components/atoms/Image.svelte';
+	// import Image from '$lib/components/atoms/Image.svelte';
 	// import ShareButton from '$lib/components/singletons/ShareButton.svelte';
-	import Tag from '$lib/components/atoms/Tag.svelte';
+	// import Tag from '$lib/components/atoms/Tag.svelte';
 </script>
 
 <svelte:head>

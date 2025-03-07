@@ -12,7 +12,7 @@
 	{/if}
 	<h3>{title}</h3>
 	<p>{content}</p>
-	{#if tags}
+	{#if tags.length}
 		<TagList {tags} />
 	{/if}
 </div>

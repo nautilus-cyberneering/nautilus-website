@@ -39,20 +39,29 @@
 			font-size: 32px;
 		}
 
+		ul {
+			margin: 1rem 0 0 0;
+			padding-left: 0.5rem;
+			list-style-position: outside;
+		}
+
 		li {
 			color: rgba(82, 82, 82, 1);
 			word-break: keep-all;
 			font-size: 18px;
+			text-indent: -1.5rem;
+			padding-left: 1.5rem;
 		}
 
 		.cta-wrapper {
 			background-color: rgba(238, 134, 97, 1);
 			padding: 1.5rem 3rem;
-
-			h4 {
-				color: rgba(250, 250, 250, 1);
-				font-size: 28px;
-			}
+		}
+		h4 {
+			color: rgba(250, 250, 250, 1);
+			font-size: 28px;
+			text-indent: -1.5rem;
+			padding-left: 1.5rem;
 		}
 	}
 </style>

@@ -13,12 +13,14 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@use '$lib/scss/breakpoints.scss' as bp;
+
 	.svg-container {
 		position: relative;
 		background-image:
 			radial-gradient(circle, rgba(250, 250, 250, 0.72), rgba(250, 250, 250, 1)),
-			url('images/nautilus-hero-bg.png');
+			url('/images/nautilus-hero-bg.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -42,6 +44,10 @@
 			font-weight: 600;
 			line-height: 1.05;
 			padding-top: 9.5rem;
+
+			@include bp.for-tablet-portrait-up {
+				font-size: 3.75rem;
+			}
 		}
 
 		.hero-para {

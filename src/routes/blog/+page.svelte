@@ -2,7 +2,7 @@
 	import { postsMetadata } from '$lib/data/postMetadata';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
 	import HeroWrapper from '$lib/components/atoms/HeroWrapper.svelte';
-	import Tag from '$lib/components/atoms/Tag.svelte';
+	// import Tag from '$lib/components/atoms/Tag.svelte';
 	import TagList from '$lib/components/molecules/TagList.svelte';
 
 	let allPosts = Object.values(postsMetadata);

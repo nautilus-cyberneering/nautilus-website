@@ -26,6 +26,15 @@
 		padding: 3rem;
 		border: 1px solid rgba(212, 212, 212, 1);
 
+		h3 {
+			font-size: 1.5rem;
+		}
+
+		p {
+			margin-top: 1rem;
+			line-height: 1.5rem;
+		}
+
 		.title-wrapper {
 			display: flex;
 			justify-content: space-between;
