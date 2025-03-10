@@ -98,8 +98,11 @@
 			justify-content: end;
 			gap: 16px;
 			margin-bottom: 1vh;
-			list-style: none;
 			font-size: 1.1rem;
+
+			li {
+				list-style: none;
+			}
 		}
 
 		li > a {
