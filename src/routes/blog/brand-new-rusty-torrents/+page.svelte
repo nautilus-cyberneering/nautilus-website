@@ -5,12 +5,12 @@
 </script>
 
 <Wrapper>
+	<!-- readd slug={data.meta.slug} and tags={data.meta.tags}
+ -->
 	<Post
 		title={data.meta.title}
-		slug={data.meta.slug}
 		coverImage={data.meta.coverImage}
 		date={data.meta.date}
-		tags={data.meta.tags}
 		contributor={data.meta.contributor}
 		contributorSlug={data.meta.contributorSlug}
 	>

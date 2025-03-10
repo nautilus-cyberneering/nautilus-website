@@ -108,7 +108,6 @@
 		li > a {
 			display: inline-block;
 			transition: all 200ms ease-in-out;
-			color: rgba(245, 245, 245, 0.8);
 			font-size: 1rem;
 		}
 
@@ -123,7 +122,7 @@
 		@include bp.for-phone-only {
 			.links-wrapper {
 				padding: 3rem;
-				margin: 3.5rem 0rem;
+				margin: 5rem 0rem;
 				opacity: 1;
 			}
 
