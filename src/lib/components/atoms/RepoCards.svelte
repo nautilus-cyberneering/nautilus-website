@@ -22,17 +22,19 @@
 		flex-direction: column;
 		align-items: flex-start;
 		text-align: left;
-		background-color: rgba(245, 245, 245, 1);
+		background-color: var(--color--page-background);
 		padding: 3rem;
-		border: 1px solid rgba(212, 212, 212, 1);
+		border: 1px solid var(--color--border);
 
 		h3 {
 			font-size: 1.5rem;
+			color: var(--color--text);
 		}
 
 		p {
 			margin-top: 1rem;
 			line-height: 1.5rem;
+			color: var(--color--text-secondary);
 		}
 
 		.title-wrapper {

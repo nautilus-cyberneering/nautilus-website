@@ -25,9 +25,9 @@
 		flex: 1;
 		min-width: 0;
 		text-align: left;
-		border: 1px solid rgba(212, 212, 212, 1);
+		border: 1px solid var(--color--border);
 		height: 100%;
-		background-color: rgba(250, 250, 250, 1);
+		background-color: var(--color--page-background);
 
 		.text-container {
 			padding: 3rem;
@@ -35,7 +35,7 @@
 		}
 
 		h3 {
-			color: rgba(10, 10, 10, 1);
+			color: var(--color--text);
 			font-size: 32px;
 		}
 
@@ -49,16 +49,18 @@
 			color: rgba(82, 82, 82, 1);
 			word-break: keep-all;
 			font-size: 18px;
-			text-indent: -1.5rem;
-			padding-left: 1.5rem;
+			text-indent: 0rem;
+			padding-left: 0.5rem;
+			color: var(--color--text-secondary);
 		}
 
 		.cta-wrapper {
 			background-color: rgba(238, 134, 97, 1);
 			padding: 1.5rem 3rem;
 		}
+
 		h4 {
-			color: rgba(250, 250, 250, 1);
+			color: var(--color--text-reverse);
 			font-size: 28px;
 			text-indent: -1.5rem;
 			padding-left: 1.5rem;

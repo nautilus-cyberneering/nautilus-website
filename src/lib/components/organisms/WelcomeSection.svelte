@@ -25,7 +25,7 @@
 	@use '$lib/scss/breakpoints.scss' as bp;
 
 	.container {
-		background-color: rgba(245, 245, 245, 1);
+		background-color: var(--color--page-secondary);
 		margin: 6rem auto 0;
 		padding-bottom: 6rem;
 		max-width: 100%;

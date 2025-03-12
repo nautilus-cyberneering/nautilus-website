@@ -12,12 +12,16 @@
 	@use '$lib/scss/breakpoints.scss' as bp;
 
 	.card {
-		background-color: rgba(245, 245, 245, 1);
-		border: 1px solid rgba(212, 212, 212, 1);
+		background-color: var(--color--page-background);
+		border: 1px solid var(--color--border);
 		padding: 1.5rem;
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
+
+		h2 {
+			color: var(--color--text);
+		}
 
 		h6 {
 			color: rgba(163, 163, 163, 1);
@@ -25,6 +29,7 @@
 
 		p {
 			line-height: 1.5;
+			color: var(--color--text-secondary);
 		}
 
 		@include bp.for-tablet-portrait-up {

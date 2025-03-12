@@ -1,6 +1,6 @@
 <script lang="ts">
-	// re-add slug and tags
-	let { title, contributor, contributorSlug, date, coverImage, children } = $props();
+	// re-add slug, contributor, contributorSlug and tags
+	let { title, date, coverImage, children } = $props();
 
 	import { formatDate } from '$lib/utils/date';
 	// import Image from '$lib/components/atoms/Image.svelte';
@@ -29,10 +29,10 @@
 				<h1>{title}</h1>
 				<div class="note">
 					<div>
-						{#if contributor}
+						<!-- {#if contributor}
 							<a class="author" href={'/contributor/' + contributorSlug}>{contributor}</a>
 							-
-						{/if}
+						{/if} -->
 						{formatDate(date)}
 					</div>
 					<!-- <ShareButton {slug} {title} /> -->

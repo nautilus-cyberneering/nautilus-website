@@ -40,7 +40,7 @@
 <style>
 	.wrapper {
 		margin-top: 3rem;
-		border: 1px solid rgba(212, 212, 212, 1);
+		border: 1px solid var(--color--border);
 	}
 
 	.header {
@@ -60,7 +60,7 @@
 	}
 
 	.text-content {
-		background-color: rgba(245, 245, 245, 1);
+		background-color: var(--color--page-background);
 		padding: 0 3rem;
 		max-height: 0;
 		overflow: hidden;
@@ -85,6 +85,10 @@
 
 	.project-details {
 		margin-top: 1.5rem;
+
+		p {
+			color: var(--color--text-secondary);
+		}
 	}
 
 	ul {
@@ -92,7 +96,7 @@
 	}
 
 	ul li {
-		color: rgba(82, 82, 82, 1);
+		color: var(--color--text-secondary);
 		word-break: keep-all;
 		position: relative;
 		padding-left: 1.5rem;

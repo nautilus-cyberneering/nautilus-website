@@ -4,7 +4,6 @@
 	import Globe from '$lib/icons/globe.svelte';
 	import MultipleUser from '$lib/icons/multipleUser.svelte';
 	import Handshake from '$lib/icons/handshake.svelte';
-	import team from '../../../images/team.png';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
 </script>
 
@@ -26,7 +25,7 @@
 				title={'Where we come from'}
 				content={'We come from different professional backgrounds and countries. Most of us are developers but some of us are not. We all believe in software and its importance for our future.'}
 			/>
-			<img src={team} alt="nautilus team" />
+			<img src='images/team.png' alt="nautilus team" />
 		</div>
 		<div class="about-section-grid">
 			<AboutCard
@@ -100,7 +99,7 @@
 		aspect-ratio: 16 / 9;
 
 		@include bp.for-tablet-portrait-up {
-			width: calc(50% - 0.75rem); // Ensures equal width with AboutCard
+			width: calc(50% - 0.75rem);
 		}
 
 		@include bp.for-desktop-up {

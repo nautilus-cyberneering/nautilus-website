@@ -19,15 +19,14 @@
 	.svg-container {
 		position: relative;
 		background-image:
-			radial-gradient(circle, rgba(250, 250, 250, 0.72), rgba(250, 250, 250, 1)),
-			url('/images/nautilus-hero-bg.png');
+			radial-gradient(circle farthest-corner, var(--radial--gradient-1), var(--radial--gradient-2)),
+			var(--hero-background);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: rgba(245, 245, 245, 0.96);
 		padding-inline: 1.5rem;
 		text-align: center;
 
@@ -44,6 +43,7 @@
 			font-weight: 600;
 			line-height: 1.05;
 			padding-top: 9.5rem;
+			color: var(--color--text);
 
 			@include bp.for-tablet-portrait-up {
 				font-size: 3.75rem;
@@ -56,6 +56,7 @@
 
 		p {
 			font-size: 1.1rem;
+			color: var(--color--text);
 		}
 
 		p:nth-of-type(2) {
@@ -71,6 +72,6 @@
 		left: 0;
 		width: 100%;
 		height: 5%;
-		background: linear-gradient(to bottom, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 1) 100%);
+		background: linear-gradient(to bottom, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 0) 100%);
 	}
 </style>
