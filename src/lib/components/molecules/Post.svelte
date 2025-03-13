@@ -72,6 +72,11 @@
 			margin-top: 4.5rem;
 			font-size: 3rem;
 			line-height: 1.2;
+			color: var(--color--text);
+		}
+
+		.note {
+			color: var(--color--text-secondary);
 		}
 
 		.layout {

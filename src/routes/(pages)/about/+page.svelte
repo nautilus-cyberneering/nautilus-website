@@ -25,7 +25,7 @@
 				title={'Where we come from'}
 				content={'We come from different professional backgrounds and countries. Most of us are developers but some of us are not. We all believe in software and its importance for our future.'}
 			/>
-			<img src='images/team.png' alt="nautilus team" />
+			<img src="images/team.png" alt="nautilus team" />
 		</div>
 		<div class="about-section-grid">
 			<AboutCard
