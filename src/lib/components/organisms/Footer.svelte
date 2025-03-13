@@ -1,12 +1,18 @@
 <script lang="ts">
 	import NautilusBig from '$lib/icons/nautilusBig.svelte';
+	import NautilusBigDarkMode from '$lib/icons/nautilusBigDarkMode.svelte';
+	import { theme } from '$lib/stores/theme';
 </script>
 
 <footer class="footer-wrapper">
 	<div class="footer-wrapper-left">
 		<div class="logo-container">
 			<a href="https://nautilus-cyberneering.de/" target="_blank">
-				<NautilusBig />
+				{#if $theme === 'dark'}
+					<NautilusBigDarkMode />
+				{:else}
+					<NautilusBig />
+				{/if}
 			</a>
 		</div>
 		<div class="footer-details">
@@ -28,8 +34,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		background-color: rgba(250, 250, 250, 1);
-		color: rgba(10, 10, 10, 1);
+		background-color: var(--color--page-background);
 		border-bottom: 16px solid rgba(238, 134, 97, 1);
 		padding: 3rem 1.5rem;
 
@@ -40,6 +45,10 @@
 
 		.footer-details {
 			margin-top: 1.5rem;
+
+			p {
+				color: var(--color--text);
+			}
 		}
 
 		.data-protection-link {
@@ -47,7 +56,7 @@
 			margin-top: 3rem;
 
 			a {
-				color: rgba(10, 10, 10, 1);
+				color: var(--color--text);
 			}
 
 			:hover {

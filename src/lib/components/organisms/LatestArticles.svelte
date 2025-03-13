@@ -12,7 +12,7 @@
 			<ArticleCard />
 		</div>
 	</div>
-	<a href="/">View all articles</a>
+	<a href="/blog">View all articles</a>
 </HomeWrapper>
 
 <style lang="scss">
@@ -24,6 +24,7 @@
 		h2 {
 			text-align: center;
 			margin-top: 6rem;
+			color: var(--color--text);
 		}
 	}
 

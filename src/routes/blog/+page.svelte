@@ -50,11 +50,11 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
-		margin-inline: 1.5rem;
+		margin: 3rem 1.5rem 0 1.5rem;
 
 		.grid-item {
-			background-color: rgba(245, 245, 245, 1);
-			border: 1px solid rgba(212, 212, 212, 1);
+			background-color: var(--color--page-background);
+			border: 1px solid var(--color--border);
 		}
 
 		img {
@@ -65,6 +65,14 @@
 
 		.text-container {
 			padding: 1.5rem 1.5rem 0 1.5rem;
+
+			h2 {
+				color: var(--color--text);
+			}
+
+			p {
+				color: var(--color--text-secondary);
+			}
 		}
 
 		.tags {

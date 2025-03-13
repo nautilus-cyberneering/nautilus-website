@@ -29,7 +29,7 @@
 				tags={['Rust', 'Open source', 'Sponsored project']}
 			/>
 		</div>
-		<a href="/">Learn more about our in-house projects</a>
+		<a href="/projects">Learn more about our in-house projects</a>
 	</div>
 </HomeWrapper>
 
@@ -37,7 +37,7 @@
 	@use '$lib/scss/breakpoints.scss' as bp;
 
 	.container {
-		background-color: rgba(245, 245, 245, 1);
+		background-color: var(--color--page-secondary);
 		margin: 6rem auto 0;
 		padding-bottom: 6rem;
 		max-width: 100%;
@@ -45,7 +45,7 @@
 
 	.text-container {
 		color: rgba(245, 245, 245, 0.96);
-		background-color: rgba(245, 245, 245, 1);
+		background-color: var(--color--page-secondary);
 		text-align: center;
 		display: flex;
 		align-items: center;
@@ -76,7 +76,7 @@
 			grid-column-gap: 1.5rem;
 			grid-row-gap: 1.5rem;
 			padding: 0rem;
-			background-color: rgba(245, 245, 245, 1);
+			background-color: var(--color--page-secondary);
 		}
 	}
 </style>

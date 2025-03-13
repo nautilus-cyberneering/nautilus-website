@@ -26,6 +26,7 @@
 		font-weight: 600;
 		line-height: 1.05;
 		padding-top: 6rem;
+		color: var(--color--text);
 
 		@include bp.for-desktop-up {
 			font-size: 3rem !important;
@@ -39,5 +40,6 @@
 	p {
 		font-size: 20px;
 		max-width: 776px;
+		color: var(--color--text-secondary);
 	}
 </style>

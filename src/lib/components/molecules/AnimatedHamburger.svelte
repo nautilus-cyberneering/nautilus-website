@@ -36,7 +36,7 @@
 	.burger > div {
 		height: 2px;
 		width: 20px;
-		background-color: rgba(26, 26, 26, 0.92);
+		background-color: var(--color--text);
 		position: absolute;
 		transition: all 300ms ease-in-out;
 	}

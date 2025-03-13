@@ -59,8 +59,8 @@
 			grid-row-gap: 1.5rem;
 			padding: 1.5rem;
 			margin: 3rem 1.5rem 0 1.5rem;
-			background-color: rgba(245, 245, 245, 1);
-			border: 1px solid rgba(212, 212, 212, 1);
+			background-color: var(--color--page-secondary);
+			border: 1px solid var(--color--border);
 		}
 	}
 </style>

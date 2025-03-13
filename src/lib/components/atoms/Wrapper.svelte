@@ -8,6 +8,6 @@
 
 <style>
 	.wrapper {
-		background-color: rgba(250, 250, 250, 1);
+		background-color: var(--color--page-background);
 	}
 </style>

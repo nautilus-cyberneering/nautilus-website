@@ -58,9 +58,9 @@
 				> or check our current most active projects below.
 			</p>
 			<div class="project-preview">
-				<ProjectPreview title={'Page title'} url={'url'} />
-				<ProjectPreview title={'Page title'} url={'url'} />
-				<ProjectPreview title={'Page title'} url={'url'} />
+				<ProjectPreview title={'Page title'} url={'/'} />
+				<ProjectPreview title={'Page title'} url={'/'} />
+				<ProjectPreview title={'Page title'} url={'/'} />
 			</div>
 		</div>
 	</div>
@@ -72,6 +72,10 @@
 	.projects-wrapper {
 		margin-top: 1.5rem;
 		margin-inline: 1.5rem;
+	}
+
+	p {
+		color: var(--color--text-secondary);
 	}
 
 	.para-margin {
