@@ -28,11 +28,11 @@
 	<div class="contact-section contact-section-lower">
 		<div>
 			<h2>Telegram</h2>
-			<ProjectPreview title={'Telegram'} url={'https://t.me/nautilus_cyberneering_en'} />
+			<ProjectPreview url={'https://t.me/nautilus_cyberneering_en'} />
 		</div>
 		<div>
 			<h2>GitHub</h2>
-			<ProjectPreview title={'GitHub'} url={'https://github.com/nautilus-cyberneering'} />
+			<ProjectPreview url={'https://github.com/nautilus-cyberneering'} />
 		</div>
 	</div>
 </Wrapper>

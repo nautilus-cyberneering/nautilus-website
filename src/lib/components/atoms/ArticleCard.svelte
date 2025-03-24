@@ -5,7 +5,7 @@
 <div class="article-wrapper">
 	<a href="/">
 		<img
-			src="https://nautilus-cyberneering.de/wp-content/uploads/2022/07/Torrust-Header-1500x600-v02.jpg"
+			src="images/posts/torrust-header.jpg"
 			alt=""
 		/>
 		<div class="text">
