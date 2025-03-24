@@ -18,8 +18,8 @@
 	@use '$lib/scss/breakpoints.scss' as bp;
 
 	.card {
-		background-color: rgba(245, 245, 245, 1);
-		border: 1px solid rgba(212, 212, 212, 1);
+		background-color: var(--color--page-background);
+		border: 1px solid var(--color--border);
 		padding: 3rem;
 
 		@include bp.for-tablet-portrait-up {
@@ -36,6 +36,7 @@
 		h3 {
 			font-size: 1.5rem;
 			margin-top: 1.5rem;
+			color: var(--color--text);
 
 			@include bp.for-desktop-up {
 				margin-top: 3rem;
@@ -46,6 +47,7 @@
 		p {
 			font-size: 1.125rem;
 			margin-top: 1rem;
+			color: var(--color--text-secondary);
 		}
 	}
 

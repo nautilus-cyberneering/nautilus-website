@@ -8,9 +8,9 @@
 
 <style>
 	a {
-		color: rgba(82, 82, 82, 1);
+		color: var(--color--text-tag);
 		padding: 4px 12px;
-		background-color: rgba(229, 229, 229, 1);
+		background-color: var(--color--tag-background);
 		border-radius: 50px;
 	}
 </style>

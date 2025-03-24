@@ -5,15 +5,9 @@
 </script>
 
 <Wrapper>
-	<!-- readd slug={data.meta.slug} and tags={data.meta.tags}
+	<!-- readd slug={data.meta.slug}, contributor={data.meta.contributor}, contributorSlug={data.meta.contributorSlug} and tags={data.meta.tags}
  -->
-	<Post
-		title={data.meta.title}
-		coverImage={data.meta.coverImage}
-		date={data.meta.date}
-		contributor={data.meta.contributor}
-		contributorSlug={data.meta.contributorSlug}
-	>
+	<Post title={data.meta.title} coverImage={data.meta.coverImage} date={data.meta.date}>
 		<p>
 			What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents.
 			If you haven’t, torrents are a file sharing technology. Torrents allow users to share large
@@ -360,10 +354,16 @@
 	h2 {
 		margin-top: 3rem;
 		line-height: 1.2;
+		color: var(--color--text);
 	}
 
 	p {
 		margin-top: 1.5rem;
+	}
+
+	p,
+	li {
+		color: var(--color--text-secondary);
 	}
 
 	figure {

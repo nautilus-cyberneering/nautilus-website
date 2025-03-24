@@ -1,7 +1,10 @@
 <script lang="ts">
 	import Nautilus from '$lib/icons/nautilus.svelte';
+	import NautilusDarkMode from '$lib/icons/nautilusDarkMode.svelte';
 	import { page } from '$app/stores';
+	import { theme } from '$lib/stores/theme';
 	import AnimatedHamburger from '$lib/components/molecules/AnimatedHamburger.svelte';
+	import ThemeToggle from '../molecules/ThemeToggle.svelte';
 
 	let isMenuOpen = $state(false);
 
@@ -16,7 +19,11 @@
 	<div class="header-wrapper">
 		<div class="logo-wrapper">
 			<a class="logo" href="/" aria-label="Site logo">
-				<Nautilus />
+				{#if $theme === 'dark'}
+					<NautilusDarkMode />
+				{:else}
+					<Nautilus />
+				{/if}
 			</a>
 			<p>Open Source, AI, and more</p>
 		</div>
@@ -51,6 +58,7 @@
 							onclick={toggleMenu}>Contact</a
 						>
 					</li>
+					<ThemeToggle />
 				</ul>
 			</div>
 		</AnimatedHamburger>
@@ -63,7 +71,7 @@
 	header {
 		position: relative;
 		z-index: 1000;
-		background-color: rgba(250, 250, 250, 0.8);
+		background-color: var(--color--page-background);
 		width: 100%;
 		padding: 1.5rem;
 		border-top: 8px solid rgba(238, 134, 97, 1);
@@ -88,7 +96,10 @@
 			align-items: center;
 			gap: 1.5rem;
 			font-size: 1rem;
-			color: rgba(10, 10, 10, 1);
+
+			p {
+				color: var(--color--text-secondary);
+			}
 		}
 
 		ul {
@@ -143,12 +154,12 @@
 			justify-content: center;
 			text-align: justify;
 			gap: 30px;
-			background-color: rgba(250, 250, 250, 0.8);
+			background-color: var(--color--page-background);
 
 			a {
 				text-decoration: none;
 				text-align: center;
-				color: rgba(10, 10, 10, 1);
+				color: var(--color--text);
 
 				&:hover {
 					filter: drop-shadow(0px 0px 3px var(--color--primary));

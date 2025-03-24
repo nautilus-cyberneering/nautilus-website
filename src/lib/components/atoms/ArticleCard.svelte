@@ -5,7 +5,7 @@
 <div class="article-wrapper">
 	<a href="/">
 		<img
-			src="https://s3-alpha-sig.figma.com/img/223c/5f4d/2133f8c693541179796d6feae9e21499?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Nx2bmSF3WdU8ceN7r4GQzYf~sXIcItlcWU5JEu93lseEurI77VxA-susOvhRJMcNj66IcM6uPBTgemwN8kiqIL729JJ3FpXg0sIwJVNqkshvy2CVRU-H-0qSgBRKv8CrHuLgbEdon-LZ4auGZgyvd2q-Fxn5LYpUYxCq4JHbDhH7Vhii2QqOOmxmkR8sIw6S76gCMZbaq6xh9YpG1htjLvTZ1JOvSrnpTVgxj6Lx0--WG~vuUrZKLV~x2tAYGTkjuMf5VKDDLiB312Obr57IUEGepobr1n9raSzu6VfAym5Hy5YfKnryKztScBIWDGzs5D1RnO1cyxluqXTGQiQaRA__"
+			src="images/posts/torrust-header.jpg"
 			alt=""
 		/>
 		<div class="text">
@@ -40,8 +40,8 @@
 	}
 
 	.article-wrapper {
-		background-color: rgba(245, 245, 245, 1);
-		border: 1px solid rgba(212, 212, 212, 1);
+		background-color: var(--color--page-background);
+		border: 1px solid var(--color--border);
 		width: 100%;
 	}
 
@@ -49,8 +49,13 @@
 		padding: 1.5rem 1.5rem 0 1.5rem;
 	}
 
+	h3 {
+		color: var(--color--text);
+	}
+
 	p {
 		margin-top: 0.5rem;
+		color: var(--color--text-secondary);
 	}
 
 	.tags {
