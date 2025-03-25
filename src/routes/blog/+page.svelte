@@ -1,90 +1,99 @@
 <script lang="ts">
-	import { postsMetadata } from '$lib/data/postMetadata';
-	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
-	import HeroWrapper from '$lib/components/atoms/HeroWrapper.svelte';
-	// import Tag from '$lib/components/atoms/Tag.svelte';
-	import TagList from '$lib/components/molecules/TagList.svelte';
+	// import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	// import HeroWrapper from '$lib/components/atoms/HeroWrapper.svelte';
 
-	let allPosts = Object.values(postsMetadata);
-	let filteredPosts = allPosts;
+	import type { BlogPost } from '$lib/utils/types';
+	import BlogPreview from '$lib/components/molecules/BlogPreview.svelte';
+
+	interface Props {
+		data: {
+			allPosts: BlogPost[];
+		};
+	}
+
+	let { data }: Props = $props();
 </script>
 
-<svelte:head>
-	<title>Blog</title>
-</svelte:head>
-
-<Wrapper>
-	<HeroWrapper title={'Blog'} />
-	<div class="grid">
-		{#each filteredPosts as post}
-			<div class="grid-item">
-				<a href="/blog/{post.slug}">
-					{#if post.coverImage}
-						<div class="container">
-							<img src={post.coverImage} alt={post.title} />
-							<div class="text-container">
-								<h2>{post.title}</h2>
-								{#if post.excerpt}
-									<p>{post.excerpt}</p>
-									<!-- {:else}
-                                    <p>{formattedDate}</p> -->
-								{/if}
-							</div>
-						</div>
-					{/if}
-				</a>
-				{#if post.tags.length > 0}
-					<div class="tags">
-						<TagList tags={post.tags} />
-					</div>
-				{/if}
-			</div>
-		{/each}
+<div class="container">
+	<div class="header">
+		<h1>Blog</h1>
 	</div>
-</Wrapper>
+
+	{#if data.allPosts && data.allPosts.length > 0}
+		<div class="grid">
+			{#each data.allPosts as post}
+				<BlogPreview post_data={post} />
+			{/each}
+		</div>
+	{/if}
+</div>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints.scss' as bp;
 
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 1.5rem;
-		margin: 3rem 1.5rem 0 1.5rem;
+	.container {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding-top: 3rem;
+		background: var(--color--page-background);
+		color: var(--color--text);
+		padding-bottom: 64px;
 
-		.grid-item {
-			background-color: var(--color--page-background);
-			border: 1px solid var(--color--border);
+		@include bp.for-desktop-up {
+			max-width: 1176px;
 		}
+	}
 
-		img {
-			width: 100%;
-			height: 176px;
-			object-fit: cover;
-		}
-
-		.text-container {
-			padding: 1.5rem 1.5rem 0 1.5rem;
-
-			h2 {
-				color: var(--color--text);
-			}
-
-			p {
-				color: var(--color--text-secondary);
-			}
-		}
-
-		.tags {
-			padding: 0 1.5rem 1.5rem 1.5rem;
-		}
+	.header {
+		margin: 0 auto;
 
 		@include bp.for-tablet-portrait-up {
-			grid-template-columns: repeat(2, 1fr);
+			width: 700px;
 		}
 
 		@include bp.for-desktop-up {
-			grid-template-columns: repeat(3, 1fr);
+			width: 1100px;
+		}
+
+		h1 {
+			padding-bottom: 1rem;
+			font-size: 36px;
+			color: var(--font-color);
+
+			@include bp.for-tablet-portrait-up {
+				padding-bottom: 0px;
+			}
+		}
+
+		@include bp.for-tablet-portrait-up {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.grid {
+		display: grid;
+		padding-top: 3rem;
+		padding-inline: 2.5rem;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 24px;
+		width: 100%;
+		flex-grow: 1;
+
+		@include bp.for-phone-only {
+			grid-template-columns: 1fr;
+		}
+
+		@include bp.for-tablet-landscape-up {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include bp.for-desktop-up {
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 </style>
