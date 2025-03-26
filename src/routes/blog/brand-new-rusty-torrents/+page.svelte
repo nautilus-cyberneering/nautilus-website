@@ -1,13 +1,20 @@
 <script lang="ts">
-	export let data;
+	let { data } = $props();
+	let { currentPost } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
 </script>
 
 <Wrapper>
-	<!-- readd slug={data.meta.slug}, contributor={data.meta.contributor}, contributorSlug={data.meta.contributorSlug} and tags={data.meta.tags}
- -->
-	<Post title={data.meta.title} coverImage={data.meta.coverImage} date={data.meta.date}>
+	<Post
+		title={currentPost.title}
+		coverImage={currentPost.coverImage}
+		date={currentPost.date}
+		contributor={currentPost.contributor}
+		contributorSlug={currentPost.contributorSlug}
+		tags={currentPost.tags}
+		categories={currentPost.categories}
+	>
 		<p>
 			What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents.
 			If you haven’t, torrents are a file sharing technology. Torrents allow users to share large

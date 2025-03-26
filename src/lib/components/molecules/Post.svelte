@@ -1,11 +1,9 @@
 <script lang="ts">
-	// re-add slug, contributor, contributorSlug and tags
-	let { title, date, coverImage, children } = $props();
+	let { title, date, contributor, contributorSlug, tags, coverImage, categories, children } =
+		$props();
 
 	import { formatDate } from '$lib/utils/date';
-	// import Image from '$lib/components/atoms/Image.svelte';
 	// import ShareButton from '$lib/components/singletons/ShareButton.svelte';
-	// import Tag from '$lib/components/atoms/Tag.svelte';
 </script>
 
 <svelte:head>
@@ -14,34 +12,38 @@
 
 <div class="container">
 	<main>
-		<article>
-			<img src={coverImage} alt={title} />
-			<div class="header">
-				<!-- {#if tags.length}
+		<img src={coverImage} alt={title} />
+		<div class="header">
+			<h1>{title}</h1>
+		</div>
+		<div class="layout">
+			{@render children()}
+		</div>
+		<div class="author-info">
+			<div>
+				Published {formatDate(date)}
+				{#if contributor}
+					<p>
+						By <a class="author" href={'/contributor/' + contributorSlug}>{contributor}</a>
+					</p>
+				{/if}
+			</div>
+			<div class="labels">
+				{#if tags.length}
 					<div class="tags">
-						{#each tags as tag}
-							<Tag {tag}>
-								{tag}
-							</Tag>
-						{/each}
+						<p>Tags:</p>
+						<span>{tags.join(', ')}</span>
 					</div>
-				{/if} -->
-				<h1>{title}</h1>
-				<div class="note">
-					<div>
-						<!-- {#if contributor}
-							<a class="author" href={'/contributor/' + contributorSlug}>{contributor}</a>
-							-
-						{/if} -->
-						{formatDate(date)}
+				{/if}
+
+				{#if categories.length}
+					<div class="categories">
+						<p>Categories:</p>
+						<span>{categories.join(', ')}</span>
 					</div>
-					<!-- <ShareButton {slug} {title} /> -->
-				</div>
+				{/if}
 			</div>
-			<div class="layout">
-				{@render children()}
-			</div>
-		</article>
+		</div>
 	</main>
 </div>
 
@@ -59,7 +61,8 @@
 			max-height: 880px;
 		}
 
-		.header {
+		.header,
+		.author-info {
 			margin-inline: 1.5rem;
 
 			@include bp.for-desktop-up {
@@ -68,15 +71,42 @@
 			}
 		}
 
+		.author-info {
+			display: flex;
+			flex-direction: column;
+			margin-top: 2rem;
+			padding-top: 1rem;
+			border-top: 2px solid var(--color--border);
+		}
+
+		.labels {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.tags {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.categories {
+			display: flex;
+			flex-direction: row;
+		}
+
+		@include bp.for-tablet-portrait-up {
+			.author-info {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
 		h1 {
 			margin-top: 4.5rem;
 			font-size: 3rem;
 			line-height: 1.2;
 			color: var(--color--text);
-		}
-
-		.note {
-			color: var(--color--text-secondary);
 		}
 
 		.layout {

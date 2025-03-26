@@ -4,10 +4,7 @@
 
 <div class="article-wrapper">
 	<a href="/">
-		<img
-			src="images/posts/torrust-header.jpg"
-			alt=""
-		/>
+		<img src="images/posts-cover-images/torrust-header.jpg" alt="" />
 		<div class="text">
 			<h3>Article title that can take as much space as needed</h3>
 			<p>

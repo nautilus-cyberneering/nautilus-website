@@ -1,10 +1,10 @@
 <script lang="ts">
 	let { url } = $props();
-	import QrCode from "./QrCode.svelte";
+	import QrCode from './QrCode.svelte';
 </script>
 
 <div class="wrapper">
-		<QrCode url={url} />
+	<QrCode {url} />
 </div>
 
 <style lang="scss">
