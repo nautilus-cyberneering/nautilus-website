@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -32,7 +33,17 @@
 			the personal benefits that you can derive from contributing.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/interesting-article-4-tips-to-becoming-a-technical-writer-with-open-source-contributions/image.png"
+				alt=""
+			/>
+			<figcaption>
+				<a href="https://opensource.com/article/21/11/technical-writing-open-source"
+					>https://opensource.com/article/21/11/technical-writing-open-source</a
+				>
+			</figcaption>
+		</figure>
 
 		<h3>My personal experience</h3>
 		<p>
@@ -100,17 +111,51 @@
 		</p>
 
 		<p>Why don't you give it a shot?</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
+	h3 {
+		margin-top: 3rem;
+		line-height: 1.2;
+		color: var(--color--text);
+	}
+
 	p {
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: rgba(82, 82, 82, 1);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>

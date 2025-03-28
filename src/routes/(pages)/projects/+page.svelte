@@ -3,7 +3,7 @@
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
 	import ProjectCard from '$lib/components/atoms/ProjectCard.svelte';
 	import FeaturedProject from '$lib/components/molecules/FeaturedProject.svelte';
-	import ProjectPreview from '$lib/components/atoms/ProjectPreview.svelte';
+	// import ProjectPreview from '$lib/components/atoms/ProjectPreview.svelte';
 </script>
 
 <Wrapper>
@@ -57,11 +57,11 @@
 					>our organization’s repositories on GitHub</a
 				> or check our current most active projects below.
 			</p>
-			<div class="project-preview">
+			<!-- <div class="project-preview">
 				<ProjectPreview title={'Page title'} url={'/'} />
 				<ProjectPreview title={'Page title'} url={'/'} />
 				<ProjectPreview title={'Page title'} url={'/'} />
-			</div>
+			</div> -->
 		</div>
 	</div>
 </Wrapper>
@@ -70,8 +70,18 @@
 	@use '$lib/scss/breakpoints.scss' as bp;
 
 	.projects-wrapper {
-		margin-top: 1.5rem;
-		margin-inline: 1.5rem;
+		margin: 0 auto;
+		padding-top: 1.5rem;
+		max-width: 400px;
+
+		@include bp.for-tablet-portrait-up {
+			max-width: 720px;
+		}
+
+		@include bp.for-desktop-up {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
 	}
 
 	p {
@@ -91,88 +101,5 @@
 
 	.project-info {
 		margin-top: 3rem;
-	}
-
-	.project-preview-wrapper {
-		margin-top: 3rem;
-
-		.project-preview {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			gap: 1.5rem;
-			margin-top: 3rem;
-		}
-
-		@include bp.for-tablet-portrait-up {
-			.project-preview {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				grid-template-rows: repeat(2, 1fr);
-				grid-column-gap: 1.5rem;
-				grid-row-gap: 1.5rem;
-
-				:global(> :nth-child(1)) {
-					grid-area: 1 / 1 / 2 / 3;
-				}
-				:global(> :nth-child(2)) {
-					grid-area: 1 / 3 / 2 / 5;
-				}
-				:global(> :nth-child(3)) {
-					grid-area: 2 / 2 / 3 / 4;
-				}
-			}
-		}
-
-		@include bp.for-desktop-up {
-			.project-preview {
-				display: flex;
-				flex-direction: column;
-				gap: 1.5rem;
-				max-width: 776px;
-				margin: 0 auto;
-				padding-block: 3rem 6rem;
-			}
-		}
-	}
-
-	@include bp.for-tablet-portrait-up {
-		.project-cards {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: repeat(2, 1fr);
-			grid-column-gap: 1.5rem;
-			grid-row-gap: 1.5rem;
-
-			:global(> :nth-child(1)) {
-				grid-area: 1 / 1 / 2 / 3;
-			}
-			:global(> :nth-child(2)) {
-				grid-area: 1 / 3 / 2 / 5;
-			}
-			:global(> :nth-child(3)) {
-				grid-area: 2 / 2 / 3 / 4;
-			}
-		}
-	}
-
-	@include bp.for-desktop-up {
-		.hero-text,
-		.project-info,
-		.featured-project,
-		.project-preview-wrapper p {
-			max-width: 776px;
-			margin: 0 auto;
-		}
-
-		.featured-project {
-			max-width: 872px;
-		}
-
-		.project-cards {
-			display: flex;
-			flex-direction: row;
-			margin-block: 3rem;
-		}
 	}
 </style>

@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -62,7 +63,23 @@
 			<a href="https://github.com/boken-engine/boken-engine">“Boken Engine”</a>.
 		</p>
 
-		<!-- IMAGES -->
+		<div class="images">
+			<figure>
+				<img
+					src="/images/posts-images/yeray-thanks-our-pleasure-to-have-had-you-on-our-team/iakkai-title-screen.png"
+					alt="iakkai"
+				/>
+				<figcaption>Iakkai: Saga Curse of Blood Logo</figcaption>
+			</figure>
+
+			<figure>
+				<img
+					src="/images/posts-images/yeray-thanks-our-pleasure-to-have-had-you-on-our-team/boken-engine-logo.png"
+					alt="boken engine"
+				/>
+				<figcaption>Boken Engine Logo</figcaption>
+			</figure>
+		</div>
 
 		<p>
 			Thereafter, we continued work on a better way to store the content for a game. That led the
@@ -83,7 +100,12 @@
 			>.
 		</p>
 
-		<!-- IMAGE -->
+		<div class="git-queue">
+			<img
+				src="/images/posts-images/yeray-thanks-our-pleasure-to-have-had-you-on-our-team/Git-Queue.jpg"
+				alt="git queue"
+			/>
+		</div>
 
 		<p>
 			Yeray stayed with the company even after the focus had shifted away from iOS and the game
@@ -283,13 +305,15 @@
 		<p>Kind Farewells,</p>
 
 		<p>Cameron Garnham and Nautilus Cyberneering.</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -299,7 +323,29 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	.images {
+		display: flex;
+		margin-block: 2rem;
+
+		figure {
+			width: 50%;
+			text-align: center;
+			color: var(--color--text);
+
+			img {
+				margin: 0 auto;
+				height: 200px;
+			}
+		}
+	}
+
+	.git-queue img {
+		margin: 0 auto;
+		margin-block: 2rem;
 	}
 </style>

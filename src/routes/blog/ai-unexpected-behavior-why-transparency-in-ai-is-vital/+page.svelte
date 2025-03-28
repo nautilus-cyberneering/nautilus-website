@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -43,7 +44,11 @@
 		</p>
 
 		<h2>Is unexpected behavior appropriate?</h2>
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/ai-unexpected-behavior-why-transparency-in-ai-is-vital/Pro-Con.png"
+			alt="pro cons"
+			style="background-color: white;"
+		/>
 		<p>
 			There are two sides to this argument. On the one hand, AI systems that exhibit novelty can be
 			advantageous. They can come up with solutions to problems that humans would never have thought
@@ -78,7 +83,10 @@
 		</p>
 
 		<h2>Model training</h2>
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/ai-unexpected-behavior-why-transparency-in-ai-is-vital/AI_Training.jpg"
+			alt="AI training"
+		/>
 		<p>
 			Now, if you are new to AI and do not know how the models are trained let me give you an
 			example. Imagine a base algorithm like a small kid. This kid receives education and is exposed
@@ -116,7 +124,10 @@
 			line with their needs and ethical standards.
 		</p>
 
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/ai-unexpected-behavior-why-transparency-in-ai-is-vital/AiTransparency.jpg"
+			alt="AI transparency"
+		/>
 		<p>
 			We need to have a better understanding of how AI systems make decisions so that we can trust
 			them. The first step towards this to understand how they have been made, having access to the
@@ -162,6 +173,7 @@
 			Please feel free to share this blog post on your social media channels or with anyone who
 			might be interested. Thank you for reading! 🙂
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -180,5 +192,9 @@
 
 	p {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
 	}
 </style>

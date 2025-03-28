@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -20,7 +21,10 @@
 			Boken Engine, <strong>Iakkai Saga: The Curse of Blood</strong>.
 		</p>
 
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/iakkai-saga-available-on-the-app-store/app-store-preview-iakkai.png"
+			alt="iakkai"
+		/>
 
 		<p>
 			You can find it on the App Store <a
@@ -58,6 +62,7 @@
 		</p>
 
 		<p>We hope you enjoy it!</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -68,7 +73,12 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
 	}
 </style>

@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -36,7 +37,10 @@
 			workshops and interesting conversations.
 		</p>
 
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/tenerife.jpg"
+			alt="tenerife"
+		/>
 
 		<p>
 			The event revolved around Java Script, touching on different topics such as Security, Web 3.0,
@@ -47,7 +51,39 @@
 			<a href="https://www.linkedin.com/in/max-gfeller-038b1847/">Max Gfeller</a>.
 		</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/event-day-1.jpg"
+						alt="event 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/event-day-2.jpg"
+						alt="event 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/event-day-3.jpg"
+						alt="event 3"
+					/>
+				</div>
+			</div>
+			<div class="double-image">
+				<img
+					src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/event-day-4.jpg"
+					alt="event 4"
+				/>
+				<img
+					src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/event-day-5.jpg"
+					alt="event 5"
+				/>
+			</div>
+			<figcaption>Pictures from the event days</figcaption>
+		</figure>
 		<p>
 			During these days almost 400 people were present and took part in all the activities. In
 			addition there were also several other companies present who had some stands, like <a
@@ -62,7 +98,36 @@
 			also to take a morning to visit the mountains and hike a little.
 		</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<img
+				src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/teide-view-1.jpg"
+				alt="teide view 1"
+			/>
+			<figcaption>Teide view from Las Mercedes</figcaption>
+		</figure>
+
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/teide-view-2.jpg"
+						alt="teide view 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/teide-view-3.jpg"
+						alt="teide view 3"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/great-jsdaycanarias-2022-software-developer-event/teide-view-4.jpg"
+						alt="teide view 4"
+					/>
+				</div>
+			</div>
+		</figure>
 
 		<p>
 			All in all it were 4 active days which make us consider next time to attend as speakers and
@@ -75,6 +140,7 @@
 				href="https://nautilus-cyberneering.de/projects/">here</a
 			> is a link to some more detail about it.
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -82,7 +148,63 @@
 	@use '$lib/scss/breakpoints' as bp;
 
 	p {
-		color: var(--color--text-secondary);
 		margin-top: 1.5rem;
+	}
+
+	p {
+		color: var(--color--text-secondary);
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		div {
+			margin-top: 1rem;
+		}
+
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 1rem;
+
+			div {
+				display: flex;
+				justify-content: center;
+				object-fit: cover;
+
+				img {
+					width: auto;
+					object-fit: cover;
+				}
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.double-image {
+			display: flex;
+			gap: 1rem;
+
+			img {
+				width: 50%;
+			}
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>

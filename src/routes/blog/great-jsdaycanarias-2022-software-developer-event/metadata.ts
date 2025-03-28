@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/jsdaycanarias-2022.jpg',
 	excerpt:
 		'Last week my colleague Jose Celano and myself attended then jsdaycanarias 2022 software developer event.',
-	tags: ['marketing'],
+	tags: ['Marketing'],
 	categories: ['Events']
 };

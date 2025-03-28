@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/open-source-why-it-is-so-important.jpg',
 	excerpt:
 		'The tech world is ever-changing, and constantly evolving and a mix of different business philosophies coexist.',
-	tags: ['collaboration', 'future', 'security'],
+	tags: ['Collaboration', 'Future', 'Security'],
 	categories: ['Open Source', 'AI']
 };

@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -253,13 +254,301 @@
 			In this section I include a brief description of the projects I have been involved in, and the
 			main task I performed in each one of them:
 		</p>
+
+		<h3>Boken Engine</h3>
+
+		<ol>
+			<li>
+				Project Urls
+				<ul>
+					<li>
+						<a href="https://github.com/boken-engine/boken-engine"
+							>https://github.com/boken-engine/boken-engine</a
+						>
+					</li>
+					<li>
+						<a href="https://www.boken-engine.dev/">https://www.boken-engine.dev/</a>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				Development dates
+				<p>From October 2020 to June 2021</p>
+			</li>
+
+			<li>
+				Description of the project
+				<p>From the repository README:</p>
+				<p>
+					BOKEN ENGINE is a Swift Package with which any user, only with a few lines of code, can
+					generate full-fledged visual stories or slide-based presentations for iOS and macOS
+					devices. It is based on SpriteKit.
+				</p>
+				<p>
+					The user just must provide a human-readable JSON description with some predefined
+					properties, the image and sound assets, and initialize the framework within the project
+					with just a few lines.
+				</p>
+			</li>
+
+			<li>
+				Technologies involved
+				<ul>
+					<li>XCode / Swift</li>
+					<li>UIKit, SceneKit, SpriteKit, and PathKit</li>
+				</ul>
+			</li>
+
+			<li>
+				Tasks
+				<ul>
+					<li>Research visual novel genre and storytelling frameworks</li>
+					<li>Research possible XCode libraries related to media handling and interaction</li>
+					<li>Implementation of a basic Visual Novel library</li>
+					<li>Research package/library/framework distribution methods on iOS</li>
+					<li>
+						Extraction of the core library functionality into CocoaPods, Carthage, and SPM
+						distributables
+					</li>
+					<li>Framework documentation</li>
+					<li>Framework branding</li>
+				</ul>
+			</li>
+		</ol>
+
+		<h3>Iakkai Saga</h3>
+
+		<ol>
+			<li>
+				Project URL
+				<ul>
+					<li>
+						<a href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood"
+							>https://github.com/boken-engine/iakkai-saga-the-curse-of-blood</a
+						>
+					</li>
+					<li>
+						<a href="https://apps.apple.com/app/id1580924283#?platform=ipad"
+							>https://apps.apple.com/app/id1580924283#?platform=ipad</a
+						>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Development dates
+				<p>From June 2021 to August 2021</p>
+			</li>
+			<li>
+				Description of the project
+				<p>
+					A demo project designed to showcase the possibilities of the Boken Engine. It is a graphic
+					novel based on an original story by Constantin Bosse. The visual assets were also created
+					specifically for the application, using the “doom metal cover” technique: blending via
+					Photoshop parts of royalty-free images to create a composition that will have its colour
+					and texture altered. The sprites (characters) were all drawn and coloured by Constantin
+					Bosse.
+				</p>
+				<figure>
+					<img
+						src="/images/posts-images/a-personal-retrospective-feedback-and-thoughts/doom-metal-cover.png"
+						alt="faq"
+					/>
+				</figure>
+			</li>
+			<li>
+				Technologies involved
+				<ul>
+					<li>Boken Engine</li>
+					<li>Swift / XCode</li>
+				</ul>
+			</li>
+			<li>
+				Tasks
+				<ul>
+					<li>Research visual novel storytelling and design.</li>
+					<li>
+						Research different ways of creating background images in a short time with an unique and
+						appealing look.
+					</li>
+					<li>Designing the general demo project and its scope.</li>
+					<li>Editing external assets.</li>
+					<li>Improving Boken Engine with the features needed by this project.</li>
+					<li>
+						Editing the story description JSON and researching ways to automate and maintain it.
+					</li>
+				</ul>
+			</li>
+		</ol>
+
+		<h3>Chinese Ideographs</h3>
+
+		<ol>
+			<li>
+				Project URL
+				<ul>
+					<li>
+						<a href="https://github.com/Nautilus-Cyberneering/chinese-ideographs"
+							>https://github.com/Nautilus-Cyberneering/chinese-ideographs</a
+						>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Development dates
+				<p>(Main involvement) From September 2021 to November 2022</p>
+			</li>
+			<li>
+				Description of the project
+				<p>From the repository README:</p>
+				<p>
+					Ethical Software Artwork Management Continuous Integration Workflow for a Website, Book
+					and Game
+				</p>
+			</li>
+			<li>
+				Technologies involved
+				<ul>
+					<li>Python</li>
+					<li>GitHub</li>
+					<li>DVC</li>
+				</ul>
+			</li>
+			<li>
+				Tasks
+				<ul>
+					<li>Research technologies to perform image manipulation programmatically.</li>
+					<li>Research tools to manipulate metadata.</li>
+					<li>Training DVC tool and advanced GIT usage.</li>
+					<li>Developing the workflow and the actions.</li>
+				</ul>
+			</li>
+		</ol>
+
+		<h3>Nautilus Librarian</h3>
+
+		<ol>
+			<li>
+				Project URLs
+				<ul>
+					<li>
+						<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian"
+							>https://github.com/Nautilus-Cyberneering/nautilus-librarian</a
+						>
+					</li>
+					<li>
+						<a href="https://nautilus-cyberneering.github.io/nautilus-librarian/"
+							>https://nautilus-cyberneering.github.io/nautilus-librarian/</a
+						>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Development dates
+				<p>(Main involvement) From December 2021 to February 2022</p>
+			</li>
+			<li>
+				Description of the project
+				<p>From the repository README:</p>
+				<p>A Python Console application to handle media libraries with Git and Dvc.</p>
+			</li>
+			<li>
+				Technologies involved
+				<ul>
+					<li>Python</li>
+					<li>GitHub</li>
+					<li>DVC</li>
+					<li>Docker</li>
+					<li>Poetry</li>
+				</ul>
+			</li>
+			<li>
+				Tasks
+				<ul>
+					<li>
+						Research the best way to extract functionality from the Chinese Ideographs repository to
+						a separate entity.
+					</li>
+					<li>Training on poetry.</li>
+					<li>
+						Refactor of all the previously developed functionality to accommodate it to the new
+						architecture.
+					</li>
+					<li>Developing all the additional new features.</li>
+					<li>Branding.</li>
+				</ul>
+			</li>
+			<figure>
+				<img
+					src="/images/posts-images/a-personal-retrospective-feedback-and-thoughts/librarian-logo.png"
+					alt="faq"
+				/>
+				<figcaption>Librarian Logo</figcaption>
+			</figure>
+		</ol>
+
+		<h3>GitQueue</h3>
+
+		<ol>
+			<li>
+				Project URLs
+				<ul>
+					<li>
+						<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian"
+							>https://github.com/Nautilus-Cyberneering/nautilus-librarian</a
+						>
+					</li>
+					<li>
+						<a href="https://nautilus-cyberneering.github.io/nautilus-librarian/"
+							>https://nautilus-cyberneering.github.io/nautilus-librarian/</a
+						>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Development dates
+				<p>From March to May 2022</p>
+			</li>
+			<li>
+				Description of the project
+				<p>This GitHub Action is a job queue with the following characteristics:</p>
+				<p>
+					Jobs are done by GitHub workflows intended to create git commits and merge them into
+					target branches.
+				</p>
+				<p>
+					It provides an optimistic locking mechanism to guarantee that commits are merged in a
+					mutual exclusion way, avoiding duplicate commits. When the queue accepts more than one
+					active job (not finished) it will also guarantee the execution order.
+				</p>
+			</li>
+			<li>
+				Technologies involved
+				<ul>
+					<li>Typescript</li>
+					<li>GitHub</li>
+					<li>Node</li>
+				</ul>
+			</li>
+			<li>
+				Tasks
+				<ul>
+					<li>
+						General development of the project and discussion on its architecture, design and
+						features.
+					</li>
+				</ul>
+			</li>
+		</ol>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -272,5 +561,27 @@
 	p,
 	li {
 		color: var(--color--text-secondary);
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>

@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -20,7 +21,15 @@
 			it. As it turned out to be it has to do with security.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/impersonation-attack.png"
+				style="background-color: white;"
+				alt="impersonation attack"
+			/>
+			<figcaption>Impersonation Attack</figcaption>
+		</figure>
+
 		<p>
 			Our team strives to have good <a
 				href="https://github.com/Nautilus-Cyberneering/nautilus-librarian/issues?q=label%3Asecurity"
@@ -50,7 +59,7 @@
 			that works with an interconnected set of keys.
 		</p>
 
-		<!-- IMAGE -->
+		<img src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/Gnupg_logo.png" alt="gnupg" />
 
 		<p>
 			One private, and secret and the other public, public meaning that it can be shared without any
@@ -146,7 +155,11 @@
 		</p>
 
 		<h2>Why use it?</h2>
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/Pro-Con.png"
+			style="background-color: white;"
+			alt="pro con"
+		/>
 
 		<h3>Advantages</h3>
 		<p>
@@ -232,8 +245,20 @@
 
 		<h3>Exporting or backing up your keys</h3>
 		<p>Here are some screenshots using Kleopatra:</p>
-		<!-- IMAGE -->
-
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-1.png"
+				alt="kleopatra"
+			/>
+			<figcaption>Right click the key to export or backup.</figcaption>
+		</figure>
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-2.png"
+				alt="kleopatra"
+			/>
+			<figcaption>Select the location where to save it to and click save.</figcaption>
+		</figure>
 		<p>
 			If you want to check the contents of the “.asc” file just open it with any basic text editor
 			file.
@@ -268,7 +293,53 @@
 
 		<p>Here are some screenshots of Kleopatra:</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-3.jpg"
+				alt="kleopatra"
+			/>
+			<figcaption>Select encryption</figcaption>
+		</figure>
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-4.jpg"
+				alt="kleopatra"
+			/>
+			<figcaption>Select files to encrypt</figcaption>
+		</figure>
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-5.jpg"
+				alt="kleopatra"
+			/>
+			<figcaption>Encryption Options</figcaption>
+		</figure>
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-6.jpg"
+				alt="kleopatra"
+			/>
+			<figcaption>Encryption Process</figcaption>
+		</figure>
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-7.jpg"
+				alt="kleopatra"
+			/>
+			<figcaption>Created GPG encrypted file</figcaption>
+		</figure>
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-8.jpg"
+				alt="kleopatra"
+			/>
+		</figure>
+		<figure>
+			<img
+				src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/kleopatra-9.jpg"
+				alt="kleopatra"
+			/>
+		</figure>
 
 		<p>
 			And again a link to Mark Schindel’s <a href="https://www.markschindel.com/how-to-use-gpg/"
@@ -287,13 +358,15 @@
 			I hope that some of your initial questions about GPG have been covered and that you are now
 			more informed than I was when I started using it.
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -303,7 +376,34 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>

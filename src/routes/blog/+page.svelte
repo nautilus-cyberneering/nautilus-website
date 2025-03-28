@@ -4,6 +4,7 @@
 
 	import type { BlogPost } from '$lib/utils/types';
 	import BlogPreview from '$lib/components/molecules/BlogPreview.svelte';
+	// import SearchBar from '$lib/components/organisms/SearchBar.svelte';
 
 	interface Props {
 		data: {

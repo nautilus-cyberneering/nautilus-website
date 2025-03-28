@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -213,7 +214,13 @@
 
 		<p>Here is a screenshot to show you what I mean from the sponsoring tool by GitHub:</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/faq.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot from GitHub Sponsor</figcaption>
+		</figure>
 
 		<p>
 			Some countries have more tax and others have less, still the paperwork a project owner or
@@ -330,7 +337,13 @@
 			</li>
 		</ul>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/github-sponsors-landing-page.jpg"
+				alt="faq"
+			/>
+			<figcaption>Screenshot GitHub Sponsors landing page</figcaption>
+		</figure>
 
 		<p>There is one additional approach that I found different but interesting and easy to use:</p>
 
@@ -346,7 +359,13 @@
 			giving in crypto currencies such as Ethereum.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/giveth-landing-page.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot Giveth.io landing page</figcaption>
+		</figure>
 
 		<ul>
 			<li>
@@ -369,7 +388,13 @@
 			product.
 		</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/gitcoin-grants-page.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot GitCoin Grants page</figcaption>
+		</figure>
 
 		<p>There are quite a few more so check out my compilation of resources.</p>
 
@@ -387,7 +412,13 @@
 			it looks like a Freelancer hiring platform.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/blocklancer-landing-page.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot Blocklancer.net Landing Page</figcaption>
+		</figure>
 
 		<ul>
 			<li>
@@ -404,7 +435,13 @@
 			> also give you an idea, but they seem outdated.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/issuehunt-landing-page.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot IssueHunt Landing Page</figcaption>
+		</figure>
 
 		<ul>
 			<li>
@@ -421,7 +458,13 @@
 			advertise it from there.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/gitcoin-bounties-page.jpg"
+				alt="faq"
+			/>
+			<figcaption>Screenshot GitCoin Bounties Page</figcaption>
+		</figure>
 
 		<h3>Tokenization (DevProtocol, SourceCred, CommonStack)</h3>
 		<ul>
@@ -456,7 +499,13 @@
 
 		<p>In a way it is like creating your own project economy with its own currency.</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/sourcecred-landing-page.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot SourceCred Landing Page</figcaption>
+		</figure>
 
 		<ul>
 			<li>
@@ -484,7 +533,13 @@
 			to speed up creating a system where creators and backers work together and get both rewarded.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/devprotocol-landing-page.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot DevProtocol Landing Page</figcaption>
+		</figure>
 
 		<ul>
 			<li>
@@ -521,7 +576,13 @@
 			> (Decentralized Autonomous Organization) for each Open Source project.
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/open-source-sources-of-income-easy-tools-and-aids/commonsstack-landing-page.png"
+				alt="faq"
+			/>
+			<figcaption>Screenshot CommonsStack Landing Page</figcaption>
+		</figure>
 
 		<h3>Crowdfunding</h3>
 		<p>
@@ -577,13 +638,15 @@
 			is the link and if you are interested in what projects we are currently working on,
 			<a href="https://nautilus-cyberneering.de/projects/">here</a>.
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -593,7 +656,34 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>

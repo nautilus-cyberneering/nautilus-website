@@ -5,11 +5,19 @@
 	import ExplorationAndEduction from '$lib/components/organisms/ExplorationAndEduction.svelte';
 	import WelcomeSection from '$lib/components/organisms/WelcomeSection.svelte';
 	import LatestArticles from '$lib/components/organisms/LatestArticles.svelte';
+
+	import type { BlogPost } from '$lib/utils/types';
+
+	export let data: {
+		allPosts: BlogPost[];
+		error: string | null;
+	};
+	let latestPosts = data.allPosts.slice(0, 3);
 </script>
 
 <Hero />
 <WhatWeDo />
 <TechAndProjects />
 <ExplorationAndEduction />
-<LatestArticles />
+<LatestArticles data={{ allPosts: latestPosts }} />
 <WelcomeSection />

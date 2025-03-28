@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -40,7 +41,10 @@
 			continue to pay for proprietary software.
 		</p>
 
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/open-source-why-it-is-so-important-now-and-in-the-future/guiding_principles.jpg"
+			alt="guiding principles"
+		/>
 
 		<p>
 			The <a href="https://en.wikipedia.org/wiki/Open_source">open-source movement</a> began as a
@@ -200,6 +204,7 @@
 				<a href="https://nautilus-cyberneering.de/projects/">Projects overview</a>
 			</li>
 		</ul>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -216,7 +221,12 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
 	}
 </style>

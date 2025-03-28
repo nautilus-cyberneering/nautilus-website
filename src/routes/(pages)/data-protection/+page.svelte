@@ -155,7 +155,7 @@
 		}
 
 		ul li {
-			color: rgba(82, 82, 82, 1);
+			color: var(--color--text-secondary);
 			list-style-type: none;
 			margin-left: 0;
 			word-break: keep-all;
@@ -166,7 +166,7 @@
 		}
 
 		@include bp.for-desktop-up {
-			max-width: 776px;
+			max-width: 1200px;
 			margin: 0 auto;
 		}
 	}

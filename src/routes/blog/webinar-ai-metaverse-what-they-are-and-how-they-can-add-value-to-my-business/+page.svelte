@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -49,18 +50,26 @@
 			webinar.
 		</p>
 
-		<!-- IMAGES -->
+		<img
+			src="/images/posts-images/webinar-ai-metaverse-what-they-are-and-how-they-can-add-value-to-my-business/AI-vs-Human-Brain-2.webp"
+			alt="webinar"
+		/>
+		<a href="https://constantinbosse.com/2022/04/22/ai-explained-in-simple-words/">
+			AI Explained in Simple Words
+		</a>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	p {
-		margin-top: 1.5rem;
+	img {
+		margin-top: 1rem;
 	}
 
 	p {
 		color: var(--color--text-secondary);
+		margin-top: 1.5rem;
 	}
 </style>

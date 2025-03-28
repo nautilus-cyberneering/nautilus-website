@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -96,7 +97,10 @@
 			</ul>
 		</ul>
 		<h3>GPG Defaults</h3>
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/how-to-use-gpg-keys-the-right-way-with-github/Gnupg_logo.png"
+			alt="gnupg"
+		/>
 		<p>
 			There are many arrangement and possible combinations of keys, sub-keys, user-id’s and so on.
 			When you use GPG to generate your keys, by default it generates your keys following a standard
@@ -154,7 +158,10 @@
 
 		<h2>Recommended Best Practices</h2>
 		<h3>How to Create Further Sub-Keys</h3>
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/how-to-use-gpg-keys-the-right-way-with-github/MOTHERkEY.jpg"
+			alt="motherkey"
+		/>
 		<p>In order to create additional sub-keys, you need to use the GPG command-line interface.</p>
 
 		<p>
@@ -298,13 +305,15 @@
 				>previous post</a
 			>.
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -314,7 +323,12 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
 	}
 </style>

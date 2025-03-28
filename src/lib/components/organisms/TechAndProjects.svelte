@@ -50,8 +50,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
-		max-width: 100vw;
+		padding-bottom: 2rem;
 	}
 
 	.cards {
@@ -59,6 +58,12 @@
 		flex-direction: column;
 		gap: 1.5rem;
 		margin: 3rem 1.5rem 0 1.5rem;
+	}
+
+	.text-container,
+	.cards {
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 	a {

@@ -16,6 +16,7 @@
 		justify-content: center;
 		width: 100%;
 		max-width: 100vw;
+		margin: 0 auto;
 		background-color: var(--color--page-background);
 	}
 </style>

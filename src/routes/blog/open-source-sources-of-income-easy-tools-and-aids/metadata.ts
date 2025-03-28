@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/open-source-sources-of-income.jpg',
 	excerpt:
 		'It’s no secret that Open Source projects have a difficult time being financially sustainable and search for sources of income. Fact is many projects struggle just to keep the lights on.',
-	tags: ['income', 'tools'],
+	tags: ['Income', 'Tools'],
 	categories: ['Open Source', 'tools']
 };

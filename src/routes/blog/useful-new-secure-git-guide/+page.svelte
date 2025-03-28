@@ -1,8 +1,10 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
+	import Project from '$lib/components/atoms/Project.svelte';
 </script>
 
 <Wrapper>
@@ -48,11 +50,33 @@
 			Besides this if you are curious about any of our main project repositories they are these:
 		</p>
 
-		<!-- PROJECTS -->
+		<div class="projects">
+			<Project
+				title={'AI & ML'}
+				para={'Command line AI assistant base module and the necessary infrastructure to train and expand it, with additional AI modules.'}
+				linkUrl={'https://github.com/Nautilus-Cyberneering/ai_assistant_roadmap'}
+				linkName={'AI Buddy Assistant'}
+				image={'/images/posts-images/useful-new-secure-git-guide/AI-ASSISTANT.jpg'}
+				alt={'AI buddy assistant'}
+				projectType={'In-House'}
+				openSource={'100%'}
+			/>
+			<Project
+				title={'Rust'}
+				para={'Highly efficient Torrent indexing and tracking server solution written in Rust for private hosting and operation.'}
+				linkUrl={'https://github.com/Nautilus-Cyberneering/ai_assistant_roadmap'}
+				linkName={'Torrust'}
+				image={'/images/posts-images/useful-new-secure-git-guide/Torrust-Square.jpg'}
+				alt={'Torrust'}
+				projectType={'Sponsored'}
+				openSource={'100%'}
+			/>
+		</div>
 
 		<p>More on our company <a href="https://nautilus-cyberneering.de/">here</a>.</p>
 
 		<p>Thank you for reading and we hope that you will learn something new!</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -63,7 +87,12 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	.projects {
+		display: flex;
 	}
 </style>

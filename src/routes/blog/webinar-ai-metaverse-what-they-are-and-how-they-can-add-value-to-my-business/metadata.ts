@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/webinar.jpg',
 	excerpt:
 		'End of last month we presented at a webinar organized by the German Chamber of Commerce in Spain.',
-	tags: ['webinar'],
+	tags: ['Webinar'],
 	categories: ['AI', 'Press']
 };

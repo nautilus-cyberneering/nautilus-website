@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/iakkai-saga-available.png',
 	excerpt:
 		'After some months of hard work we finally published the first application built entirely using Boken Engine, Iakkai Saga: The Curse of Blood.',
-	tags: ['Boken Engine', 'game', 'Iakkai Saga', 'ios'],
+	tags: ['Boken Engine', 'Game', 'Iakkai Saga', 'iOS'],
 	categories: ['Open Source']
 };

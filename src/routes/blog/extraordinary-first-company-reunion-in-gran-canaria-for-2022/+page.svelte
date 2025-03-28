@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -25,7 +26,35 @@
 			about different project related topics as well as getting to know each other.
 		</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/reunion-1.jpg"
+						alt="reunion 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/reunion-2.jpg"
+						alt="reunion 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/reunion-3.jpg"
+						alt="reunion 3"
+					/>
+				</div>
+			</div>
+			<div>
+				<img
+					src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/reunion-4.jpg"
+					alt="reunion 4"
+				/>
+			</div>
+			<figcaption>Meetings surrounded by nature in Bandama</figcaption>
+		</figure>
 
 		<h2>Discussions</h2>
 		<p>Some of the things that we talked about were:</p>
@@ -65,25 +94,216 @@
 		</p>
 
 		<h2>Coast Trips</h2>
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/coast-trip-1.jpg"
+						alt="coast trip 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/coast-trip-2.jpg"
+						alt="coast trip 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/coast-trip-3.jpg"
+						alt="coast trip 3"
+					/>
+				</div>
+			</div>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/coast-trip-4.jpeg"
+						alt="coast trip 4"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/coast-trip-5.jpg"
+						alt="coast trip 5"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/coast-trip-6.jpeg"
+						alt="coast trip 6"
+					/>
+				</div>
+			</div>
+			<figcaption>El Confital’s Rocky Coast, Las Canteras Beach, Maspalomas</figcaption>
+		</figure>
 
 		<h2>Mountain Trips</h2>
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/mountain-trip-1.jpeg"
+						alt="mountain trip 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/mountain-trip-2.jpeg"
+						alt="mountain trip 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/mountain-trip-3.jpeg"
+						alt="mountain trip 3"
+					/>
+				</div>
+			</div>
+			<div>
+				<img
+					src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/mountain-trip-4.jpeg"
+					alt="mountain trip 4"
+				/>
+			</div>
+			<figcaption>Artenara to Moya Road</figcaption>
+		</figure>
 
 		<h2>Bonsai Center</h2>
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/bonsai-center-1.jpeg"
+						alt="bonsai center 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/bonsai-center-2.jpg"
+						alt="bonsai center 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/bonsai-center-3.jpeg"
+						alt="bonsai center 3"
+					/>
+				</div>
+			</div>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/bonsai-center-4.jpg"
+						alt="bonsai center 4"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/bonsai-center-5.jpg"
+						alt="bonsai center 3"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/bonsai-center-6.jpg"
+						alt="bonsai center 3"
+					/>
+				</div>
+			</div>
+			<div>
+				<img
+					src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/bonsai-center-7.jpg"
+					alt="bonsai center 3"
+				/>
+			</div>
+			<figcaption>El Valle Bonsai Center, Teror</figcaption>
+		</figure>
 
 		<h2>Team Building</h2>
 		<p>
 			All in all the two weeks were filled with interesting conversations and good team building
 			exercises like hiking in the foggy and rainy mountains.
 		</p>
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-1.jpeg"
+						alt="team building 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-2.jpeg"
+						alt="team building 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-3.jpeg"
+						alt="team building 3"
+					/>
+				</div>
+			</div>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-4.jpeg"
+						alt="team building 4"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-5.jpeg"
+						alt="team building 5"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-6.jpeg"
+						alt="team building 6"
+					/>
+				</div>
+			</div>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-7.jpeg"
+						alt="team building 7"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-8.jpg"
+						alt="team building 8"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-9.jpg"
+						alt="team building 9"
+					/>
+				</div>
+			</div>
+			<div class="double-image">
+				<img
+					src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-10.jpeg"
+					alt="team building 10"
+				/>
+				<img
+					src="/images/posts-images/extraordinary-first-company-reunion-in-gran-canaria-for-2022/team-building-11.jpg"
+					alt="team building 11"
+				/>
+			</div>
+			<figcaption>Caldera de lo Marteles to Santa Lucia</figcaption>
+		</figure>
 
 		<p>
 			We look forward to the next meeting in September!!! If you want to know about how to become
 			part of our team, <a href="https://nautilus-cyberneering.de/team/">check this out</a>.
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -103,5 +323,58 @@
 	p,
 	li {
 		color: var(--color--text-secondary);
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		div {
+			margin-top: 1rem;
+		}
+
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 1rem;
+
+			div {
+				display: flex;
+				justify-content: center;
+				object-fit: cover;
+
+				img {
+					width: auto;
+					object-fit: cover;
+				}
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.double-image {
+			display: flex;
+			gap: 1rem;
+
+			img {
+				width: 50%;
+			}
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>
