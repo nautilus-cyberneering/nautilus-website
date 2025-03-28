@@ -1,8 +1,8 @@
 <script lang="ts">
-	let { tag = 'Tag' } = $props();
+	let { tag } = $props();
 </script>
 
-<a href="/">
+<a href="/tags/{tag}">
 	{tag}
 </a>
 

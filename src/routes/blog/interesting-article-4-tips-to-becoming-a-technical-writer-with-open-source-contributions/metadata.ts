@@ -8,6 +8,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/torrust-header.jpg',
 	excerpt:
 		'This is an excellent article by Ashley Hardin giving some useful tips that essentially states that...',
-	tags: ['collaboration', 'Reshare'],
+	tags: ['Collaboration', 'Reshare'],
 	categories: ['Open Source']
 };

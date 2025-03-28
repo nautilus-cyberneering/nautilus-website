@@ -6,6 +6,6 @@ export const metadata = {
 	date: '2022-05-31T00:00:00.000Z',
 	coverImage: '/images/posts-cover-images/ai-unexpected-behaviour.jpg',
 	excerpt: 'Have you ever thought about what happens when there is AI unexpected behavior?',
-	tags: ['ethics', 'security', 'transparency'],
+	tags: ['Ethics', 'Security', 'Transparency'],
 	categories: ['AI', 'Open Source']
 };

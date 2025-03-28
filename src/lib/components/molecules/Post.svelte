@@ -57,8 +57,12 @@
 		border-bottom: 1px solid transparent;
 
 		img {
-			width: 100%;
 			max-height: 880px;
+			margin: 0 auto;
+
+			@include bp.for-desktop-up {
+				width: 1200px;
+			}
 		}
 
 		.header,
@@ -77,11 +81,17 @@
 			margin-top: 2rem;
 			padding-top: 1rem;
 			border-top: 2px solid var(--color--border);
+			color: var(--color--text);
 		}
 
 		.labels {
 			display: flex;
 			flex-direction: column;
+		}
+
+		.tags span,
+		.categories span {
+			margin-left: 8px;
 		}
 
 		.tags {

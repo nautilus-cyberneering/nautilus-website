@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -31,11 +32,14 @@
 		</p>
 
 		<p>
-			If you do not have an iOS device you can download Iakkai and install it as a simple macOS app.
-			You only need to double click to uncompress the file and copy the app to you Application
-			folder.
+			If you do not have an iOS device you can <a
+				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood/releases/download/1.0/iakkai-1.0.zip"
+				download><button>download Iakkai</button></a
+			>
+			and install it as a simple macOS app. You only need to double click to uncompress the file and
+			copy the app to you Application folder.
 		</p>
-		<!-- IMAGE -->
+
 		<p>
 			We tried to publish it on the Mac App Store but it was rejected by Apple reviewers. The reason
 			was:
@@ -62,7 +66,12 @@
 			>. Since Boken Engine does not have any special dependency on phone features we only had to
 			add some new xcode settings and build for macOS.
 		</p>
-		<!-- IMAGE -->
+
+		<img
+			src="/images/posts-images/iakkai-saga-for-macos/deployment-info-macos.png"
+			alt="deployment"
+		/>
+
 		<p>
 			Apple has developed a project called the <a
 				href="https://developer.apple.com/design/human-interface-guidelines/mac-catalyst"
@@ -70,25 +79,51 @@
 			>. As they promise “you can make a Mac version of your iPad app”. Basically they use the same
 			libraries under the hood whether you build for iOS or macOS.
 		</p>
-		<!-- IMAGE -->
+
+		<img
+			src="/images/posts-images/iakkai-saga-for-macos/mac-catalyst-stack.png"
+			alt="mac catalyst"
+		/>
+
 		<p>
 			Once we changed the settings, we tried to build for macOS. We had a build error in one of the
 			methods we used to detect the device’s orientation. We solved it with build conditions, making
 			ladscape the only orientation available for macOS.
 		</p>
 
-		<!-- IMAGE -->
+		<pre>
+			<code>
+{`func getDeviceOrientation() -> DeviceOrientation {
+	#if targetEnvironment(macCatalyst)
+		return DeviceOrientation.horizontal
+	#else
+	if UIApplication.shared.statusBarOrientation.isLandscape {
+		return DeviceOrientation.horizontal
+	} else {
+		return DeviceOrientation.vertical
+	}
+	#endif
+}`}
+			</code>
+		</pre>
+
 		<p>
 			After fixing that build error we could run the app for macOS. So we tried to publish it on the
 			Mac App Store. We followed the stardard process to publish directly using xcode but we got
 			this error in the final step while we were uploading the app to the store:
 		</p>
 
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/iakkai-saga-for-macos/error-universal-binary-needed.png"
+			alt="error"
+		/>
 
 		<p>The problem here, was that we were building Boken Engine only for arm64 architecture.</p>
 
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/iakkai-saga-for-macos/error-boken-engine-only-for-arm64.png"
+			alt="error"
+		/>
 
 		<p>
 			We had to change xcode settings in order to build Boken Engine for both architectures. After
@@ -104,7 +139,10 @@
 			you normally do when you upload the application build to the Store. But you have to choose the
 			second option:
 		</p>
-		<!-- IMAGE -->
+		<img
+			src="/images/posts-images/iakkai-saga-for-macos/distribute-app-with-developer-id.png"
+			alt="distribute app"
+		/>
 
 		<p>
 			xcode will magically handle all the process related to signing with your certificates. At the
@@ -132,7 +170,11 @@
 			we decided to generate a zip file using the command ditto:
 		</p>
 
-		<code> % ditto -c -k --keepParent DDD ZZZ </code>
+		<pre>
+			<code>
+{`% ditto -c -k --keepParent DDD ZZZ}`}
+			</code>
+		</pre>
 
 		<p>
 			Where DDD is the path to the directory containing the app you have exported in the previous
@@ -205,6 +247,7 @@
 				>
 			</li>
 		</ul>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -224,5 +267,13 @@
 	p,
 	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
+	}
+
+	code {
+		color: var(--color--text);
 	}
 </style>

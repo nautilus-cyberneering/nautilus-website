@@ -72,7 +72,7 @@
 	}
 
 	.text-content.open {
-		max-height: 500px;
+		max-height: 1000px;
 		opacity: 1;
 		padding: 3rem;
 	}

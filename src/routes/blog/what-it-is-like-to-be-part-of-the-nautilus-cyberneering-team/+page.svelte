@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -43,7 +44,14 @@
 		</p>
 
 		<h3>Boken Engine Project</h3>
-		<!-- IMAGES -->
+
+		<figure>
+			<img
+				src="/images/posts-images/what-it-is-like-to-be-part-of-the-nautilus-cyberneering-team/Boken-Engine-GitHub.jpg"
+				alt="boken engine"
+			/>
+			<figcaption>Boken Engine Repository</figcaption>
+		</figure>
 
 		<p>The project had four main parts:</p>
 
@@ -123,7 +131,40 @@
 			> app listed in the Apple Store.
 		</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<img
+				src="/images/posts-images/what-it-is-like-to-be-part-of-the-nautilus-cyberneering-team/iakkai-title-screen.png"
+				alt="iakkai title screen"
+			/>
+			<figcaption>Iakkai: Saga Curse of Blood Logo</figcaption>
+		</figure>
+
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/what-it-is-like-to-be-part-of-the-nautilus-cyberneering-team/hunter.png"
+						class="app-screenshot"
+						alt="hunter"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/what-it-is-like-to-be-part-of-the-nautilus-cyberneering-team/arms.png"
+						class="app-screenshot"
+						alt="arms"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/what-it-is-like-to-be-part-of-the-nautilus-cyberneering-team/village.png"
+						class="app-screenshot"
+						alt="village"
+					/>
+				</div>
+			</div>
+			<figcaption>Sample Screenshots from the App</figcaption>
+		</figure>
 
 		<p>
 			We were proactive and got things done, and we all did enjoy the whole experience. It was a
@@ -132,7 +173,7 @@
 
 		<p>
 			If you want to see the public repository <a
-				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood">here it is</a
+				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood/">here it is</a
 			>.
 		</p>
 
@@ -222,6 +263,14 @@
 			<li>
 				<strong>Git-Queue:</strong> Is GitHub Action job queue for use in GitHub repositories with
 				the following characteristics:
+
+				<div class="images">
+					<img
+						src="/images/posts-images/what-it-is-like-to-be-part-of-the-nautilus-cyberneering-team/Git-Queue.jpg"
+						alt="git queue"
+					/>
+				</div>
+
 				<ul>
 					<li>
 						It only allows one pending job at the same time. <a
@@ -244,13 +293,17 @@
 				<strong>Nautilus Librarian:</strong> A Python Console application to handle media libraries
 				with <a href="https://git-scm.com/">Git</a> and
 				<a href="https://github.com/iterative/dvc">Dvc</a>.
-				<ul>
-					<li>
-						<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian"
-							>Link to our repository</a
-						>
-					</li>
-				</ul>
+
+				<div class="images">
+					<img
+						src="/images/posts-images/what-it-is-like-to-be-part-of-the-nautilus-cyberneering-team/Librarian-logo.jpg"
+						alt="librarian logo"
+					/>
+				</div>
+
+				<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian"
+					>Link to our repository</a
+				>
 			</li>
 		</ul>
 
@@ -302,13 +355,15 @@
 				>
 			</li>
 		</ul>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -318,7 +373,58 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	.images img {
+		margin: 0 auto;
+		margin-top: 2rem;
+		width: 200px;
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		div {
+			margin-top: 1rem;
+		}
+
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 1rem;
+
+			div {
+				display: flex;
+				justify-content: center;
+				object-fit: cover;
+
+				img {
+					width: auto;
+					object-fit: cover;
+				}
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>

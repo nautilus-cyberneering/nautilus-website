@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/extraordinary-first-company-reunion.jpg',
 	excerpt:
 		'Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.',
-	tags: ['meeting'],
+	tags: ['Meeting'],
 	categories: ['Team']
 };

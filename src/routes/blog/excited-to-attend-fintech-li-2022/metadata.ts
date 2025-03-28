@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/excited-to-attend-fintech.jpg',
 	excerpt:
 		'We are excited to announce that we are attending Fintech.Li 2022 conference on the 28 of this month!',
-	tags: ['blockchain', 'fintech', 'web3'],
+	tags: ['Blockchain', 'Fintech', 'Web3'],
 	categories: ['Events']
 };

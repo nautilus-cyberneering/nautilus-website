@@ -8,5 +8,5 @@ export const metadata = {
 	excerpt:
 		'Yeray recently left our team after contributing his unique set of professional skills and abilities towards our projects. He has been kind, reliable, attentive, self-motivated, and methodical in his approach. ',
 	tags: ['Open Source', 'Team'],
-	categories: ['ethics', 'transparency']
+	categories: ['Ethics', 'Transparency']
 };

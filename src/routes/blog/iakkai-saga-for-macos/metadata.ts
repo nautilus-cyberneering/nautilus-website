@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/iakkai-saga-visual-story-game.jpg',
 	excerpt:
 		'Although you can easily build and run the Iakkai Saga demo project on your macOS, we wanted to have a simpler way to execute it. We wanted to show what you can build using Boken Engine even before knowing how to do it.',
-	tags: ['Boken Engine', 'Iakkai Saga', 'ios'],
+	tags: ['Boken Engine', 'Iakkai Saga', 'iOS'],
 	categories: ['Open Source']
 };

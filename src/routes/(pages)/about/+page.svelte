@@ -69,6 +69,8 @@
 		}
 
 		@include bp.for-desktop-up {
+			max-width: 1200px;
+			margin: 0 auto;
 		}
 	}
 
@@ -115,12 +117,12 @@
 
 		@include bp.for-tablet-portrait-up {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr); // Two columns for the first two rows
+			grid-template-columns: repeat(2, 1fr);
 			grid-auto-rows: auto;
 			gap: 1.5rem;
 
 			:global(> :nth-child(5)) {
-				grid-column: span 2; // Make the last AboutCard span the full width
+				grid-column: span 2;
 			}
 		}
 

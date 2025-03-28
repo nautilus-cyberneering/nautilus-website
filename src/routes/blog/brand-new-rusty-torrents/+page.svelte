@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -115,11 +116,14 @@
 			the time savings for a Is it not sweet?
 		</p>
 		<figure>
-			<img src="/images/torrent-seeders-graph.png" alt="Torrent Seeders Graph" />
+			<img
+				src="/images/posts-images/brand-new-rusty-torrents/torrent-seeders-graph.png"
+				alt="Torrent Seeders Graph"
+			/>
 			<figcaption>Time reduction depending on torrent Seeders</figcaption>
 		</figure>
 		<figure>
-			<img src="/images/underlying-graph-data.png" alt="" />
+			<img src="/images/posts-images/brand-new-rusty-torrents/underlying-graph-data.png" alt="" />
 			<figcaption>Underlying data for graph</figcaption>
 		</figure>
 
@@ -317,7 +321,10 @@
 
 		<div class="images-container">
 			<div>
-				<img src="/images/nautilus-post-icon.jpg" alt="nautilus" />
+				<img
+					src="/images/posts-images/brand-new-rusty-torrents/nautilus-post-icon.jpg"
+					alt="nautilus"
+				/>
 				<ul>
 					<li>
 						<a href="https://nautilus-cyberneering.de/"> Pioneering OS Ecosystems </a>
@@ -335,7 +342,10 @@
 				</ul>
 			</div>
 			<div>
-				<img src="/images/torrust-post-icon.jpg" alt="torrust" />
+				<img
+					src="/images/posts-images/brand-new-rusty-torrents/torrust-post-icon.jpg"
+					alt="torrust"
+				/>
 				<ul>
 					<li>
 						<a href="https://torrust.com/"> Torrust Website </a>
@@ -352,6 +362,7 @@
 			</div>
 		</div>
 		<p>Stay tuned for more updates. Thanks for reading!</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 

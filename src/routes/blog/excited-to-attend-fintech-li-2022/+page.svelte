@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -18,14 +19,16 @@
 		<p>
 			We are excited to announce that we are attending <a href="https://www.fintech.li/"
 				>Fintech.Li</a
-			> 2022 conference on the 28 of this month!
+			> 2022 conference on the 28th of this month!
 		</p>
 
 		<h2>What is Fintech.Li 2022?</h2>
 		<p>The conference's tagline is:</p>
 		<p>
-			Building the bridge from today to the future. Together we create magic in both worlds, in the
-			centralized and decentralized world.
+			<strong>
+				"Building the bridge from today to the future. Together we create magic in both worlds, in
+				the centralized and decentralized world."
+			</strong>
 		</p>
 		<p>
 			Fintech.li 2022 is where the most powerful conversations and connections happen in real life.
@@ -68,6 +71,7 @@
 			together! See you in no time <a href="https://blockfinance-eco.li/">BlockFinance ECO AG</a>
 			and <a href="https://hodl10.io/">Hodl10</a>!
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 

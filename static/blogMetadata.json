@@ -16,6 +16,24 @@
     ]
   },
   {
+    "title": "AI unexpected behavior – Why transparency in AI is vital",
+    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-05-31T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
+    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
+    "tags": [
+      "Ethics",
+      "Security",
+      "Transparency"
+    ],
+    "categories": [
+      "AI",
+      "Open Source"
+    ]
+  },
+  {
     "title": "Contributing to an Open Source Project as a Non Developer",
     "slug": "contributing-to-an-open-source-project-as-a-non-developer",
     "contributor": "Constantin Bosse",
@@ -29,6 +47,54 @@
     ],
     "categories": [
       "Open Source"
+    ]
+  },
+  {
+    "title": "A Personal Retrospective: Feedback and Thoughts",
+    "slug": "a-personal-retrospective-feedback-and-thoughts",
+    "contributor": "Yeray Rodriguez",
+    "contributorSlug": "yeray-rodriguez",
+    "date": "2022-06-30T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
+    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
+    "tags": [
+      "Feedback",
+      "Projects"
+    ],
+    "categories": [
+      "Team"
+    ]
+  },
+  {
+    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
+    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-05-02T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
+    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
+    "tags": [
+      "Meeting"
+    ],
+    "categories": [
+      "Team"
+    ]
+  },
+  {
+    "title": "What is Fintech.Li 2022?",
+    "slug": "excited-to-attend-fintech-li-2022",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-09-13T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/excited-to-attend-fintech.jpg",
+    "excerpt": "We are excited to announce that we are attending Fintech.Li 2022 conference on the 28 of this month!",
+    "tags": [
+      "Blockchain",
+      "Fintech",
+      "Web3"
+    ],
+    "categories": [
+      "Events"
     ]
   },
   {
@@ -48,55 +114,6 @@
     ]
   },
   {
-    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
-    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-02T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
-    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
-    "tags": [
-      "meeting"
-    ],
-    "categories": [
-      "Team"
-    ]
-  },
-  {
-    "title": "AI unexpected behavior – Why transparency in AI is vital",
-    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-31T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
-    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
-    "tags": [
-      "ethics",
-      "security",
-      "transparency"
-    ],
-    "categories": [
-      "AI",
-      "Open Source"
-    ]
-  },
-  {
-    "title": "A Personal Retrospective: Feedback and Thoughts",
-    "slug": "a-personal-retrospective-feedback-and-thoughts",
-    "contributor": "Yeray Rodriguez",
-    "contributorSlug": "yeray-rodriguez",
-    "date": "2022-06-30T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
-    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
-    "tags": [
-      "feedback",
-      "projects"
-    ],
-    "categories": [
-      "Team"
-    ]
-  },
-  {
     "title": "Great jsdaycanarias 2022 Software Developer Event",
     "slug": "great-jsdaycanarias-2022-software-developer-event",
     "contributor": "Constantin Bosse",
@@ -105,24 +122,7 @@
     "coverImage": "/images/posts-cover-images/jsdaycanarias-2022.jpg",
     "excerpt": "Last week my colleague Jose Celano and myself attended then jsdaycanarias 2022 software developer event.",
     "tags": [
-      "marketing"
-    ],
-    "categories": [
-      "Events"
-    ]
-  },
-  {
-    "title": "What is Fintech.Li 2022?",
-    "slug": "excited-to-attend-fintech-li-2022",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-09-13T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/excited-to-attend-fintech.jpg",
-    "excerpt": "We are excited to announce that we are attending Fintech.Li 2022 conference on the 28 of this month!",
-    "tags": [
-      "blockchain",
-      "fintech",
-      "web3"
+      "Marketing"
     ],
     "categories": [
       "Events"
@@ -138,7 +138,7 @@
     "excerpt": "Assuring the authenticity of work submitted to GitHub has become increasingly important. One of the common policies that organizations have used to secure the commits made by developers has been to require the use of GPG signatures that are embedded into the Git commits.",
     "tags": [
       "GitHub",
-      "security"
+      "Security"
     ],
     "categories": [
       "Open Source"
@@ -154,9 +154,9 @@
     "excerpt": "After some months of hard work we finally published the first application built entirely using Boken Engine, Iakkai Saga: The Curse of Blood.",
     "tags": [
       "Boken Engine",
-      "game",
+      "Game",
       "Iakkai Saga",
-      "ios"
+      "iOS"
     ],
     "categories": [
       "Open Source"
@@ -173,7 +173,7 @@
     "tags": [
       "Boken Engine",
       "Iakkai Saga",
-      "ios"
+      "iOS"
     ],
     "categories": [
       "Open Source"
@@ -188,7 +188,7 @@
     "coverImage": "/images/posts-cover-images/torrust-header.jpg",
     "excerpt": "This is an excellent article by Ashley Hardin giving some useful tips that essentially states that...",
     "tags": [
-      "collaboration",
+      "Collaboration",
       "Reshare"
     ],
     "categories": [
@@ -220,8 +220,8 @@
     "coverImage": "/images/posts-cover-images/open-source-sources-of-income.jpg",
     "excerpt": "It’s no secret that Open Source projects have a difficult time being financially sustainable and search for sources of income. Fact is many projects struggle just to keep the lights on.",
     "tags": [
-      "income",
-      "tools"
+      "Income",
+      "Tools"
     ],
     "categories": [
       "Open Source",
@@ -237,9 +237,9 @@
     "coverImage": "/images/posts-cover-images/open-source-why-it-is-so-important.jpg",
     "excerpt": "The tech world is ever-changing, and constantly evolving and a mix of different business philosophies coexist.",
     "tags": [
-      "collaboration",
-      "future",
-      "security"
+      "Collaboration",
+      "Future",
+      "Security"
     ],
     "categories": [
       "Open Source",
@@ -255,7 +255,7 @@
     "coverImage": "/images/posts-cover-images/simple-media-management-system.jpg",
     "excerpt": "Our current new project is to create a simple media management system through GitHub repositories and GitHub actions.",
     "tags": [
-      "collaboration",
+      "Collaboration",
       "GitHub"
     ],
     "categories": [
@@ -271,11 +271,11 @@
     "coverImage": "/images/posts-cover-images/useful-new-secure-git-guide.jpg",
     "excerpt": "Last month we launched our Secure Git Guide. We decided to create it so that other developers can benefit from our insights from the work that we are doing involving advanced Git.",
     "tags": [
-      "git"
+      "Git"
     ],
     "categories": [
       "Open Source",
-      "tools"
+      "Tools"
     ]
   },
   {
@@ -287,7 +287,7 @@
     "coverImage": "/images/posts-cover-images/webinar.jpg",
     "excerpt": "End of last month we presented at a webinar organized by the German Chamber of Commerce in Spain.",
     "tags": [
-      "webinar"
+      "Webinar"
     ],
     "categories": [
       "AI",
@@ -299,11 +299,11 @@
     "slug": "what-is-gpg-why-and-how-to-use-it",
     "contributor": "Constantin Bosse",
     "contributorSlug": "constantin-bosse",
-    "date": "2022-05-17T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/what-it-is-like-to-be-part-of-the-nautilus-team.jpg",
+    "date": "2022-01-28T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/what-is-gpg.jpg",
     "excerpt": "I did not have a clue about what is meant by GPG when I heard it. As it turned out to be it has to do with security.",
     "tags": [
-      "security"
+      "Security"
     ],
     "categories": [
       "Open Source"
@@ -340,8 +340,8 @@
       "Team"
     ],
     "categories": [
-      "ethics",
-      "transparency"
+      "Ethics",
+      "Transparency"
     ]
   }
 ]

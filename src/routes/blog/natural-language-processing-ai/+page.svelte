@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -35,7 +36,10 @@
 			it could look like this:
 		</p>
 
-		<!-- IMAGE -->
+		<figure>
+			<img src="/images/posts-images/natural-language-processing-ai/AI-BUDDY.png" alt="ai buddy" />
+			<figcaption>Clearly not exactly like in the picture but you get the point. : )</figcaption>
+		</figure>
 
 		<p>
 			Human communication and understanding is rather complex, as you well know. Hence to achieve
@@ -168,7 +172,15 @@
 		</p>
 
 		<h3>Deep Neural Network Learning</h3>
-		<!-- IMAGE -->
+		<figure>
+			<img
+				src="/images/posts-images/natural-language-processing-ai/Neural-Network.png"
+				style="background-color: white;"
+				alt="ai buddy"
+			/>
+			<figcaption>Neural Network example with node tree</figcaption>
+		</figure>
+
 		<p>
 			Is an approach in which there are different layers of inter connected nodes. Nodes are
 			computational sets of rules that get adjusted in the form of weights during the training
@@ -222,7 +234,35 @@
 			in different programming languages such as Python.
 		</p>
 
-		<!-- TABLE -->
+		<figure>
+			<table border="1">
+				<thead>
+					<tr>
+						<th></th>
+						<th>GPT-2</th>
+						<th>GPT-3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Date</strong></td>
+						<td>2019-02</td>
+						<td>2020-05</td>
+					</tr>
+					<tr>
+						<td><strong>Parameters</strong></td>
+						<td>1.5 Billion</td>
+						<td>125 Million – 175 Billion</td>
+					</tr>
+					<tr>
+						<td><strong>Training Data</strong></td>
+						<td>10 Billion tokens</td>
+						<td>499 Billion tokens</td>
+					</tr>
+				</tbody>
+			</table>
+			<figcaption>Model Progression OpenAI</figcaption>
+		</figure>
 
 		<p>Here are two interesting links:</p>
 
@@ -248,7 +288,33 @@
 			<strong>generalist</strong> models good for most of the purposes.
 		</p>
 
-		<!-- TABLE -->
+		<figure>
+			<table border="1">
+				<thead>
+					<tr>
+						<th></th>
+						<th>GPT-Neo</th>
+						<th>GPT-J</th>
+						<th>GPT-NeoX</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Date</strong></td>
+						<td>2021-03</td>
+						<td>2021-06</td>
+						<td>2022-02</td>
+					</tr>
+					<tr>
+						<td><strong>Parameters</strong></td>
+						<td>1.3 to 2.7 Billion</td>
+						<td>6 Billion</td>
+						<td>20 Billion</td>
+					</tr>
+				</tbody>
+			</table>
+			<figcaption>Model Progression EleutherAI</figcaption>
+		</figure>
 
 		<h4>Interesting Responses from GPT-J</h4>
 		<p>
@@ -256,7 +322,34 @@
 			interface so that judge for yourself.
 		</p>
 
-		<!-- IMAGES -->
+		<figure>
+			<img
+				src="/images/posts-images/natural-language-processing-ai/test-1.png"
+				style="background-color: white;"
+				alt="ai buddy"
+			/>
+			<figcaption>AI responding to “Who is the greatest musician of all times?”</figcaption>
+		</figure>
+
+		<figure>
+			<img
+				src="/images/posts-images/natural-language-processing-ai/test-2.png"
+				style="background-color: white;"
+				alt="ai buddy"
+			/>
+			<figcaption>
+				AI responding to “which is the best beginner programming language in your opinion?”
+			</figcaption>
+		</figure>
+
+		<figure>
+			<img
+				src="/images/posts-images/natural-language-processing-ai/test-3.png"
+				style="background-color: white;"
+				alt="ai buddy"
+			/>
+			<figcaption>AI responding to “what is more important to work or to live?”</figcaption>
+		</figure>
 
 		<p>
 			Here is the link to the online test instance where I got the responses from if you are
@@ -290,7 +383,31 @@
 			drawing, singing, etc…
 		</p>
 
-		<!-- TABLE -->
+		<figure>
+			<table border="1">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Wu Dao 2.0</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Date</strong></td>
+						<td>2021-06</td>
+					</tr>
+					<tr>
+						<td><strong>Parameters</strong></td>
+						<td>1.75 Trillion</td>
+					</tr>
+					<tr>
+						<td><strong>Training Data</strong></td>
+						<td>4.9 TB</td>
+					</tr>
+				</tbody>
+			</table>
+			<figcaption>Model Specs Wu Dao 2.0</figcaption>
+		</figure>
 
 		<h2>Some Implemented Solutions</h2>
 		<p>
@@ -301,7 +418,7 @@
 		<h3>Jasper</h3>
 		<p>This is a tool that I think many digital copy writers will find handy to ease their work.</p>
 
-		<!-- VIDEO -->
+		<a href="https://www.jasper.ai/">Jasper AI</a>
 
 		<h3>Thoughts</h3>
 		<p>Same applies to this solution which helps you speed up your tweets in your own style.</p>
@@ -309,8 +426,8 @@
 
 		<h3>DeepGenX</h3>
 		<p>This is a solution for developers to write code faster and easier.</p>
+		<a href="https://www.deepgenx.com/">https://www.deepgenx.com/</a>
 
-		<!-- IMAGE -->
 		<p>
 			Nevertheless, this is just three from many more. <a href="https://gpt3demo.com/">Here</a> is a
 			more extensive list of such solutions.
@@ -345,13 +462,15 @@
 				>here is another post of mine</a
 			>.
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -361,7 +480,51 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		color: var(--color--text);
+		margin-top: 2rem;
+	}
+
+	th,
+	td {
+		border: 1px solid var(--color--border);
+		padding: 10px;
+		text-align: left;
+		color: var(--color--text);
+	}
+
+	th {
+		background-color: var(--color--page-background);
+		font-weight: bold;
+		color: var(--color--text);
 	}
 </style>

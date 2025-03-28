@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/a-personal-retrospective.jpg',
 	excerpt:
 		"This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
-	tags: ['feedback', 'projects'],
+	tags: ['Feedback', 'Projects'],
 	categories: ['Team']
 };

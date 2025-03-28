@@ -48,6 +48,7 @@
 		flex-direction: column;
 		margin: 3rem 1.5rem 0 1.5rem;
 		gap: 1.5rem;
+		max-width: 1200px;
 	}
 
 	@include bp.for-tablet-portrait-up {

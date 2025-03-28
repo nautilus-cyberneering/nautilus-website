@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -65,9 +66,100 @@
 		</p>
 
 		<h3>Artwork</h3>
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/artwork-1.jpg"
+						alt="artwork 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/artwork-2.jpg"
+						alt="artwork 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/artwork-3.jpg"
+						alt="artwork 3"
+					/>
+				</div>
+			</div>
+			<div class="double-image">
+				<img
+					src="/images/posts-images/simple-media-management-system-using-github-repositories/artwork-4.jpg"
+					alt="artwork 4"
+				/>
+				<img
+					src="/images/posts-images/simple-media-management-system-using-github-repositories/artwork-5.jpg"
+					alt="artwork 5"
+				/>
+			</div>
+			<figcaption>
+				Sample Artwork – Courtesy of Ethical Software Ltd. – <a
+					href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+					>Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)</a
+				>
+			</figcaption>
+		</figure>
+
 		<h3>Radicals & Variants</h3>
-		<!-- IMAGES -->
+		<figure>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/calligraphy-1.jpg"
+						alt="calligraphy 1"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/calligraphy-2.jpg"
+						alt="calligraphy 2"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/calligraphy-3.jpg"
+						alt="calligraphy 3"
+					/>
+				</div>
+			</div>
+			<div class="image-grid">
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/calligraphy-4.jpg"
+						alt="calligraphy 4"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/calligraphy-5.jpg"
+						alt="calligraphy 5"
+					/>
+				</div>
+				<div>
+					<img
+						src="/images/posts-images/simple-media-management-system-using-github-repositories/calligraphy-6.jpg"
+						alt="calligraphy 6"
+					/>
+				</div>
+			</div>
+			<div>
+				<img
+					src="/images/posts-images/simple-media-management-system-using-github-repositories/calligraphy-7.jpg"
+					alt="calligraphy 7"
+				/>
+			</div>
+			<figcaption>
+				Sample Calligraphy- Courtesy of Ethical Software Ltd. – <a
+					href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+					>Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)</a
+				>
+			</figcaption>
+		</figure>
 
 		<h2>Creating a Simple Media Management System</h2>
 		<p>
@@ -134,13 +226,15 @@
 		</ul>
 
 		<p>Finally, if you would like to collaborate with us let us know!</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
 <style lang="scss">
 	@use '$lib/scss/breakpoints' as bp;
 
-	h2 {
+	h2,
+	h3 {
 		margin-top: 3rem;
 		line-height: 1.2;
 		color: var(--color--text);
@@ -150,7 +244,61 @@
 		margin-top: 1.5rem;
 	}
 
-	p {
+	p,
+	li {
 		color: var(--color--text-secondary);
+	}
+
+	figure {
+		text-align: center;
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		div {
+			margin-top: 1rem;
+		}
+
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 1rem;
+
+			div {
+				display: flex;
+				justify-content: center;
+				object-fit: cover;
+
+				img {
+					width: auto;
+					object-fit: cover;
+				}
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.double-image {
+			display: flex;
+			gap: 1rem;
+
+			img {
+				width: 50%;
+			}
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--color--text);
+			margin-top: 0.5rem;
+			text-align: center;
+		}
 	}
 </style>

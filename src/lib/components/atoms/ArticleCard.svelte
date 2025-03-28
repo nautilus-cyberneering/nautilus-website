@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Tag from '$lib/components/atoms/Tag.svelte';
+	// import Tag from '$lib/components/atoms/Tag.svelte';
 </script>
 
 <div class="article-wrapper">
@@ -13,11 +13,7 @@
 			</p>
 		</div>
 	</a>
-	<ul class="tags">
-		<Tag />
-		<Tag />
-		<Tag />
-	</ul>
+	<ul class="tags"></ul>
 </div>
 
 <style lang="scss">

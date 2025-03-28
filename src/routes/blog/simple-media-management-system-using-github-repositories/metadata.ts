@@ -7,6 +7,6 @@ export const metadata = {
 	coverImage: '/images/posts-cover-images/simple-media-management-system.jpg',
 	excerpt:
 		'Our current new project is to create a simple media management system through GitHub repositories and GitHub actions.',
-	tags: ['collaboration', 'GitHub'],
+	tags: ['Collaboration', 'GitHub'],
 	categories: ['Open Source']
 };

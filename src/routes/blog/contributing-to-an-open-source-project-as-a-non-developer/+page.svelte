@@ -1,8 +1,9 @@
 <script lang="ts">
 	let { data } = $props();
-	let { currentPost } = data;
+	let { currentPost, allPosts } = data;
 	import Post from '$lib/components/molecules/Post.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
+	import PrevNextPost from '$lib/components/molecules/PrevNextPost.svelte';
 </script>
 
 <Wrapper>
@@ -161,7 +162,11 @@
 		</p>
 
 		<p>Here is a small sample of the Art that I created for the Iakkai Saga App:</p>
-		<!-- IMAGE -->
+
+		<img
+			src="/images/posts-images/contributing-to-an-open-source-project-as-a-non-developer/Sprites-03.png"
+			alt="sprites"
+		/>
 
 		<p>
 			The hardware that I used was a WACOM Cintiq 13” tablet. It was a great experience which I
@@ -210,6 +215,7 @@
 				>Here</a
 			> is a post in case you want to know a little more about it.
 		</p>
+		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>
 </Wrapper>
 
@@ -229,5 +235,9 @@
 	p,
 	li {
 		color: var(--color--text-secondary);
+	}
+
+	img {
+		margin-top: 2rem;
 	}
 </style>
