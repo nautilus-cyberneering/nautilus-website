@@ -4,7 +4,7 @@ export const metadata = {
 	contributor: 'Cameron Garnham',
 	contributorSlug: 'cameron-garnham',
 	date: '2022-07-09T00:00:00.000Z',
-	coverImage: '/images/posts-cover-images/torrust-header.jpg',
+	coverImage: '',
 	excerpt:
 		'Yeray recently left our team after contributing his unique set of professional skills and abilities towards our projects. He has been kind, reliable, attentive, self-motivated, and methodical in his approach. ',
 	tags: ['Open Source', 'Team'],

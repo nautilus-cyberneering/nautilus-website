@@ -1,4 +1,7 @@
 <script lang="ts">
+	import DefaultNautilus from '$lib/icons/defaultNautilus.svelte';
+	import DefaultNautilusDark from '$lib/icons/defaultNautilusDark.svelte';
+	import { theme } from '$lib/stores/theme';
 	import Tag from '$lib/components/atoms/Tag.svelte';
 
 	let { post_data } = $props();
@@ -6,9 +9,23 @@
 
 <div class="card">
 	<div class="image-container">
-		<a href="/blog/{post_data.slug}">
-			<img src={post_data.coverImage} alt={post_data.title} />
-		</a>
+		{#if post_data.coverImage}
+			<a href="/blog/{post_data.slug}">
+				<img src={post_data.coverImage} alt={post_data.title} />
+			</a>
+		{:else}
+			<div class="default-cover-image">
+				{#if $theme === 'dark'}
+					<a href="/blog/{post_data.slug}">
+						<DefaultNautilusDark />
+					</a>
+				{:else}
+					<a href="/blog/{post_data.slug}">
+						<DefaultNautilus />
+					</a>
+				{/if}
+			</div>
+		{/if}
 	</div>
 	<div class="content">
 		<a href="/blog/{post_data.slug}">

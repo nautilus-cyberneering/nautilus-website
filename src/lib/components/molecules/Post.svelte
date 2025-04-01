@@ -1,9 +1,21 @@
 <script lang="ts">
-	let { title, date, contributor, contributorSlug, tags, coverImage, categories, children } =
-		$props();
+	import DefaultNautilus from '$lib/icons/defaultNautilus.svelte';
+	import DefaultNautilusDark from '$lib/icons/defaultNautilusDark.svelte';
+	import { theme } from '$lib/stores/theme';
+	let {
+		title,
+		date,
+		contributor,
+		contributorSlug,
+		tags,
+		coverImage = '',
+		categories,
+		children
+	} = $props();
 
 	import { formatDate } from '$lib/utils/date';
 	// import ShareButton from '$lib/components/singletons/ShareButton.svelte';
+	const displayImage = coverImage.trim() !== '' ? coverImage : DefaultNautilus;
 </script>
 
 <svelte:head>
@@ -12,7 +24,18 @@
 
 <div class="container">
 	<main>
-		<img src={coverImage} alt={title} />
+		{#if displayImage === coverImage}
+			<img src={displayImage} alt={title} />
+		{:else}
+			<div class="default-cover-image">
+				{#if $theme === 'dark'}
+					<DefaultNautilusDark />
+				{:else}
+					<DefaultNautilus />
+				{/if}
+			</div>
+		{/if}
+
 		<div class="header">
 			<h1>{title}</h1>
 		</div>
@@ -63,6 +86,11 @@
 			@include bp.for-desktop-up {
 				width: 1200px;
 			}
+		}
+
+		.default-cover-image {
+			display: flex;
+			justify-content: center;
 		}
 
 		.header,

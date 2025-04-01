@@ -3,20 +3,18 @@
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
 	import ProjectCard from '$lib/components/atoms/ProjectCard.svelte';
 	import FeaturedProject from '$lib/components/molecules/FeaturedProject.svelte';
-	// import ProjectPreview from '$lib/components/atoms/ProjectPreview.svelte';
+	import ProjectPreview from '$lib/components/atoms/ProjectPreview.svelte';
 </script>
 
 <Wrapper>
 	<HeroWrapper title={'Projects'} />
 	<div class="projects-wrapper">
-		<div class="hero-text">
-			<p>
-				We work on both external and internal projects. External from customers and internal to
-				realize our own ideas. On this page you will only find a reference to our internal public
-				projects.
-			</p>
-			<p class="para-margin">We have three types of internal projects:</p>
-		</div>
+		<p>
+			We work on both external and internal projects. External from customers and internal to
+			realize our own ideas. On this page you will only find a reference to our internal public
+			projects.
+		</p>
+		<p class="para-margin">We have three types of internal projects:</p>
 		<div class="project-cards">
 			<ProjectCard
 				title={'Vision'}
@@ -47,9 +45,7 @@
 				>.
 			</p>
 		</div>
-		<div class="featured-project">
-			<FeaturedProject />
-		</div>
+		<FeaturedProject />
 		<div class="project-preview-wrapper">
 			<p>
 				For a complete overview of all our repositories please feel free to browse <a
@@ -57,11 +53,11 @@
 					>our organization’s repositories on GitHub</a
 				> or check our current most active projects below.
 			</p>
-			<!-- <div class="project-preview">
-				<ProjectPreview title={'Page title'} url={'/'} />
-				<ProjectPreview title={'Page title'} url={'/'} />
-				<ProjectPreview title={'Page title'} url={'/'} />
-			</div> -->
+			<div class="project-preview">
+				<ProjectPreview title={'Page title'} url={'url'} image={''} />
+				<ProjectPreview title={'Page title'} url={'url'} image={''} />
+				<ProjectPreview title={'Page title'} url={'url'} image={''} />
+			</div>
 		</div>
 	</div>
 </Wrapper>
@@ -96,10 +92,28 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
-		margin-top: 1.5rem;
+		margin-top: 2rem;
+
+		@include bp.for-desktop-up {
+			max-width: 1200px;
+			padding-top: 2rem;
+			margin: 0 auto;
+		}
 	}
 
 	.project-info {
 		margin-top: 3rem;
+	}
+
+	.project-preview-wrapper {
+		margin-top: 2rem;
+	}
+
+	.project-preview {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 2rem;
+		gap: 1rem;
 	}
 </style>

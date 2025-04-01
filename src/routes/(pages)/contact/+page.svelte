@@ -3,7 +3,7 @@
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
 	import PostBox from '$lib/icons/postBox.svelte';
 	import Email from '$lib/icons/email.svelte';
-	import ProjectPreview from '$lib/components/atoms/ProjectPreview.svelte';
+	import QRCodeConnect from '$lib/components/atoms/QRCodeConnect.svelte';
 </script>
 
 <Wrapper>
@@ -28,11 +28,11 @@
 	<div class="contact-section contact-section-lower">
 		<div>
 			<h2>Telegram</h2>
-			<ProjectPreview url={'https://t.me/nautilus_cyberneering_en'} />
+			<QRCodeConnect url={'https://t.me/nautilus_cyberneering_en'} />
 		</div>
 		<div>
 			<h2>GitHub</h2>
-			<ProjectPreview url={'https://github.com/nautilus-cyberneering'} />
+			<QRCodeConnect url={'https://github.com/nautilus-cyberneering'} />
 		</div>
 	</div>
 </Wrapper>

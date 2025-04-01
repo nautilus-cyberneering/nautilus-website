@@ -1,10 +1,7 @@
 <script lang="ts">
-	// import Wrapper from '$lib/components/atoms/Wrapper.svelte';
-	// import HeroWrapper from '$lib/components/atoms/HeroWrapper.svelte';
-
 	import type { BlogPost } from '$lib/utils/types';
 	import BlogPreview from '$lib/components/molecules/BlogPreview.svelte';
-	// import SearchBar from '$lib/components/organisms/SearchBar.svelte';
+	import SearchBar from '$lib/components/organisms/SearchBar.svelte';
 
 	interface Props {
 		data: {
@@ -13,16 +10,42 @@
 	}
 
 	let { data }: Props = $props();
+	let { allPosts: blogPosts = [] } = data || {};
+	let searchTerm = $state('');
+
+	type Post = {
+		title: string;
+		date: string;
+		contributor: string;
+		slug: string;
+	};
+
+	let posts = $state<Post[]>([]);
+
+	if (blogPosts && blogPosts.length > 0) {
+		posts = blogPosts.filter((post: BlogPost) => {
+			const title = post?.title ?? '';
+			const contributor = post?.contributor ?? '';
+			const excerpt = post?.excerpt ?? '';
+
+			return (
+				title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+				contributor.toLowerCase().includes(searchTerm.toLowerCase()) ||
+				excerpt.toLowerCase().includes(searchTerm.toLowerCase())
+			);
+		});
+	}
 </script>
 
 <div class="container">
 	<div class="header">
 		<h1>Blog</h1>
+		<SearchBar bind:searchTerm {blogPosts} />
 	</div>
 
-	{#if data.allPosts && data.allPosts.length > 0}
+	{#if posts && posts.length > 0}
 		<div class="grid">
-			{#each data.allPosts as post}
+			{#each posts as post}
 				<BlogPreview post_data={post} />
 			{/each}
 		</div>

@@ -38,9 +38,8 @@
 
 	.container {
 		background-color: var(--color--page-secondary);
-		margin: 6rem auto 0;
+		margin: auto 0;
 		padding-bottom: 6rem;
-		max-width: 100%;
 	}
 
 	.text-container {
@@ -57,7 +56,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
-		margin: 3rem 1.5rem 0 1.5rem;
+		padding: 3rem 1.5rem 0 1.5rem !important;
 	}
 
 	.text-container,
