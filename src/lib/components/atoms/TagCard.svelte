@@ -70,12 +70,13 @@
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-
 		text-decoration: none;
+		border: 1px solid var(--color--border);
+		max-width: 872px;
+		margin: 0 auto;
 
 		&[href],
 		&[onclick] {
@@ -93,13 +94,14 @@
 		justify-content: space-between;
 		padding: 20px 20px;
 		flex: 1 0 50%;
-		background-color: white;
-		color: black;
+		background-color: var(--color--card-background);
+		color: var(--color--text);
 
 		.content {
 			display: flex;
 			flex-direction: column;
 			flex: 1;
+			color: var(--color--text);
 		}
 	}
 

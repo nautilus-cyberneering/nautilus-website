@@ -1,33 +1,22 @@
 <script lang="ts">
-	import DefaultNautilus from '$lib/icons/defaultNautilus.svelte';
-	import DefaultNautilusDark from '$lib/icons/defaultNautilusDark.svelte';
-	import { theme } from '$lib/stores/theme';
 	let { title, url, image } = $props();
 </script>
 
 <div class="card">
 	<div class="image-container">
 		{#if image}
-			<a href="/blog/{url}">
+			<a href={url}>
 				<img src={image} alt={title} />
 			</a>
 		{:else}
-			<div class="default-cover-image">
-				{#if $theme === 'dark'}
-					<a href="/blog/{url}">
-						<DefaultNautilusDark />
-					</a>
-				{:else}
-					<a href="/blog/{url}">
-						<DefaultNautilus />
-					</a>
-				{/if}
-			</div>
+			<a href={url}>
+				<img src="/images/posts-cover-images/NautilusDefault.png" alt={title} />
+			</a>
 		{/if}
 	</div>
 	<div class="content">
 		<h2 class="title">{title}</h2>
-		<a href="/">{url}</a>
+		<a href="/">{title}</a>
 	</div>
 </div>
 
@@ -43,12 +32,10 @@
 		flex-direction: column;
 		height: 100%;
 		border: 1px solid var(--color--border);
-		padding-inline: 2rem;
 
 		@include bp.for-desktop-up {
 			flex-direction: row;
 			align-items: center;
-			gap: 2rem;
 		}
 	}
 
@@ -56,13 +43,12 @@
 		width: 100%;
 		height: 180px;
 		object-fit: cover;
-		border: 1px solid red;
 	}
 
 	.content {
 		display: flex;
 		flex-direction: column;
-		padding: 15px;
+		padding: 2rem;
 		flex-grow: 1;
 	}
 

@@ -37,13 +37,14 @@
 	@use '$lib/scss/breakpoints.scss' as bp;
 
 	.container {
+		margin: 4rem auto 0;
 		background-color: var(--color--page-secondary);
-		margin: auto 0;
 		padding-bottom: 6rem;
+		max-width: 100%;
 	}
 
 	.text-container {
-		color: rgba(245, 245, 245, 0.96);
+		color: var(--color--text);
 		background-color: var(--color--page-secondary);
 		text-align: center;
 		display: flex;

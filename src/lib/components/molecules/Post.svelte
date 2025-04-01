@@ -1,7 +1,5 @@
 <script lang="ts">
-	import DefaultNautilus from '$lib/icons/defaultNautilus.svelte';
-	import DefaultNautilusDark from '$lib/icons/defaultNautilusDark.svelte';
-	import { theme } from '$lib/stores/theme';
+	import Tag from '../atoms/Tag.svelte';
 	let {
 		title,
 		date,
@@ -15,7 +13,6 @@
 
 	import { formatDate } from '$lib/utils/date';
 	// import ShareButton from '$lib/components/singletons/ShareButton.svelte';
-	const displayImage = coverImage.trim() !== '' ? coverImage : DefaultNautilus;
 </script>
 
 <svelte:head>
@@ -24,16 +21,10 @@
 
 <div class="container">
 	<main>
-		{#if displayImage === coverImage}
-			<img src={displayImage} alt={title} />
+		{#if coverImage}
+			<img src={coverImage} alt={title} />
 		{:else}
-			<div class="default-cover-image">
-				{#if $theme === 'dark'}
-					<DefaultNautilusDark />
-				{:else}
-					<DefaultNautilus />
-				{/if}
-			</div>
+			<img src="/images/posts-cover-images/NautilusDefault.png" alt={title} />
 		{/if}
 
 		<div class="header">
@@ -55,10 +46,11 @@
 				{#if tags.length}
 					<div class="tags">
 						<p>Tags:</p>
-						<span>{tags.join(', ')}</span>
+						{#each tags as tag}
+							<Tag {tag} />
+						{/each}
 					</div>
 				{/if}
-
 				{#if categories.length}
 					<div class="categories">
 						<p>Categories:</p>
@@ -88,11 +80,6 @@
 			}
 		}
 
-		.default-cover-image {
-			display: flex;
-			justify-content: center;
-		}
-
 		.header,
 		.author-info {
 			margin-inline: 1.5rem;
@@ -117,7 +104,6 @@
 			flex-direction: column;
 		}
 
-		.tags span,
 		.categories span {
 			margin-left: 8px;
 		}
@@ -125,11 +111,21 @@
 		.tags {
 			display: flex;
 			flex-direction: row;
+			align-items: flex-end;
+			gap: 10px;
+
+			p {
+				color: var(--color--text);
+			}
 		}
 
 		.categories {
 			display: flex;
 			flex-direction: row;
+
+			p {
+				color: var(--color--text);
+			}
 		}
 
 		@include bp.for-tablet-portrait-up {

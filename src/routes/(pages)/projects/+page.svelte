@@ -54,9 +54,9 @@
 				> or check our current most active projects below.
 			</p>
 			<div class="project-preview">
-				<ProjectPreview title={'Page title'} url={'url'} image={''} />
-				<ProjectPreview title={'Page title'} url={'url'} image={''} />
-				<ProjectPreview title={'Page title'} url={'url'} image={''} />
+				<ProjectPreview title={'Page title'} url={'/'} image={''} />
+				<ProjectPreview title={'Page title'} url={'/'} image={''} />
+				<ProjectPreview title={'Page title'} url={'/'} image={''} />
 			</div>
 		</div>
 	</div>

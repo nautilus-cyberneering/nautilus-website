@@ -16,38 +16,6 @@
     ]
   },
   {
-    "title": "Contributing to an Open Source Project as a Non Developer",
-    "slug": "contributing-to-an-open-source-project-as-a-non-developer",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2021-08-18T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/contributing-to-open-source.jpg",
-    "excerpt": "In this post you will learn about my experience as a non-developer helping to take a closed source software project, a non-linear visual story framework for IOS Swift, into the Open Source realm and develop a demo for it.",
-    "tags": [
-      "Boken Engine",
-      "Iakkai Saga"
-    ],
-    "categories": [
-      "Open Source"
-    ]
-  },
-  {
-    "title": "Brand New Rusty Torrents?",
-    "slug": "brand-new-rusty-torrents",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-07-21T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/torrust-header.jpg",
-    "excerpt": "What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents. If you haven’t, torrents are a file sharing technology. Torrents allow users to share large files quickly and easily in a decentralized manner.",
-    "tags": [
-      "Torrust"
-    ],
-    "categories": [
-      "Open Source",
-      "Products"
-    ]
-  },
-  {
     "title": "AI unexpected behavior – Why transparency in AI is vital",
     "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
     "contributor": "Constantin Bosse",
@@ -62,6 +30,38 @@
     ],
     "categories": [
       "AI",
+      "Open Source"
+    ]
+  },
+  {
+    "title": "A Personal Retrospective: Feedback and Thoughts",
+    "slug": "a-personal-retrospective-feedback-and-thoughts",
+    "contributor": "Yeray Rodriguez",
+    "contributorSlug": "yeray-rodriguez",
+    "date": "2022-06-30T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
+    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
+    "tags": [
+      "Feedback",
+      "Projects"
+    ],
+    "categories": [
+      "Team"
+    ]
+  },
+  {
+    "title": "Contributing to an Open Source Project as a Non Developer",
+    "slug": "contributing-to-an-open-source-project-as-a-non-developer",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2021-08-18T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/contributing-to-open-source.jpg",
+    "excerpt": "In this post you will learn about my experience as a non-developer helping to take a closed source software project, a non-linear visual story framework for IOS Swift, into the Open Source realm and develop a demo for it.",
+    "tags": [
+      "Boken Engine",
+      "Iakkai Saga"
+    ],
+    "categories": [
       "Open Source"
     ]
   },
@@ -98,19 +98,19 @@
     ]
   },
   {
-    "title": "A Personal Retrospective: Feedback and Thoughts",
-    "slug": "a-personal-retrospective-feedback-and-thoughts",
-    "contributor": "Yeray Rodriguez",
-    "contributorSlug": "yeray-rodriguez",
-    "date": "2022-06-30T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
-    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
+    "title": "Brand New Rusty Torrents?",
+    "slug": "brand-new-rusty-torrents",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-07-21T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/torrust-header.jpg",
+    "excerpt": "What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents. If you haven’t, torrents are a file sharing technology. Torrents allow users to share large files quickly and easily in a decentralized manner.",
     "tags": [
-      "Feedback",
-      "Projects"
+      "Torrust"
     ],
     "categories": [
-      "Team"
+      "Open Source",
+      "Products"
     ]
   },
   {
@@ -229,6 +229,22 @@
     ]
   },
   {
+    "title": "Simple Media Management System Using GitHub Repositories",
+    "slug": "simple-media-management-system-using-github-repositories",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2021-11-12T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/simple-media-management-system.jpg",
+    "excerpt": "Our current new project is to create a simple media management system through GitHub repositories and GitHub actions.",
+    "tags": [
+      "Collaboration",
+      "GitHub"
+    ],
+    "categories": [
+      "Open Source"
+    ]
+  },
+  {
     "title": "Open Source – Why it is so important now and in the future",
     "slug": "open-source-why-it-is-so-important-now-and-in-the-future",
     "contributor": "Constantin Bosse",
@@ -244,22 +260,6 @@
     "categories": [
       "Open Source",
       "AI"
-    ]
-  },
-  {
-    "title": "Simple Media Management System Using GitHub Repositories",
-    "slug": "simple-media-management-system-using-github-repositories",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2021-11-12T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/simple-media-management-system.jpg",
-    "excerpt": "Our current new project is to create a simple media management system through GitHub repositories and GitHub actions.",
-    "tags": [
-      "Collaboration",
-      "GitHub"
-    ],
-    "categories": [
-      "Open Source"
     ]
   },
   {
@@ -316,7 +316,7 @@
     "contributorSlug": "constantin-bosse",
     "date": "2022-05-17T00:00:00.000Z",
     "coverImage": "/images/posts-cover-images/what-it-is-like-to-be-part-of-the-nautilus-team.jpg",
-    "excerpt": "What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents. If you haven’t, torrents are a file sharing technology. Torrents allow users to share large files quickly and easily in a decentralized manner.",
+    "excerpt": "I recently attended a Software Developer event in Tenerife called JSDay for which I had been giving much thought to possible questions by someone considering Nautilus Cyberneering.",
     "tags": [
       "Open Source",
       "Products",

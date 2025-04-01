@@ -25,6 +25,9 @@
 		border: none;
 		border-radius: 5px;
 		transition: all 0.3s ease;
+		flex-shrink: 0;
+		min-width: 40px;
+		min-height: 40px;
 	}
 
 	.theme-toggle:hover {
