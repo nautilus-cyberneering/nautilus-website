@@ -36,6 +36,7 @@
 		}
 
 		@include bp.for-desktop-up {
+			margin: 0 auto;
 			width: 648px;
 			padding: 3rem;
 		}

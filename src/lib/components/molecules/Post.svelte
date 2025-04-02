@@ -1,6 +1,15 @@
 <script lang="ts">
-	let { title, date, contributor, contributorSlug, tags, coverImage, categories, children } =
-		$props();
+	import Tag from '../atoms/Tag.svelte';
+	let {
+		title,
+		date,
+		contributor,
+		contributorSlug,
+		tags,
+		coverImage = '',
+		categories,
+		children
+	} = $props();
 
 	import { formatDate } from '$lib/utils/date';
 	// import ShareButton from '$lib/components/singletons/ShareButton.svelte';
@@ -12,7 +21,12 @@
 
 <div class="container">
 	<main>
-		<img src={coverImage} alt={title} />
+		{#if coverImage}
+			<img src={coverImage} alt={title} />
+		{:else}
+			<img src="/images/posts-cover-images/NautilusDefault.png" alt={title} />
+		{/if}
+
 		<div class="header">
 			<h1>{title}</h1>
 		</div>
@@ -32,10 +46,11 @@
 				{#if tags.length}
 					<div class="tags">
 						<p>Tags:</p>
-						<span>{tags.join(', ')}</span>
+						{#each tags as tag}
+							<Tag {tag} />
+						{/each}
 					</div>
 				{/if}
-
 				{#if categories.length}
 					<div class="categories">
 						<p>Categories:</p>
@@ -89,7 +104,6 @@
 			flex-direction: column;
 		}
 
-		.tags span,
 		.categories span {
 			margin-left: 8px;
 		}
@@ -97,11 +111,21 @@
 		.tags {
 			display: flex;
 			flex-direction: row;
+			align-items: flex-end;
+			gap: 10px;
+
+			p {
+				color: var(--color--text);
+			}
 		}
 
 		.categories {
 			display: flex;
 			flex-direction: row;
+
+			p {
+				color: var(--color--text);
+			}
 		}
 
 		@include bp.for-tablet-portrait-up {

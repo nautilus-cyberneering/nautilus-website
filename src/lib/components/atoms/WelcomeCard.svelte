@@ -46,7 +46,7 @@
 		}
 
 		li {
-			color: rgba(82, 82, 82, 1);
+			color: var(--color--text);
 			word-break: keep-all;
 			font-size: 18px;
 			text-indent: 0rem;

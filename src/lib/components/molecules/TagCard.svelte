@@ -60,6 +60,7 @@
 		font-size: 1.2rem;
 		font-family: var(--font--title);
 		font-weight: 700;
+		color: var(--color--text);
 	}
 
 	.date {
@@ -72,6 +73,7 @@
 		margin-top: 5px;
 		font-size: 0.9rem;
 		text-align: justify;
+		color: var(--color--text);
 	}
 
 	.image-container {

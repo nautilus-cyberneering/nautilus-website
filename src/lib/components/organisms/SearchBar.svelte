@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import { createPostsIndex, searchPostsIndex } from '$lib/utils/search';
 	import Icon from '@iconify/svelte';
+	import { theme } from '$lib/stores/theme';
 
 	export let searchTerm = '';
 	export let blogPosts: BlogPost[] = [];
@@ -62,12 +63,21 @@
 				/>
 			</div>
 			<div>
-				<Icon
-					icon="heroicons:magnifying-glass-16-solid"
-					width="28"
-					height="28"
-					style="color: rgba(245, 245, 245, 0.08);"
-				/>
+				{#if $theme === 'dark'}
+					<Icon
+						icon="heroicons:magnifying-glass-16-solid"
+						width="28"
+						height="28"
+						style="color: #ffffff;"
+					/>
+				{:else}
+					<Icon
+						icon="heroicons:magnifying-glass-16-solid"
+						width="28"
+						height="28"
+						style="color: #121212;"
+					/>
+				{/if}
 			</div>
 		</div>
 	{/if}
@@ -96,7 +106,7 @@
 										<!-- Highlight matching tags -->
 										{#if tag.toLowerCase().includes(searchTerm.toLowerCase())}
 											<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-											<p class="tag" style="color: black;">{@html tag}</p>
+											<p class="tag">{@html tag}</p>
 										{/if}
 									{/each}
 								</div>
@@ -116,14 +126,8 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
 		background-color: transparent;
-		border: 1px solid rgba(245, 245, 245, 0.08);
-		border-radius: 1.5rem;
-
-		@include bp.for-phone-only {
-			width: 300px;
-		}
 	}
 
 	.input-wrapper {
@@ -132,10 +136,16 @@
 		width: 360px;
 		border-radius: 5px;
 		padding: 0.5rem;
-		border: none;
+		border: 1px solid var(--color--border);
+		border-radius: 1.5rem;
 		outline: none;
-		color: white;
+		color: var(--color--text);
 		background-color: transparent;
+
+		&:focus-within {
+			border: 1px solid rgba(238, 134, 97, 1);
+			box-shadow: 0 0 15px rgba(238, 134, 97, 0.6);
+		}
 
 		div {
 			display: flex;
@@ -149,7 +159,7 @@
 		flex-grow: 1;
 		font-size: 1rem;
 		background-color: transparent;
-		color: rgba(245, 245, 245, 0.96);
+		color: var(--color--text);
 
 		&:focus {
 			outline: none;
@@ -164,14 +174,36 @@
 	.dropdown {
 		position: absolute;
 		top: 100%;
-		left: 0;
-		width: 100%;
+		max-width: 400px;
 		max-height: 300px;
 		overflow-y: auto;
-		background-color: hsl(220, 10%, 14%);
+		background-color: var(--color--page-background);
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		border-radius: 0 0 4px 4px;
+		border: 3px solid var(--color--border);
 		z-index: 10;
+
+		/* Webkit Browsers (Chrome, Safari, Edge) */
+		&::-webkit-scrollbar {
+			width: 6px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(238, 134, 97, 1);
+			border-radius: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: rgba(238, 134, 97, 0.8);
+		}
+
+		/* Firefox */
+		scrollbar-width: thin;
+		scrollbar-color: rgba(238, 134, 97, 1) transparent;
 	}
 
 	.dropdown ul {
@@ -191,12 +223,15 @@
 
 	.dropdown a {
 		text-decoration: none;
-		color: rgba(245, 245, 245, 0.96);
 		display: block;
 	}
 
 	.dropdown a:hover {
-		background-color: hsl(220, 10%, 20%);
+		background-color: var(--color--page-secondary);
+	}
+
+	.dropdown p {
+		color: var(--color--text-secondary);
 	}
 
 	.tag-container {
@@ -212,5 +247,6 @@
 		font-weight: 500;
 		font-size: 0.85rem;
 		width: fit-content;
+		color: var(--color--text);
 	}
 </style>

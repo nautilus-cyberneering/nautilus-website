@@ -6,9 +6,15 @@
 
 <div class="card">
 	<div class="image-container">
-		<a href="/blog/{post_data.slug}">
-			<img src={post_data.coverImage} alt={post_data.title} />
-		</a>
+		{#if post_data.coverImage}
+			<a href="/blog/{post_data.slug}">
+				<img src={post_data.coverImage} alt={post_data.title} />
+			</a>
+		{:else}
+			<a href="/blog/{post_data.slug}">
+				<img src="/images/posts-cover-images/NautilusDefault.png" alt={post_data.title} />
+			</a>
+		{/if}
 	</div>
 	<div class="content">
 		<a href="/blog/{post_data.slug}">
@@ -56,7 +62,7 @@
 	}
 
 	.description {
-		color: #666;
+		color: var(--color--text-secondary);
 		font-size: 0.9rem;
 		line-height: 1.4;
 		overflow: hidden;

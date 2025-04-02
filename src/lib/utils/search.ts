@@ -35,7 +35,7 @@ export function searchPostsIndex(searchTerm: string) {
 	}
 
 	const match = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-	const results = postsIndex.search(match);
+	const results = postsIndex.search(match) as number[];
 
 	return results
 		.map((index) => posts[index as number])

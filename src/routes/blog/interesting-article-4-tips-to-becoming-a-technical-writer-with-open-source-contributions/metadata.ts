@@ -5,7 +5,7 @@ export const metadata = {
 	contributor: 'Constantin Bosse',
 	contributorSlug: 'constantin-bosse',
 	date: '2021-11-05T00:00:00.000Z',
-	coverImage: '/images/posts-cover-images/torrust-header.jpg',
+	coverImage: '',
 	excerpt:
 		'This is an excellent article by Ashley Hardin giving some useful tips that essentially states that...',
 	tags: ['Collaboration', 'Reshare'],

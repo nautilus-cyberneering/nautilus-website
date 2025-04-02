@@ -37,7 +37,9 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@use '$lib/scss/breakpoints.scss' as bp;
+
 	.wrapper {
 		margin-top: 3rem;
 		border: 1px solid var(--color--border);
@@ -74,7 +76,11 @@
 	.text-content.open {
 		max-height: 1000px;
 		opacity: 1;
-		padding: 3rem;
+		padding: 1rem 2rem;
+
+		@include bp.for-desktop-up {
+			padding: 3rem;
+		}
 	}
 
 	.text-content.closed {
