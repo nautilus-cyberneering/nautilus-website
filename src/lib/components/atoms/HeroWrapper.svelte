@@ -1,8 +1,9 @@
 <script lang="ts">
+	import { theme } from '$lib/stores/theme';
 	let { title } = $props();
 </script>
 
-<div class="svg-container">
+<div class="svg-container {$theme === 'dark' ? 'dark-theme' : 'light-theme'}">
 	<div class="svg-content">
 		<h1 class="hero-heading">{title}</h1>
 	</div>
@@ -11,9 +12,6 @@
 <style>
 	.svg-container {
 		position: relative;
-		background-image:
-			radial-gradient(circle, var(--radial--gradient-1), var(--radial--gradient-2)),
-			url('/images/nautilus-pages-bg.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -35,6 +33,18 @@
 			padding-bottom: 8rem;
 			color: var(--color--text);
 		}
+	}
+
+	.dark-theme {
+		background-image:
+			radial-gradient(circle, var(--radial--gradient-1), var(--radial--gradient-2)),
+			url('/images/nautilus-hero-bg-dark.png');
+	}
+
+	.light-theme {
+		background-image:
+			radial-gradient(circle, var(--radial--gradient-1), var(--radial--gradient-2)),
+			url('/images/nautilus-pages-bg.png');
 	}
 
 	.svg-container::after {

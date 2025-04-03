@@ -13,6 +13,7 @@
 	let { title, coverImage, slug, date, excerpt }: Props = $props();
 
 	const formattedDate = formatDate(date);
+	console.log(coverImage);
 </script>
 
 <TagCard href="/blog/{slug}" target="_self">

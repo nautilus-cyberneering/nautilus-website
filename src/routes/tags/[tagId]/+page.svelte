@@ -24,7 +24,7 @@
 					{#if post.tags && post.tags.includes(tagId)}
 						<TagCard
 							title={post?.title || 'Default title'}
-							coverImage={post?.coverImage || 'Default image'}
+							coverImage={post?.coverImage || '/images/posts-cover-images/NautilusDefault.png'}
 							slug={post?.slug || 'Default slug'}
 							excerpt={post?.excerpt || 'Default excerpt'}
 							date={post?.date || 'Default date'}
