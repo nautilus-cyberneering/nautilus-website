@@ -15,11 +15,13 @@
 			title={'Secure GIT Guide'}
 			content={'Learn how to use GIT securely in development work, with articles covering GPG keys, signature user, best practices and more.'}
 			tags={['GIT', 'Open source', 'In-house project']}
+			repo={'https://github.com/nautilus-cyberneering/secure-git-guide'}
 		/>
 		<RepoCards
 			title={'Open Source'}
 			content={'Learn all you need to start your own Open Source project or begin contributing to one, with links, examples, templates, etc.'}
 			tags={['GIT', 'Open source', 'In-house project']}
+			repo={'https://github.com/nautilus-cyberneering/opensource'}
 		/>
 	</div>
 </HomeWrapper>

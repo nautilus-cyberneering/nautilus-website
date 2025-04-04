@@ -2,13 +2,15 @@
 	import TagList from '$lib/components/molecules/TagList.svelte';
 	import ExternalRepo from '$lib/icons/externalRepo.svelte';
 
-	let { title, content, tags } = $props();
+	let { title, content, tags, repo } = $props();
 </script>
 
 <div class="card">
 	<div class="title-wrapper">
 		<h3>{title}</h3>
-		<ExternalRepo />
+		<a href={repo} target="_blank">
+			<ExternalRepo />
+		</a>
 	</div>
 	<p>{content}</p>
 	{#if tags}

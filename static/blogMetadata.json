@@ -1,39 +1,5 @@
 [
   {
-    "title": "A challenging journey – The origins of Boken",
-    "slug": "a-challenging-journey-the-origins-of-boken",
-    "contributor": "Fernando Torres",
-    "contributorSlug": "fernando-torres",
-    "date": "2021-06-28T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/a-challenging-journey.jpg",
-    "excerpt": "Throughout 2020 we had to face a lot of challenges, so at the beginning of 2021 we were more than ready to face a new one, which resulted in Boken Engine. This time in the form of a new project, something none of us had ever been asked to do before.",
-    "tags": [
-      "Boken Engine",
-      "Iakkai Saga"
-    ],
-    "categories": [
-      "Open Source"
-    ]
-  },
-  {
-    "title": "AI unexpected behavior – Why transparency in AI is vital",
-    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-31T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
-    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
-    "tags": [
-      "Ethics",
-      "Security",
-      "Transparency"
-    ],
-    "categories": [
-      "AI",
-      "Open Source"
-    ]
-  },
-  {
     "title": "A Personal Retrospective: Feedback and Thoughts",
     "slug": "a-personal-retrospective-feedback-and-thoughts",
     "contributor": "Yeray Rodriguez",
@@ -83,18 +49,19 @@
     ]
   },
   {
-    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
-    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-02T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
-    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
+    "title": "A challenging journey – The origins of Boken",
+    "slug": "a-challenging-journey-the-origins-of-boken",
+    "contributor": "Fernando Torres",
+    "contributorSlug": "fernando-torres",
+    "date": "2021-06-28T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/a-challenging-journey.jpg",
+    "excerpt": "Throughout 2020 we had to face a lot of challenges, so at the beginning of 2021 we were more than ready to face a new one, which resulted in Boken Engine. This time in the form of a new project, something none of us had ever been asked to do before.",
     "tags": [
-      "Meeting"
+      "Boken Engine",
+      "Iakkai Saga"
     ],
     "categories": [
-      "Team"
+      "Open Source"
     ]
   },
   {
@@ -111,6 +78,39 @@
     "categories": [
       "Open Source",
       "Products"
+    ]
+  },
+  {
+    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
+    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-05-02T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
+    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
+    "tags": [
+      "Meeting"
+    ],
+    "categories": [
+      "Team"
+    ]
+  },
+  {
+    "title": "AI unexpected behavior – Why transparency in AI is vital",
+    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-05-31T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
+    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
+    "tags": [
+      "Ethics",
+      "Security",
+      "Transparency"
+    ],
+    "categories": [
+      "AI",
+      "Open Source"
     ]
   },
   {
@@ -229,22 +229,6 @@
     ]
   },
   {
-    "title": "Simple Media Management System Using GitHub Repositories",
-    "slug": "simple-media-management-system-using-github-repositories",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2021-11-12T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/simple-media-management-system.jpg",
-    "excerpt": "Our current new project is to create a simple media management system through GitHub repositories and GitHub actions.",
-    "tags": [
-      "Collaboration",
-      "GitHub"
-    ],
-    "categories": [
-      "Open Source"
-    ]
-  },
-  {
     "title": "Open Source – Why it is so important now and in the future",
     "slug": "open-source-why-it-is-so-important-now-and-in-the-future",
     "contributor": "Constantin Bosse",
@@ -260,6 +244,22 @@
     "categories": [
       "Open Source",
       "AI"
+    ]
+  },
+  {
+    "title": "Simple Media Management System Using GitHub Repositories",
+    "slug": "simple-media-management-system-using-github-repositories",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2021-11-12T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/simple-media-management-system.jpg",
+    "excerpt": "Our current new project is to create a simple media management system through GitHub repositories and GitHub actions.",
+    "tags": [
+      "Collaboration",
+      "GitHub"
+    ],
+    "categories": [
+      "Open Source"
     ]
   },
   {

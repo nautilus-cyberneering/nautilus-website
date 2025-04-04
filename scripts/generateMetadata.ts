@@ -30,7 +30,6 @@ async function generateMetadata() {
 	}
 
 	fs.writeFileSync(OUTPUT_FILE, JSON.stringify(metadataArray, null, 2));
-	console.log(`✅ Metadata generated: ${OUTPUT_FILE}`);
 }
 
 generateMetadata();

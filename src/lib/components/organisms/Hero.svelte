@@ -1,4 +1,8 @@
-<div class="svg-container">
+<script lang="ts">
+	import { theme } from '$lib/stores/theme';
+</script>
+
+<div class="svg-container {$theme === 'dark' ? 'dark-theme' : 'light-theme'}">
 	<div class="svg-content">
 		<h1 class="hero-heading">Pioneering<br /><span>Open Source</span><br />ecosystems</h1>
 		<div class="hero-para">
@@ -63,6 +67,18 @@
 			padding-top: 1.5rem;
 			padding-bottom: 5rem;
 		}
+	}
+
+	.dark-theme {
+		background-image:
+			radial-gradient(circle, var(--radial--gradient-1), var(--radial--gradient-2)),
+			url('/images/nautilus-hero-bg-dark.png');
+	}
+
+	.light-theme {
+		background-image:
+			radial-gradient(circle, var(--radial--gradient-1), var(--radial--gradient-2)),
+			url('/images/nautilus-pages-bg.png');
 	}
 
 	.svg-container::after {
