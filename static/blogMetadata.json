@@ -1,18 +1,18 @@
 [
   {
-    "title": "A challenging journey – The origins of Boken",
-    "slug": "a-challenging-journey-the-origins-of-boken",
-    "contributor": "Fernando Torres",
-    "contributorSlug": "fernando-torres",
-    "date": "2021-06-28T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/a-challenging-journey.jpg",
-    "excerpt": "Throughout 2020 we had to face a lot of challenges, so at the beginning of 2021 we were more than ready to face a new one, which resulted in Boken Engine. This time in the form of a new project, something none of us had ever been asked to do before.",
+    "title": "A Personal Retrospective: Feedback and Thoughts",
+    "slug": "a-personal-retrospective-feedback-and-thoughts",
+    "contributor": "Yeray Rodriguez",
+    "contributorSlug": "yeray-rodriguez",
+    "date": "2022-06-30T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
+    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
     "tags": [
-      "Boken Engine",
-      "Iakkai Saga"
+      "Feedback",
+      "Projects"
     ],
     "categories": [
-      "Open Source"
+      "Team"
     ]
   },
   {
@@ -23,6 +23,39 @@
     "date": "2021-08-18T00:00:00.000Z",
     "coverImage": "/images/posts-cover-images/contributing-to-open-source.jpg",
     "excerpt": "In this post you will learn about my experience as a non-developer helping to take a closed source software project, a non-linear visual story framework for IOS Swift, into the Open Source realm and develop a demo for it.",
+    "tags": [
+      "Boken Engine",
+      "Iakkai Saga"
+    ],
+    "categories": [
+      "Open Source"
+    ]
+  },
+  {
+    "title": "What is Fintech.Li 2022?",
+    "slug": "excited-to-attend-fintech-li-2022",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-09-13T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/excited-to-attend-fintech.jpg",
+    "excerpt": "We are excited to announce that we are attending Fintech.Li 2022 conference on the 28 of this month!",
+    "tags": [
+      "Blockchain",
+      "Fintech",
+      "Web3"
+    ],
+    "categories": [
+      "Events"
+    ]
+  },
+  {
+    "title": "A challenging journey – The origins of Boken",
+    "slug": "a-challenging-journey-the-origins-of-boken",
+    "contributor": "Fernando Torres",
+    "contributorSlug": "fernando-torres",
+    "date": "2021-06-28T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/a-challenging-journey.jpg",
+    "excerpt": "Throughout 2020 we had to face a lot of challenges, so at the beginning of 2021 we were more than ready to face a new one, which resulted in Boken Engine. This time in the form of a new project, something none of us had ever been asked to do before.",
     "tags": [
       "Boken Engine",
       "Iakkai Saga"
@@ -48,41 +81,6 @@
     ]
   },
   {
-    "title": "AI unexpected behavior – Why transparency in AI is vital",
-    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-31T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
-    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
-    "tags": [
-      "Ethics",
-      "Security",
-      "Transparency"
-    ],
-    "categories": [
-      "AI",
-      "Open Source"
-    ]
-  },
-  {
-    "title": "What is Fintech.Li 2022?",
-    "slug": "excited-to-attend-fintech-li-2022",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-09-13T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/excited-to-attend-fintech.jpg",
-    "excerpt": "We are excited to announce that we are attending Fintech.Li 2022 conference on the 28 of this month!",
-    "tags": [
-      "Blockchain",
-      "Fintech",
-      "Web3"
-    ],
-    "categories": [
-      "Events"
-    ]
-  },
-  {
     "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
     "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
     "contributor": "Constantin Bosse",
@@ -98,19 +96,21 @@
     ]
   },
   {
-    "title": "A Personal Retrospective: Feedback and Thoughts",
-    "slug": "a-personal-retrospective-feedback-and-thoughts",
-    "contributor": "Yeray Rodriguez",
-    "contributorSlug": "yeray-rodriguez",
-    "date": "2022-06-30T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
-    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
+    "title": "AI unexpected behavior – Why transparency in AI is vital",
+    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-05-31T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
+    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
     "tags": [
-      "Feedback",
-      "Projects"
+      "Ethics",
+      "Security",
+      "Transparency"
     ],
     "categories": [
-      "Team"
+      "AI",
+      "Open Source"
     ]
   },
   {

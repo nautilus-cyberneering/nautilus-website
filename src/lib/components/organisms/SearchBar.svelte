@@ -8,7 +8,6 @@
 
 	export let searchTerm = '';
 	export let blogPosts: BlogPost[] = [];
-	export let onSearch: (searchTerm: string) => void; // Callback prop
 
 	let showInput = true;
 	let searchInput: HTMLInputElement | null = null;
@@ -28,7 +27,6 @@
 		const input = event.target as HTMLInputElement;
 		searchTerm = input.value;
 		dropdownOpen = searchTerm.length > 0;
-		onSearch(searchTerm); // Call the callback prop
 	}
 
 	function clearSearch() {
