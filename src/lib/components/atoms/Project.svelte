@@ -13,21 +13,29 @@
 			<p>
 				{para}
 			</p>
-			<p class="details">
-				<span>Project Type:</span><span> {projectType}</span>
+			<hr />
+			<p class="details details-top">
+				<span class="chip">Project Type:</span><span class="info"> {projectType}</span>
 			</p>
 			<p class="details">
-				<span>Open Source:</span><span> {openSource}</span>
+				<span class="chip">Open Source:</span><span class="info"> {openSource}</span>
 			</p>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
+	.projects h4 {
+		color: var(--color--text);
+		text-align: center;
+		margin: 1rem;
+	}
+
 	.project {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 1rem;
+		gap: 2rem;
 
 		.image img {
 			margin: 0 auto;
@@ -40,10 +48,31 @@
 		}
 
 		.details {
-			margin-top: 0;
+			margin-top: 0rem;
 			text-align: left;
 			color: var(--color--text);
 			margin-bottom: 0rem;
+
+			.chip,
+			.info {
+				padding: 2px 4px;
+				color: var(--color--text-reverse);
+				font-size: 16px;
+			}
+
+			.chip {
+				border-radius: 4px 0 0 4px;
+				background-color: gray;
+			}
+
+			.info {
+				border-radius: 0 4px 4px 0;
+				background-color: purple;
+			}
+		}
+
+		.details-top {
+			margin-top: 1rem;
 		}
 	}
 

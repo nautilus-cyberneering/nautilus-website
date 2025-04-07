@@ -14,7 +14,11 @@
 		</ul>
 	</div>
 	<div class="cta-wrapper">
-		<h4>{card.cta}</h4>
+		<h4>
+			<a href="mailto:info@nautilus.cybernering.de">
+				{card.cta}
+			</a>
+		</h4>
 	</div>
 </div>
 
@@ -59,7 +63,7 @@
 			padding: 1.5rem 3rem;
 		}
 
-		h4 {
+		h4 a {
 			color: var(--color--text-reverse);
 			font-size: 28px;
 			text-indent: -1.5rem;
