@@ -1,10 +1,15 @@
 <script lang="ts">
-	let { tag } = $props();
+	let { tag, category } = $props<{ tag?: string; category?: string }>();
+
+	let value = tag || category;
+	let type = tag ? 'tags' : category ? 'categories' : null;
 </script>
 
-<a href="/tags/{tag}">
-	{tag}
-</a>
+{#if value && type}
+	<a href="/{type}/{value}">
+		{value}
+	</a>
+{/if}
 
 <style>
 	a {

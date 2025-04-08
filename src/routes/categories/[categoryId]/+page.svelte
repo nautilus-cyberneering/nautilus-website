@@ -5,24 +5,24 @@
 	import HeroWrapper from '$lib/components/atoms/HeroWrapper.svelte';
 	import Wrapper from '$lib/components/atoms/Wrapper.svelte';
 
-	const tagId = page.params.tagId;
+	const categoryId = page.params.categoryId;
 	const blogPosts: BlogPost[] = page.data.posts;
 
-	$: postsWithTag = blogPosts.filter((post) => post?.tags?.includes(tagId));
+	$: postsWithCategories = blogPosts.filter((post) => post?.tags?.includes(categoryId));
 </script>
 
 <Wrapper>
 	{#if blogPosts && blogPosts.length}
-		<HeroWrapper title={tagId} />
+		<HeroWrapper title={categoryId} />
 		<div class="container">
 			<p class="tag-count">
-				We found <strong>{postsWithTag.length}</strong>
-				{postsWithTag.length > 1 || postsWithTag.length === 0 ? 'posts' : 'post'} with the tag
-				<strong>{tagId}</strong>
+				We found <strong>{postsWithCategories.length}</strong>
+				{postsWithCategories.length > 1 ? 'posts' : 'post'} with the category
+				<strong>{categoryId}</strong>
 			</p>
 			{#each blogPosts as post}
 				{#if post?.tags}
-					{#if post.tags && post.tags.includes(tagId)}
+					{#if post.tags && post.tags.includes(categoryId)}
 						<TagCard
 							title={post?.title || 'Default title'}
 							coverImage={post?.coverImage || '/images/posts-cover-images/NautilusDefault.png'}

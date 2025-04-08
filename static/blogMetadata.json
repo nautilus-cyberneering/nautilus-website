@@ -1,5 +1,21 @@
 [
   {
+    "title": "A challenging journey – The origins of Boken",
+    "slug": "a-challenging-journey-the-origins-of-boken",
+    "contributor": "Fernando Torres",
+    "contributorSlug": "fernando-torres",
+    "date": "2021-06-28T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/a-challenging-journey.jpg",
+    "excerpt": "Throughout 2020 we had to face a lot of challenges, so at the beginning of 2021 we were more than ready to face a new one, which resulted in Boken Engine. This time in the form of a new project, something none of us had ever been asked to do before.",
+    "tags": [
+      "Boken Engine",
+      "Iakkai Saga"
+    ],
+    "categories": [
+      "Open Source"
+    ]
+  },
+  {
     "title": "A Personal Retrospective: Feedback and Thoughts",
     "slug": "a-personal-retrospective-feedback-and-thoughts",
     "contributor": "Yeray Rodriguez",
@@ -16,19 +32,19 @@
     ]
   },
   {
-    "title": "Contributing to an Open Source Project as a Non Developer",
-    "slug": "contributing-to-an-open-source-project-as-a-non-developer",
+    "title": "Brand New Rusty Torrents?",
+    "slug": "brand-new-rusty-torrents",
     "contributor": "Constantin Bosse",
     "contributorSlug": "constantin-bosse",
-    "date": "2021-08-18T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/contributing-to-open-source.jpg",
-    "excerpt": "In this post you will learn about my experience as a non-developer helping to take a closed source software project, a non-linear visual story framework for IOS Swift, into the Open Source realm and develop a demo for it.",
+    "date": "2022-07-21T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/torrust-header.jpg",
+    "excerpt": "What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents. If you haven’t, torrents are a file sharing technology. Torrents allow users to share large files quickly and easily in a decentralized manner.",
     "tags": [
-      "Boken Engine",
-      "Iakkai Saga"
+      "Torrust"
     ],
     "categories": [
-      "Open Source"
+      "Open Source",
+      "Products"
     ]
   },
   {
@@ -49,38 +65,6 @@
     ]
   },
   {
-    "title": "A challenging journey – The origins of Boken",
-    "slug": "a-challenging-journey-the-origins-of-boken",
-    "contributor": "Fernando Torres",
-    "contributorSlug": "fernando-torres",
-    "date": "2021-06-28T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/a-challenging-journey.jpg",
-    "excerpt": "Throughout 2020 we had to face a lot of challenges, so at the beginning of 2021 we were more than ready to face a new one, which resulted in Boken Engine. This time in the form of a new project, something none of us had ever been asked to do before.",
-    "tags": [
-      "Boken Engine",
-      "Iakkai Saga"
-    ],
-    "categories": [
-      "Open Source"
-    ]
-  },
-  {
-    "title": "Brand New Rusty Torrents?",
-    "slug": "brand-new-rusty-torrents",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-07-21T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/torrust-header.jpg",
-    "excerpt": "What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents. If you haven’t, torrents are a file sharing technology. Torrents allow users to share large files quickly and easily in a decentralized manner.",
-    "tags": [
-      "Torrust"
-    ],
-    "categories": [
-      "Open Source",
-      "Products"
-    ]
-  },
-  {
     "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
     "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
     "contributor": "Constantin Bosse",
@@ -93,6 +77,22 @@
     ],
     "categories": [
       "Team"
+    ]
+  },
+  {
+    "title": "Contributing to an Open Source Project as a Non Developer",
+    "slug": "contributing-to-an-open-source-project-as-a-non-developer",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2021-08-18T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/contributing-to-open-source.jpg",
+    "excerpt": "In this post you will learn about my experience as a non-developer helping to take a closed source software project, a non-linear visual story framework for IOS Swift, into the Open Source realm and develop a demo for it.",
+    "tags": [
+      "Boken Engine",
+      "Iakkai Saga"
+    ],
+    "categories": [
+      "Open Source"
     ]
   },
   {

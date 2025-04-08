@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Tag from '../atoms/Tag.svelte';
+	import Tag from '$lib/components/atoms/Tag.svelte';
 	let {
 		title,
 		date,
@@ -54,7 +54,9 @@
 				{#if categories.length}
 					<div class="categories">
 						<p>Categories:</p>
-						<span>{categories.join(', ')}</span>
+						{#each categories as category}
+							<Tag {category} />
+						{/each}
 					</div>
 				{/if}
 			</div>
@@ -102,26 +104,15 @@
 		.labels {
 			display: flex;
 			flex-direction: column;
-		}
-
-		.categories span {
-			margin-left: 8px;
-		}
-
-		.tags {
-			display: flex;
-			flex-direction: row;
-			align-items: flex-end;
 			gap: 10px;
-
-			p {
-				color: var(--color--text);
-			}
 		}
 
+		.tags,
 		.categories {
 			display: flex;
 			flex-direction: row;
+			align-items: center;
+			gap: 10px;
 
 			p {
 				color: var(--color--text);

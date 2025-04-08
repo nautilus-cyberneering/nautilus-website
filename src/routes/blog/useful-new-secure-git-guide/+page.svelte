@@ -94,5 +94,13 @@
 
 	.projects {
 		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		background-color: var(--color--page-secondary);
+		padding: 1rem;
+
+		@include bp.for-tablet-portrait-up {
+			flex-direction: row;
+		}
 	}
 </style>
