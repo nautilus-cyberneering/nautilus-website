@@ -32,6 +32,24 @@
     ]
   },
   {
+    "title": "AI unexpected behavior – Why transparency in AI is vital",
+    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-05-31T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
+    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
+    "tags": [
+      "Ethics",
+      "Security",
+      "Transparency"
+    ],
+    "categories": [
+      "AI",
+      "Open Source"
+    ]
+  },
+  {
     "title": "Brand New Rusty Torrents?",
     "slug": "brand-new-rusty-torrents",
     "contributor": "Constantin Bosse",
@@ -45,6 +63,21 @@
     "categories": [
       "Open Source",
       "Products"
+    ]
+  },
+  {
+    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
+    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-05-02T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
+    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
+    "tags": [
+      "Meeting"
+    ],
+    "categories": [
+      "Team"
     ]
   },
   {
@@ -65,21 +98,6 @@
     ]
   },
   {
-    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
-    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-02T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
-    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
-    "tags": [
-      "Meeting"
-    ],
-    "categories": [
-      "Team"
-    ]
-  },
-  {
     "title": "Contributing to an Open Source Project as a Non Developer",
     "slug": "contributing-to-an-open-source-project-as-a-non-developer",
     "contributor": "Constantin Bosse",
@@ -92,24 +110,6 @@
       "Iakkai Saga"
     ],
     "categories": [
-      "Open Source"
-    ]
-  },
-  {
-    "title": "AI unexpected behavior – Why transparency in AI is vital",
-    "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-31T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/ai-unexpected-behaviour.jpg",
-    "excerpt": "Have you ever thought about what happens when there is AI unexpected behavior?",
-    "tags": [
-      "Ethics",
-      "Security",
-      "Transparency"
-    ],
-    "categories": [
-      "AI",
       "Open Source"
     ]
   },
