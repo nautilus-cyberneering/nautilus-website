@@ -8,7 +8,7 @@ interface Post {
 	tags: string[];
 }
 
-let postsIndex: FlexSearch.Index;
+let postsIndex = new FlexSearch.Index({ tokenize: 'forward' });
 let posts: Post[];
 
 export function createPostsIndex(data: BlogPost[]) {
