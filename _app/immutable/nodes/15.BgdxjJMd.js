@@ -1,0 +1,30 @@
+import{t as l,a as d}from"../chunks/CFkxUOtV.js";import{s as u,f as c}from"../chunks/R17_qK1o.js";import{P as h,a as p}from"../chunks/CNI12Ffv.js";import{W as w}from"../chunks/pQDhVu7Z.js";var m=l(`<p class="svelte-144wwl0">Throughout 2020 we had to face a lot of challenges, so at the beginning of 2021 we were more
+			than ready to face a new one, which resulted in Boken Engine. This time in the form of a new
+			project, something none of us had ever been asked to do before. The idea was to develop a
+			software around which we could build a community, following the Open Source foundations and
+			its four core freedoms:</p> <ol><li class="svelte-144wwl0">To run the program for any purpose.</li> <li class="svelte-144wwl0">To study how the program works and change it to make it do what you wish.</li> <li class="svelte-144wwl0">To redistribute it.</li> <li class="svelte-144wwl0">To distribute copies of your modified versions from others.</li></ol> <p class="svelte-144wwl0">For this we established a multidisciplinary team, made up of developers, and business
+			consultants all of us working remotely, based in Germany and Spain.</p> <p class="svelte-144wwl0">Within the team we had many years of experience in the design and development of digital
+			products but never Open Source, so we were eager to learn from this new project and document
+			our trip into the unknown.</p> <p class="svelte-144wwl0">But before going any further, let’s give you a bit of background information. The groundwork
+			of the project was done a few months ago. In an earlier phase, most of the team worked on the
+			development of a software product that would eventually evolve into <a href="https://github.com/boken-engine/boken-engine">Boken Engine</a>.</p> <p class="svelte-144wwl0">In that preliminary phase, the objective was twofold:</p> <ul><li class="svelte-144wwl0">On the one hand, we wanted to create an iOS Game engine for 2D multimedia slides-based
+				games, with several elements characteristic of Point and Click adventures.</li> <li class="svelte-144wwl0">On the other hand, we wanted to publish the resulting game in the App Store.</li></ul> <p class="svelte-144wwl0">We managed to develop a fully functioning application called <a href="https://github.com/boken-engine/15-universe-facts">“15 facts of the Universe”</a> but in the end could not publish because it was not approved for the Apple Store. The Apple Store’s
+			rejection message: “…the usefulness of your app is limited by the minimal amount of content or
+			features it includes.”.</p> <p class="svelte-144wwl0">After several months of work, this drawback not only did not discourage us, but also provided
+			us with some lessons that would be particularly useful to move forward with the second phase,
+			and that’s how we started Boken.</p> <p class="svelte-144wwl0">To begin with, we refactored the software to convert it to a framework to make it more
+			versatile, giving the possibility to create new applications based on a fully configurable
+			multimedia content (adding text, sound, and images).</p> <p class="svelte-144wwl0">Boken thus became a tool that allowed us to create different types of applications and games.
+			In addition to this we developed new functionalities that would take the possibilities of the
+			framework further and enrich the applications resulting from using it.</p> <p class="svelte-144wwl0">In parallel to the technical development, we started researching about different practices on
+			common Open Source projects. We learned about the best practices and the recommendations on
+			how successful communities have been managed to attract and involve users committed to a
+			common goal. We also learnt about Open Source licensing, business, and commercialization
+			models, in addition to community contribution management and governance models.</p> <p class="svelte-144wwl0">The whole process is documented and it’s <a href="https://github.com/boken-engine/boken-engine/tree/master/doc">available on the project’s GitHub repository</a>, so that anyone interested in joining us can check how we progressed and the different
+			things that we looked at on this road.</p> <p class="svelte-144wwl0">Something worth mentioning too, is that our regular weekly meetings to review our progress
+			helped us to continuously improve, getting valuable feedback for further development, both in
+			building the software and in building the community.</p> <p class="svelte-144wwl0">In this way, we feel that we have made consistent progress on several useful new features for
+			the future, and we can state that Boken is currently ready to be used by anyone interested in
+			creating their own applications, games, and presentations.</p> <p class="svelte-144wwl0">At this moment we are working on a <a href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood">demo project</a> to showcase the real power and features of the framework. It is a visual novel styled as a <a href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure">Choose Your Own Adventure</a> (CYOA) books, set in an Epic Fantasy world, and geared towards a young adult audience.</p> <p class="svelte-144wwl0">We are open to receive new contributors interested in participating both in the development
+			and improvement of Boken and in helping us to work on the demo. Are you interested? Go ahead
+			and check our GitHub or Website to know more about it. Also check out our <a href="https://nautilus-cyberneering.de/projects/">company project page</a> to see more of the things that we do.</p> <p class="svelte-144wwl0">We’d love to have you onboard!</p> <!>`,1);function S(o,a){let{currentPost:e,allPosts:n}=a.data;w(o,{children:(s,g)=>{h(s,{get title(){return e.title},get coverImage(){return e.coverImage},get date(){return e.date},get contributor(){return e.contributor},get contributorSlug(){return e.contributorSlug},get tags(){return e.tags},get categories(){return e.categories},children:(i,f)=>{var t=m(),r=u(c(t),36);p(r,{get currentPage(){return e.slug},allPosts:n}),d(i,t)},$$slots:{default:!0}})}})}export{S as component};

@@ -1,0 +1,1 @@
+import{t as s,a as t}from"./CFkxUOtV.js";import{c as o,r as i}from"./R17_qK1o.js";import{s as m}from"./w_F8Gj9M.js";var d=s('<div class="wrapper svelte-cmawjs"><!></div>');function l(a,e){var r=d(),p=o(r);m(p,()=>e.children),i(r),t(a,r)}export{l as W};

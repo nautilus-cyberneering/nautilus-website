@@ -1,0 +1,1 @@
+import{L as l}from"../chunks/BpdjVhuB.js";const n=async({fetch:o,params:t})=>{const e=await o("/api"),{tagId:s}=t;return{posts:await e.json(),tagId:s}},r=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{l as component,r as universal};
