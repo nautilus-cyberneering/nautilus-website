@@ -28,11 +28,11 @@
 			<li>
 				<a
 					href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits"
-					>GitHub Documentation – Signing commits</a
+					target="_blank">GitHub Documentation – Signing commits</a
 				>
 			</li>
 			<li>
-				<a href="https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work"
+				<a href="https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work" target="_blank"
 					>Git Documentation – Git Tools – Signing Your Work</a
 				>
 			</li>
@@ -168,7 +168,7 @@
 			A colleague of mine, Jose Celano wrote a very clear step-by-step guide for internal use in one
 			of our company’s repositories, <a
 				href="https://github.com/nautilus-cyberneering/pygithub/blob/main/docs/how_to_create_a_subkey_for_signing.md"
-				>here</a
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -254,7 +254,7 @@
 			<li>
 				Follow the necessary steps as shown in their <a
 					href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits"
-					>GitHub Documentation – Signing commits.</a
+					target="_blank">GitHub Documentation – Signing commits.</a
 				>
 			</li>
 		</ol>
@@ -301,8 +301,8 @@
 
 		<p>
 			If this is too advance you can just go back to the basic as in my <a
-				href="https://nautilus-cyberneering.de/2022/01/28/what-is-gpg-why-and-how-to-use-it/"
-				>previous post</a
+				href="https://nautilus-cyberneering.dev/blog/what-is-gpg-why-and-how-to-use-it"
+				target="_blank">previous post</a
 			>.
 		</p>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />

@@ -25,7 +25,7 @@
 					<Nautilus />
 				{/if}
 			</a>
-			<p>Open Source, AI, and more</p>
+			<p>Open Source, Decentralization, and more</p>
 		</div>
 		<AnimatedHamburger {isMenuOpen} {toggleMenu}>
 			<div class="links-wrapper">
@@ -39,13 +39,13 @@
 							>About</a
 						>
 					</li>
-					<li>
+					<!-- <li>
 						<a
 							href="/projects"
 							class={currentPath === '/projects' ? 'active' : ''}
 							onclick={toggleMenu}>Projects</a
 						>
-					</li>
+					</li> -->
 					<li>
 						<a href="/blog" class={currentPath === '/blog' ? 'active' : ''} onclick={toggleMenu}
 							>Blog</a

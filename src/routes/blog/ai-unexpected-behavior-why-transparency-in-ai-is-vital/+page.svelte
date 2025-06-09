@@ -28,13 +28,13 @@
 		<h2>An example of AI unexpected behavior</h2>
 		<p>
 			One example of AI’s unexpected behavior in the positive sense is the GO contest from 2016,
-			where the <a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo</a> AI beat the human
-			champion four out of five times. The AI system did this by making moves that no one had ever
-			seen before. If you are interested to another article making an analysis of this match and
-			expands on the topic of unexpected behavior you can find it
+			where the <a href="https://en.wikipedia.org/wiki/AlphaGo" target="_blank">AlphaGo</a> AI beat
+			the human champion four out of five times. The AI system did this by making moves that no one
+			had ever seen before. If you are interested to another article making an analysis of this
+			match and expands on the topic of unexpected behavior you can find it
 			<a
 				href="https://www.aitrends.com/ai-insider/novelty-in-the-game-of-go-provides-bright-insights-for-ai-and-autonomous-vehicles/"
-				>here</a
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -68,6 +68,7 @@
 		<p>
 			In the article <a
 				href="https://www.aitrends.com/ai-insider/novelty-in-the-game-of-go-provides-bright-insights-for-ai-and-autonomous-vehicles/"
+				target="_blank"
 				>“Novelty In The Game Of Go Provides Bright Insights For AI And Autonomous Vehicles”</a
 			> by Dr. Lance Eliot this gets briefly explained. As he indicates this novelty can result from
 			the sheer processing power and the underlying AI algorithms.
@@ -78,7 +79,7 @@
 			algorithms, which then can result in unexpected behavior such as possible gender bias, etc. If
 			you are interested in reading more from Dr. Eliot on bias <a
 				href="https://www.forbes.com/sites/lanceeliot/2020/01/04/overcoming-racial-bias-in-ai-systems-and-startlingly-even-in-ai-self-driving-cars/?sh=34de133f723b"
-				>here</a
+				target="_blank">here</a
 			> is an article of his.
 		</p>
 
@@ -137,11 +138,12 @@
 		<h2>Conclusion</h2>
 		<p>
 			Today there is much debate on this topic, and there are initiatives like the <a
-				href="https://modelcards.withgoogle.com/about">AI model cards</a
+				href="https://modelcards.withgoogle.com/about"
+				target="_blank">AI model cards</a
 			>
 			which aim to increase transparency around AI models. This is a good start, but we need to do more
 			to ensure that AI systems are accountable and a general approach is needed, the
-			<a href="https://en.wikipedia.org/wiki/Open_source">Open Source</a> approach.
+			<a href="https://en.wikipedia.org/wiki/Open_source" target="_blank">Open Source</a> approach.
 		</p>
 
 		<p>
@@ -164,8 +166,8 @@
 
 		<p>
 			If you would like to read more about Open Source and its importance <a
-				href="https://nautilus-cyberneering.de/2022/05/24/open-source-why-it-is-so-important-now-and-in-the-future/"
-				>here</a
+				href="https://nautilus-cyberneering.dev/2022/05/24/open-source-why-it-is-so-important-now-and-in-the-future/"
+				target="_blank">here</a
 			> is another of our posts.
 		</p>
 

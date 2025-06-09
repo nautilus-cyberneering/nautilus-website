@@ -16,8 +16,8 @@
 
 <style>
 	.qr-code {
-		width: 250px;
-		height: 250px;
+		width: 150px;
+		height: 150px;
 		object-fit: contain;
 	}
 </style>

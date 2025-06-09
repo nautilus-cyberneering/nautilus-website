@@ -27,13 +27,13 @@
 			<li>Our address: C/ FERNANDO GUANARTEME, N.º 12, CP 35310, SANTA BRÍGIDA (Las Palmas)</li>
 			<li>Our contact telephone number: +34 637.20.03.79</li>
 			<li>
-				Our contact e-mail address: <a href="mailto:info@nautilus-cyberneering.de"
-					>info@nautilus-cyberneering.de</a
+				Our contact e-mail address: <a href="mailto:info@nautilus-cyberneering.dev"
+					>info@nautilus-cyberneering.dev</a
 				>
 			</li>
 			<li>
-				Our website: <a href="https://www.nautilus-cyberneering.de" target="_blank"
-					>www.nautilus-cyberneering.de</a
+				Our website: <a href="https://nautilus-cyberneering.dev/" target="_blank"
+					>www.nautilus-cyberneering.dev</a
 				>
 			</li>
 			<li>We are at your disposal, do not hesitate to contact us.</li>
@@ -119,12 +119,8 @@
 			photocopy of your ID card, so that we can identify you.
 		</p>
 		<p>
-			To request any of these rights, you must make a written request to our address, along with a
-			photocopy of your ID card, so that we can identify you.
-		</p>
-		<p>
 			To learn more about your data protection rights, you can consult the website of the Spanish
-			Data Protection Agency (www.aepd.es).
+			Data Protection Agency (<a href="https://www.aepd.es">www.aepd.es</a>).
 		</p>
 	</div>
 </Wrapper>

@@ -17,8 +17,9 @@
 		categories={currentPost.categories}
 	>
 		<p>
-			We are excited to announce that we are attending <a href="https://www.fintech.li/"
-				>Fintech.Li</a
+			We are excited to announce that we are attending <a
+				href="https://www.fintech.li/"
+				target="_blank">Fintech.Li</a
 			> 2022 conference on the 28th of this month!
 		</p>
 
@@ -40,7 +41,8 @@
 			Some of the speakers are Eva Kaili (Vice President, European, Cyrus Fazel (Founder and CEO
 			Swissborg), Mauro Casellini, CEO Bitcoin Suisse Liechtenstein & Head of Bitcoin Suisse Europe
 			and many others. Parliament)Are you curios about the other speakers here you can find out <a
-				href="https://www.fintech.li/speaker-22">here</a
+				href="https://www.fintech.li/speaker-22"
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -68,8 +70,10 @@
 		<p>
 			We will be flying in from Germany, Spain and other parts of the world to join our colleagues
 			in Liechtenstein. We are all looking forward to an exciting and productive conference and time
-			together! See you in no time <a href="https://blockfinance-eco.li/">BlockFinance ECO AG</a>
-			and <a href="https://hodl10.io/">Hodl10</a>!
+			together! See you in no time <a href="https://blockfinance-eco.li/" target="_blank"
+				>BlockFinance ECO AG</a
+			>
+			and <a href="https://hodl10.io/" target="_blank">Hodl10</a>!
 		</p>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>

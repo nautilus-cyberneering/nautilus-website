@@ -9,7 +9,8 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@use '$lib/scss/breakpoints.scss' as bp;
 	.svg-container {
 		position: relative;
 		background-size: cover;
@@ -55,5 +56,13 @@
 		width: 100%;
 		height: 60%;
 		background: linear-gradient(to bottom, rgba(250, 250, 250, 0) 0%, rgba(250, 250, 250, 0) 100%);
+	}
+
+	@include bp.for-desktop-up {
+		.dark-theme,
+		.light-theme {
+			background-repeat: repeat;
+			background-size: 200px auto; /* or 2x your original box size */
+		}
 	}
 </style>

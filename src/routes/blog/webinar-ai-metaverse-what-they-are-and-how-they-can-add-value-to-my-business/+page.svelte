@@ -23,7 +23,8 @@
 
 		<p>
 			We were invited to collaborate during this session by the company <a
-				href="https://edataconsulting.com/">edataconsulting</a
+				href="https://edataconsulting.com/"
+				target="_blank">edataconsulting</a
 			> with whom we are working on a project.
 		</p>
 
@@ -36,12 +37,12 @@
 		<p>
 			<a
 				href="https://www.youtube.com/watch?app=desktop&v=Aki_7JfpBrI&feature=emb_logo&ab_channel=sociosahk"
-				>This</a
+				target="_blank">This</a
 			>
 			is a link to the webinar in case that you are interested and if you want to get a copy of the slides
 			<a
 				href="https://github.com/Nautilus-Cyberneering/.github/blob/main/events/webinars/20220331_TOPIC_AI/20220331%20-%20Webinar%20AHK%20-%20Nautilus%20-%20Presentation%20-%20AI.pdf"
-				>here they are</a
+				target="_blank">here they are</a
 			>.
 		</p>
 
@@ -54,7 +55,7 @@
 			src="/images/posts-images/webinar-ai-metaverse-what-they-are-and-how-they-can-add-value-to-my-business/AI-vs-Human-Brain-2.webp"
 			alt="webinar"
 		/>
-		<a href="https://constantinbosse.com/2022/04/22/ai-explained-in-simple-words/">
+		<a href="https://constantinbosse.com/2022/04/22/ai-explained-in-simple-words/" target="_blank">
 			AI Explained in Simple Words
 		</a>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />

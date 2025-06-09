@@ -35,11 +35,12 @@
 		<h2>Project Background and Team</h2>
 		<p>
 			It has been about 8 months now that I started contributing to a new Open-Source project called <a
-				href="https://github.com/boken-engine/boken-engine">Boken Engine</a
+				href="https://github.com/boken-engine/boken-engine"
+				target="_blank">Boken Engine</a
 			>
 			– An iOS Swift framework for creating slides-based, non-linear visual stories and presentations.
 			The project however, started beginning of last year as a closed source development for one of my
-			former employer’s <a href="https://www.hyve.net/en/">HYVE</a> customers.
+			former employer’s <a href="https://www.hyve.net/en/" target="_blank">HYVE</a> customers.
 		</p>
 
 		<p>
@@ -96,7 +97,8 @@
 
 		<p>
 			If you are curious, you can find this information <a
-				href="https://github.com/boken-engine/boken-engine/tree/master/doc">here</a
+				href="https://github.com/boken-engine/boken-engine/tree/master/doc"
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -152,12 +154,13 @@
 		<p>
 			In my specific case I tested and learned to use 2 different digital drawing applications and
 			created artwork with it. The applications that I used were <a
-				href="https://affinity.serif.com/es/">Affinity Designer</a
+				href="https://affinity.serif.com/es/"
+				target="_blank">Affinity Designer</a
 			>
 			and the other
 			<a
 				href="https://www.painterartist.com/en/product/painter/?sourceid=ptr2022-xx-ppc_brkws&x-vehicle=ppc_brkws&trial=big&gclid=Cj0KCQjwvO2IBhCzARIsALw3ASpWjLuJtJRBQShzjV1uHHgrA9xFzTPNNYCF6nzAeen0lCqHNKF_MHcaAtszEALw_wcB"
-				>Corel Painter 2022</a
+				target="_blank">Corel Painter 2022</a
 			>.
 		</p>
 
@@ -179,19 +182,20 @@
 
 		<ul>
 			<li>
-				<a href="https://www.boken-engine.dev/2021-06-28-a-challenging-journey/"
+				<a href="https://www.boken-engine.dev/2021-06-28-a-challenging-journey/" target="_blank"
 					>A Challenging Journey</a
 				>
 			</li>
 			<li>
-				<a href="https://www.boken-engine.dev/2021-08-17-Iaaki-Saga-for-macOS/"
+				<a href="https://www.boken-engine.dev/2021-08-17-Iaaki-Saga-for-macOS/" target="_blank"
 					>Iakkai Saga for macOS</a
 				>
 			</li>
 		</ul>
 		<p>
 			If you want to read more articles in the future here is our website and blog: <a
-				href="https://www.boken-engine.dev/">https://www.boken-engine.dev/</a
+				href="https://www.boken-engine.dev/"
+				target="_blank">https://www.boken-engine.dev/</a
 			>
 		</p>
 
@@ -212,7 +216,7 @@
 			I can only encourage anyone to check out OSS projects and contribute to these even if they are
 			not developers, since you can always add value with your knowledge and time. <a
 				href="https://opensource.com/life/16/1/8-ways-contribute-open-source-without-writing-code"
-				>Here</a
+				target="_blank">Here</a
 			> is a post in case you want to know a little more about it.
 		</p>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />

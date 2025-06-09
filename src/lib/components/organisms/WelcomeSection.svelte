@@ -1,8 +1,8 @@
 <script lang="ts">
 	import TextBlock from '$lib/components/atoms/TextBlock.svelte';
 	import HomeWrapper from '$lib/components/molecules/HomeWrapper.svelte';
-	import WelcomeCard from '$lib/components/atoms/WelcomeCard.svelte';
-	import { welcome } from '$lib/constants/constants';
+	// import WelcomeCard from '$lib/components/atoms/WelcomeCard.svelte';
+	// import { welcome } from '$lib/constants/constants';
 </script>
 
 <HomeWrapper>
@@ -10,14 +10,14 @@
 		<div class="text-container">
 			<TextBlock
 				heading={'You are welcome'}
-				content={'Whether you are a “rookie” or a “veteran” in the Open Source Realm, come join us on this big adventure.'}
+				content={"You're welcome to contribute to our current project <a href='https://torrust.com/' target='_blank'>torrust.com</a>"}
 			/>
 		</div>
-		<div class="card-container">
+		<!-- <div class="card-container">
 			{#each welcome as card}
 				<WelcomeCard {card} />
 			{/each}
-		</div>
+		</div> -->
 	</div>
 </HomeWrapper>
 
@@ -37,7 +37,7 @@
 		justify-content: center;
 	}
 
-	.card-container {
+	/* .card-container {
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
@@ -55,5 +55,5 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 		}
-	}
+	} */
 </style>

@@ -14,16 +14,19 @@
 			<AboutCard
 				title={'What makes us tick'}
 				content={'Things that define us as a team are our constant strive to learn and improve ourselves as people but also that we believe that all we do has an impact on others and our planet. We are convinced of technology’s great potential and value for individuals as well as companies.'}
+				extraContent={''}
 			/>
 			<AboutCard
 				title={'What we care for'}
 				content={'We care for people, transparency, learning, sharing of knowledge, the responsible use and free availability of software and technology in addition to nature.'}
+				extraContent={''}
 			/>
 		</div>
 		<div class="about-section-flex">
 			<AboutCard
 				title={'Where we come from'}
 				content={'We come from different professional backgrounds and countries. Most of us are developers but some of us are not. We all believe in software and its importance for our future.'}
+				extraContent={''}
 			/>
 			<img src="images/team.png" alt="nautilus team" />
 		</div>
@@ -32,24 +35,29 @@
 				title={'Working remotely around the globe'}
 				content={'We have team members from Australia, Germany and Spain working all remotely together from places as far as Hong Kong.'}
 				svg={Globe}
+				extraContent={''}
 			/>
 			<AboutCard
 				title={'A team that spans beyond definition'}
 				content={'We consider anyone participating in our projects part of our team, no matter if they are employees or contributors.'}
 				svg={MultipleUser}
+				extraContent={''}
 			/>
 			<AboutCard
 				title={'Collaborating with other companies'}
-				content={'We collaborate with other companies, such as Ethical Software Limited and Edataconsulting.'}
+				content={'We have collaborated with other companies, such as Ethical Software Limited and Edataconsulting.'}
 				svg={Handshake}
+				extraContent={''}
 			/>
 			<AboutCard
 				title={'Where we are'}
-				content={'We are at the first steps of our journey that will bring us great personal satisfaction and learning using and exploring the world of AI and pioneering our first Open Source Ecosystem.'}
+				content={"We're diving into the roots of decentralization by learning from protocols like BitTorrent. Instead of chasing trends, we're rebuilding what already works—peer-to-peer sharing, distributed indexes, and open standards—with modern tools and clean design."}
+				extraContent={"We're creating open-source services and libraries that improve the BitTorrent ecosystem, making it easier to host, share, and discover content without relying on central platforms."}
 			/>
 			<AboutCard
 				title={'Where we are headed'}
-				content={'We aim to bring the power of AI directly to the end user on his local desktop and to create a community around our vision. A vision where the community learns, teaches and drives the direction and evolution of solutions, and this without external influences.'}
+				content={"We're working to bring new life to proven decentralized tech. That means adding versioning, improving indexing, and building APIs that make it easier to create reliable peer-to-peer apps."}
+				extraContent={'Our mission is to help shape a more open, resilient internet—one where control stays with the community, not the server.'}
 			/>
 		</div>
 	</div>

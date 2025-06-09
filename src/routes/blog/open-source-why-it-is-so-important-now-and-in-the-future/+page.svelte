@@ -47,8 +47,10 @@
 		/>
 
 		<p>
-			The <a href="https://en.wikipedia.org/wiki/Open_source">open-source movement</a> began as a
-			reaction to this. Its main belief that
+			The <a href="https://en.wikipedia.org/wiki/Open_source" target="_blank"
+				>open-source movement</a
+			>
+			began as a reaction to this. Its main belief that
 			<strong>software should be freely available and collaborative</strong>. The idea being that
 			this approach does generate superior quality, stemming from a large community backing where
 			anybody can improve it. The result being an always <strong>improving code spiral</strong> where
@@ -67,9 +69,10 @@
 			Proof is that <strong
 				>probably all of our software is partially or exclusively based on Open-Source code</strong
 			>. To list just a few of the relevant software examples, these are the
-			<a href="https://en.wikipedia.org/wiki/Linux">Linux operating system</a>,
-			<a href="https://en.wikipedia.org/wiki/Android_(operating_system)">Android</a>, and
-			<a href="https://en.wikipedia.org/wiki/Firefox">Mozilla Firefox</a>.
+			<a href="https://en.wikipedia.org/wiki/Linux" target="_blank">Linux operating system</a>,
+			<a href="https://en.wikipedia.org/wiki/Android_(operating_system)" target="_blank">Android</a
+			>, and
+			<a href="https://en.wikipedia.org/wiki/Firefox" target="_blank">Mozilla Firefox</a>.
 		</p>
 
 		<p>
@@ -81,12 +84,13 @@
 			<li>
 				<a
 					href="https://www.zdnet.com/article/open-source-software-is-it-about-free-or-is-it-about-freedom/"
-					>Open source matters, and it’s about more than just free software</a
+					target="_blank">Open source matters, and it’s about more than just free software</a
 				>
 			</li>
 			<li>
 				<a
 					href="https://www.zdnet.com/article/open-source-nine-out-of-ten-companies-use-it-but-how-much-is-it-really-worth/"
+					target="_blank"
 					>Open-source software: Nine out of 10 companies use it, but how much is it really worth?</a
 				>
 			</li>
@@ -169,7 +173,7 @@
 		<p>
 			<a
 				href="https://www.forbes.com/sites/michaelperegrine/2022/04/26/the-looming-board-challenge-oversight-of-artificial-intelligence/?sh=371d436c287b"
-				>Here is a good article</a
+				target="_blank">Here is a good article</a
 			> from Forbes on these challenges.
 		</p>
 
@@ -198,10 +202,10 @@
 
 		<ul>
 			<li>
-				<a href="https://github.com/Nautilus-Cyberneering">GitHub repositories</a>
+				<a href="https://github.com/Nautilus-Cyberneering" target="_blank">GitHub repositories</a>
 			</li>
 			<li>
-				<a href="https://nautilus-cyberneering.de/projects/">Projects overview</a>
+				<a href="https://nautilus-cyberneering.dev/" target="_blank">Projects overview</a>
 			</li>
 		</ul>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />

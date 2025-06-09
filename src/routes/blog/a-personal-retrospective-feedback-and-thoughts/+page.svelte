@@ -262,12 +262,13 @@
 				Project Urls
 				<ul>
 					<li>
-						<a href="https://github.com/boken-engine/boken-engine"
+						<a href="https://github.com/boken-engine/boken-engine" target="_blank"
 							>https://github.com/boken-engine/boken-engine</a
 						>
 					</li>
 					<li>
-						<a href="https://www.boken-engine.dev/">https://www.boken-engine.dev/</a>
+						<a href="https://www.boken-engine.dev/" target="_blank">https://www.boken-engine.dev/</a
+						>
 					</li>
 				</ul>
 			</li>
@@ -324,12 +325,12 @@
 				Project URL
 				<ul>
 					<li>
-						<a href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood"
+						<a href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood" target="_blank"
 							>https://github.com/boken-engine/iakkai-saga-the-curse-of-blood</a
 						>
 					</li>
 					<li>
-						<a href="https://apps.apple.com/app/id1580924283#?platform=ipad"
+						<a href="https://apps.apple.com/app/id1580924283#?platform=ipad" target="_blank"
 							>https://apps.apple.com/app/id1580924283#?platform=ipad</a
 						>
 					</li>
@@ -388,7 +389,7 @@
 				Project URL
 				<ul>
 					<li>
-						<a href="https://github.com/Nautilus-Cyberneering/chinese-ideographs"
+						<a href="https://github.com/Nautilus-Cyberneering/chinese-ideographs" target="_blank"
 							>https://github.com/Nautilus-Cyberneering/chinese-ideographs</a
 						>
 					</li>
@@ -432,12 +433,12 @@
 				Project URLs
 				<ul>
 					<li>
-						<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian"
+						<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian" target="_blank"
 							>https://github.com/Nautilus-Cyberneering/nautilus-librarian</a
 						>
 					</li>
 					<li>
-						<a href="https://nautilus-cyberneering.github.io/nautilus-librarian/"
+						<a href="https://nautilus-cyberneering.github.io/nautilus-librarian/" target="_blank"
 							>https://nautilus-cyberneering.github.io/nautilus-librarian/</a
 						>
 					</li>
@@ -494,12 +495,12 @@
 				Project URLs
 				<ul>
 					<li>
-						<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian"
+						<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian" target="_blank"
 							>https://github.com/Nautilus-Cyberneering/nautilus-librarian</a
 						>
 					</li>
 					<li>
-						<a href="https://nautilus-cyberneering.github.io/nautilus-librarian/"
+						<a href="https://nautilus-cyberneering.github.io/nautilus-librarian/" target="_blank"
 							>https://nautilus-cyberneering.github.io/nautilus-librarian/</a
 						>
 					</li>

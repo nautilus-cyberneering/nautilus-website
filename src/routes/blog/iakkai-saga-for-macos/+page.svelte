@@ -19,7 +19,7 @@
 		<p>
 			Although you can easily build and run the <a
 				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood"
-				>Iakkai Saga demo project</a
+				target="_blank">Iakkai Saga demo project</a
 			> on your macOS, we wanted to have a simpler way to execute it. We wanted to show what you can
 			build using Boken Engine even before knowing how to do it.
 		</p>
@@ -27,13 +27,15 @@
 		<p>
 			That’s why we decided to build a macOS version. If you have an iOS device the simplest way is
 			to install the Iakkai iOS App from the Apple App Store: <a
-				href="https://apps.apple.com/app/id1580924283#?platform=ipad">Iakkai</a
+				href="https://apps.apple.com/app/id1580924283#?platform=ipad"
+				target="_blank">Iakkai</a
 			>.
 		</p>
 
 		<p>
 			If you do not have an iOS device you can <a
 				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood/releases/download/1.0/iakkai-1.0.zip"
+				target="_blank"
 				download><button>download Iakkai</button></a
 			>
 			and install it as a simple macOS app. You only need to double click to uncompress the file and
@@ -62,7 +64,7 @@
 		<p>
 			This task was surprisingly easy. We started reading Apple documentation about <a
 				href="https://developer.apple.com/documentation/apple-silicon/running-your-ios-apps-in-macos"
-				>running iOS apps on macOS</a
+				target="_blank">running iOS apps on macOS</a
 			>. Since Boken Engine does not have any special dependency on phone features we only had to
 			add some new xcode settings and build for macOS.
 		</p>
@@ -75,7 +77,7 @@
 		<p>
 			Apple has developed a project called the <a
 				href="https://developer.apple.com/design/human-interface-guidelines/mac-catalyst"
-				>Mac Catalyst</a
+				target="_blank">Mac Catalyst</a
 			>. As they promise “you can make a Mac version of your iPad app”. Basically they use the same
 			libraries under the hood whether you build for iOS or macOS.
 		</p>
@@ -148,7 +150,7 @@
 			xcode will magically handle all the process related to signing with your certificates. At the
 			end of the process you have to submit the app to be <a
 				href="https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution"
-				>notarized</a
+				target="_blank">notarized</a
 			>. As Apple says:
 		</p>
 
@@ -162,7 +164,9 @@
 		<p>
 			After some minutes (less than 10) you will receive an email and you can continue the process.
 			Once done you can then export the application distributable and run it on any macOS. The
-			distributable is an <a href="https://en.wikipedia.org/wiki/Bundle_(macOS)">macOS bundle</a> (folder).
+			distributable is an <a href="https://en.wikipedia.org/wiki/Bundle_(macOS)" target="_blank"
+				>macOS bundle</a
+			> (folder).
 		</p>
 
 		<p>
@@ -200,13 +204,13 @@
 			<li>
 				<a
 					href="https://developer.apple.com/documentation/apple-silicon/running-your-ios-apps-in-macos"
-					>Running you iOS app on macOS</a
+					target="_blank">Running you iOS app on macOS</a
 				>
 			</li>
 			<li>
 				<a
 					href="https://developer.apple.com/documentation/uikit/creating-a-mac-version-of-your-ipad-app"
-					>Creating a Mac Version of Your iPad App</a
+					target="_blank">Creating a Mac Version of Your iPad App</a
 				>
 			</li>
 		</ul>
@@ -215,34 +219,34 @@
 
 		<ul>
 			<li>
-				<a href="https://developer.apple.com/developer-id"
+				<a href="https://developer.apple.com/developer-id" target="_blank"
 					>Distributing apps outside the Mac App Store</a
 				>
 			</li>
 			<li>
 				<a
 					href="https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution"
-					>Notarizing macOS software before distribution</a
+					target="_blank">Notarizing macOS software before distribution</a
 				>
 			</li>
 			<li>
-				<a href="https://www.appcoda.com/distribute-macos-apps"
+				<a href="https://www.appcoda.com/distribute-macos-apps" target="_blank"
 					>Beyond the Sandbox: Signing and distributing macOS apps outside of the Mac App Store</a
 				>
 			</li>
 			<li>
 				<a
 					href="https://developer.apple.com/library/archive/documentation/Porting/Conceptual/PortingUnix/distributing/distibuting.html"
-					>Create dmg distribution file</a
+					target="_blank">Create dmg distribution file</a
 				>
 			</li>
 			<li>
-				<a href="https://developer.apple.com/forums/thread/128166"
+				<a href="https://developer.apple.com/forums/thread/128166" target="_blank"
 					>3 options for distributing macOS apps</a
 				>
 			</li>
 			<li>
-				<a href="https://developer.apple.com/forums/thread/128166"
+				<a href="https://developer.apple.com/forums/thread/128166" target="_blank"
 					>Signing a Mac Product For Distribution</a
 				>
 			</li>

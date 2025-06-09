@@ -22,8 +22,8 @@
 			methodical in his approach. We have had the fortune to review his retrospective report that
 			covers the last seventeen months of his contributions, giving Nautilus Cyberneering the rare
 			and valuable opportunity to consider <a
-				href="https://nautilus-cyberneering.de/2022/06/30/a-personal-retrospective-feedback-and-thoughts/"
-				>this honest feedback</a
+				href="https://nautilus-cyberneering.dev/blog/a-personal-retrospective-feedback-and-thoughts"
+				target="_blank">this honest feedback</a
 			>.
 		</p>
 
@@ -58,9 +58,10 @@
 			Successfully, this led to the open-source proof of concept: <strong
 				>“Iakkai – The Curse of Blood”</strong
 			>
-			being published onto <a href="https://apps.apple.com/app/id1580924283">Apple App-Store</a>,
-			running our open-source game engine:
-			<a href="https://github.com/boken-engine/boken-engine">“Boken Engine”</a>.
+			being published onto
+			<a href="https://apps.apple.com/app/id1580924283" target="_blank">Apple App-Store</a>, running
+			our open-source game engine:
+			<a href="https://github.com/boken-engine/boken-engine" target="_blank">“Boken Engine”</a>.
 		</p>
 
 		<div class="images">
@@ -96,7 +97,8 @@
 
 		<p>
 			The first version has recently been released <a
-				href="https://github.com/Nautilus-Cyberneering/git-queue">here</a
+				href="https://github.com/Nautilus-Cyberneering/git-queue"
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -116,8 +118,8 @@
 
 		<p>
 			Before finishing his time with Nautilus, Yeray wrote a <a
-				href="https://nautilus-cyberneering.de/2022/06/30/a-personal-retrospective-feedback-and-thoughts/"
-				>retrospective report</a
+				href="https://nautilus-cyberneering.dev/blog/a-personal-retrospective-feedback-and-thoughts"
+				target="_blank">retrospective report</a
 			>. This document gave Nautilus the valuable and rare opportunity to respond to honest
 			feedback.
 		</p>
