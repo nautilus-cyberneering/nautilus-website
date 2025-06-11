@@ -17,8 +17,9 @@
 		categories={currentPost.categories}
 	>
 		<p>
-			The company that I currently work for, <a href="https://nautilus-cyberneering.de/"
-				>Nautilus Cyberneering</a
+			The company that I currently work for, <a
+				href="https://nautilus-cyberneering.dev/"
+				target="_blank">Nautilus Cyberneering</a
 			>, has a 5 year project for which the so called
 			<strong>Natural Language Processing AI</strong> is key. We essentially want to create a virtual
 			artificial intelligence assistant that you can run from your own local computer and communicate
@@ -54,17 +55,18 @@
 		</p>
 
 		<p>
-			Some good friends of mine were currently using <a href="https://openai.com/">GPT-3</a>. They
-			told me that to them it was another employee in their company. Knowing them I knew it was no
-			overstatement, when they told me that they used it for code review and research. Especially
-			since their business also happens to be in machine learning, AI and automation solution
-			consulting. Consequently, I became even more interested.
+			Some good friends of mine were currently using <a href="https://openai.com/" target="_blank"
+				>GPT-3</a
+			>. They told me that to them it was another employee in their company. Knowing them I knew it
+			was no overstatement, when they told me that they used it for code review and research.
+			Especially since their business also happens to be in machine learning, AI and automation
+			solution consulting. Consequently, I became even more interested.
 		</p>
 
 		<p>
 			However, if you keep on reading please let me first start by saying that I do not consider
 			myself an expert in this field, so please forgive any mistakes I may make during this post.
-			Still you may find it interestint if you are also new to the topic.
+			Still you may find it interesting if you are also new to the topic.
 		</p>
 
 		<p>In this post I will do the following:</p>
@@ -90,14 +92,18 @@
 			language data. The goal is a computer capable of “understanding” the contents of documents,
 			including the contextual nuances of the language within them.”
 		</p>
-		<a href="https://en.wikipedia.org/wiki/Natural_language_processing">wikipedia.org</a>
+		<a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank"
+			>wikipedia.org</a
+		>
 
 		<h3>IBM</h3>
 		<p>
 			“Natural language processing strives to build machines that understand and respond to text or
 			voice data—and respond with text or speech of their own—in much the same way humans do.”
 		</p>
-		<a href="https://www.ibm.com/think/topics/natural-language-processing">ibm.com</a>
+		<a href="https://www.ibm.com/think/topics/natural-language-processing" target="_blank"
+			>ibm.com</a
+		>
 
 		<p>So to sum up:</p>
 		<p>
@@ -138,7 +144,8 @@
 
 		<p>
 			If you are curious you can read more <a
-				href="https://en.wikipedia.org/wiki/Natural_language_processing">here</a
+				href="https://en.wikipedia.org/wiki/Natural_language_processing"
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -147,8 +154,9 @@
 			Creating a single working NLP model is difficult. Evidently, it takes a lot of effort. For
 			many years different approaches came into existence to optimize and test this process.
 			Research in this field has been going on for over half a century. You can get a brief overview
-			of the past models in <a href="https://en.wikipedia.org/wiki/Natural_language_processing"
-				>Wikipedia</a
+			of the past models in <a
+				href="https://en.wikipedia.org/wiki/Natural_language_processing"
+				target="_blank">Wikipedia</a
 			>.
 		</p>
 
@@ -167,7 +175,8 @@
 			A system is set up to automatically discover and learn through prepared sets of labeled or
 			unlabeled data. It essentially learns to recognize and associate features, common patterns,
 			within a context and make associations of meaning. For more information <a
-				href="https://en.wikipedia.org/wiki/Feature_learning">here</a
+				href="https://en.wikipedia.org/wiki/Feature_learning"
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -187,7 +196,8 @@
 			phase. The nodes pass information through them. The data that you input into the system
 			proceeds through this network of decision rules and progresses through the different layers
 			like a decision tree. For more information <a
-				href="https://en.wikipedia.org/wiki/Deep_learning">here</a
+				href="https://en.wikipedia.org/wiki/Deep_learning"
+				target="_blank">here</a
 			>.
 		</p>
 
@@ -224,9 +234,9 @@
 		</p>
 
 		<p>
-			The model was developed by <a href="https://openai.com/">OPENAI</a>. It started out as an open
-			source project; however, nowadays its code base has been licensed out exclusively to
-			Microsoft.
+			The model was developed by <a href="https://openai.com/" target="_blank">OPENAI</a>. It
+			started out as an open source project; however, nowadays its code base has been licensed out
+			exclusively to Microsoft.
 		</p>
 
 		<p>
@@ -270,11 +280,11 @@
 			<li>
 				An in depth article by Lambda an AI infrastructure company providing computation: <a
 					href="https://lambdalabs.com/blog/demystifying-gpt-3/"
-					>https://lambdalabs.com/blog/demystifying-gpt-3/</a
+					target="_blank">https://lambdalabs.com/blog/demystifying-gpt-3/</a
 				>
 			</li>
 			<li>
-				A link to their API if you are interested: <a href="https://openai.com/api/"
+				A link to their API if you are interested: <a href="https://openai.com/api/" target="_blank"
 					>https://openai.com/api/</a
 				>
 			</li>
@@ -282,8 +292,9 @@
 
 		<h3>GPT-J, GPT-Neo & GPT-NeoX</h3>
 		<p>
-			These three models have been developed by <a href="https://www.eleuther.ai/">EleutherAI</a>.
-			It is an <strong>Open-Source</strong> project. It is a grassroots collective of researchers
+			These three models have been developed by <a href="https://www.eleuther.ai/" target="_blank"
+				>EleutherAI</a
+			>. It is an <strong>Open-Source</strong> project. It is a grassroots collective of researchers
 			working on open-source AI research. The models can from what I read be considered
 			<strong>generalist</strong> models good for most of the purposes.
 		</p>
@@ -353,12 +364,13 @@
 
 		<p>
 			Here is the link to the online test instance where I got the responses from if you are
-			interested: <a href="https://6b.eleuther.ai/">https://6b.eleuther.ai/</a>
+			interested: <a href="https://6b.eleuther.ai/" target="_blank">https://6b.eleuther.ai/</a>
 		</p>
 
 		<p>
-			On the other hand you also can get paid access at <a href="https://goose.ai/">goose.ai</a> and
-			test the different EleutherAI models at very reasonable prices.
+			On the other hand you also can get paid access at <a href="https://goose.ai/" target="_blank"
+				>goose.ai</a
+			> and test the different EleutherAI models at very reasonable prices.
 		</p>
 
 		<h3>Wu Dao 2.0 – China’s Monster Natural Language Processing AI</h3>
@@ -418,19 +430,23 @@
 		<h3>Jasper</h3>
 		<p>This is a tool that I think many digital copy writers will find handy to ease their work.</p>
 
-		<a href="https://www.jasper.ai/">Jasper AI</a>
+		<a href="https://www.jasper.ai/" target="_blank">Jasper AI</a>
 
 		<h3>Thoughts</h3>
 		<p>Same applies to this solution which helps you speed up your tweets in your own style.</p>
-		<a href="https://thoughts.sushant-kumar.com/">https://thoughts.sushant-kumar.com/</a>
+		<a href="https://thoughts.sushant-kumar.com/" target="_blank"
+			>https://thoughts.sushant-kumar.com/</a
+		>
 
 		<h3>DeepGenX</h3>
 		<p>This is a solution for developers to write code faster and easier.</p>
-		<a href="https://www.deepgenx.com/">https://www.deepgenx.com/</a>
+		<a href="https://www.deepgenx.com/" target="_blank">https://www.deepgenx.com/</a>
 
 		<p>
-			Nevertheless, this is just three from many more. <a href="https://gpt3demo.com/">Here</a> is a
-			more extensive list of such solutions.
+			Nevertheless, this is just three from many more. <a
+				href="https://gpt3demo.com/"
+				target="_blank">Here</a
+			> is a more extensive list of such solutions.
 		</p>
 
 		<h2>Final Reflections</h2>
@@ -443,7 +459,8 @@
 			OpenAi, for instance decided when they developed their GPT-2 model to not make it fully
 			available due to its potential to create fake news with it. In addition, later OpenAi went one
 			step further and called out to create a general collaboration on AI safety in <a
-				href="https://openai.com/index/cooperation-on-safety/">this post</a
+				href="https://openai.com/index/cooperation-on-safety/"
+				target="_blank">this post</a
 			>.
 		</p>
 
@@ -459,7 +476,7 @@
 			AI has only started and we are still to see much more of it in the coming years. If you want
 			to read another interesting example of Natural Language Processing AI at work, <a
 				href="https://constantinbosse.com/2021/11/09/good-read-ai-summarizing-books/"
-				>here is another post of mine</a
+				target="_blank">here is another post of mine</a
 			>.
 		</p>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />

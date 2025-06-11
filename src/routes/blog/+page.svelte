@@ -69,6 +69,8 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 24px;
 		width: 100%;
+		margin: 0 auto;
+		max-width: 1200px;
 		flex-grow: 1;
 
 		@include bp.for-phone-only {

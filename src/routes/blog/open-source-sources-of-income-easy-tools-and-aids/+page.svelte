@@ -193,16 +193,18 @@
 
 		<ul>
 			<li>
-				<a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a>
+				<a href="https://summerofcode.withgoogle.com/" target="_blank">Google Summer of Code</a>
 			</li>
 			<li>
-				<a href="https://developers.google.com/season-of-docs">Season of Docs</a>
+				<a href="https://developers.google.com/season-of-docs" target="_blank">Season of Docs</a>
 			</li>
 			<li>
-				<a href="https://developers.google.com/season-of-docs">Open Source Security Foundation</a>
+				<a href="https://developers.google.com/season-of-docs" target="_blank"
+					>Open Source Security Foundation</a
+				>
 			</li>
 			<li>
-				<a href="https://nlnet.nl/">NLNet</a>
+				<a href="https://nlnet.nl/" target="_blank">NLNet</a>
 			</li>
 		</ul>
 
@@ -316,16 +318,17 @@
 		<p>
 			Examples of the first are <a
 				href="https://docs.google.com/document/d/17w7Wz614gXB8zqEQM8VOwjIzVRvXnL8ISTYQDBDOYEs/edit?tab=t.0#heading=h.4ht9aj2cw09r"
-				>Patreon.com</a
-			>, <a href="https://ko-fi.com/">Ko-fi.com</a> and
-			<a href="https://liberapay.com/">Liberapay.com</a>. Examples of the second are
-			<a href="https://en.tipeee.com/">Tipee.com</a>
-			and <a href="https://buymeacoffee.com/">buymeacoffee.com</a>.
+				target="_blank">Patreon.com</a
+			>, <a href="https://ko-fi.com/" target="_blank">Ko-fi.com</a> and
+			<a href="https://liberapay.com/" target="_blank">Liberapay.com</a>. Examples of the second are
+			<a href="https://en.tipeee.com/" target="_blank">Tipee.com</a>
+			and <a href="https://buymeacoffee.com/" target="_blank">buymeacoffee.com</a>.
 		</p>
 
 		<p>
-			Then you find a full service solution run by <a href="https://opencollective.com/"
-				>OpenCollective.com</a
+			Then you find a full service solution run by <a
+				href="https://opencollective.com/"
+				target="_blank">OpenCollective.com</a
 			> in the (USA) where they will deal with all the necessary paperwork, legal setup etc. and you
 			can function through them.
 		</p>
@@ -333,7 +336,7 @@
 		<p>Then there is GitHub’s solution that they are rolling out right now:</p>
 		<ul>
 			<li>
-				<a href="https://github.com/sponsors">https://github.com/sponsors</a>
+				<a href="https://github.com/sponsors" target="_blank">https://github.com/sponsors</a>
 			</li>
 		</ul>
 
@@ -349,7 +352,7 @@
 
 		<ul>
 			<li>
-				<a href="https://giveth.io/es">Giveth.io</a>
+				<a href="https://giveth.io/es" target="_blank">Giveth.io</a>
 			</li>
 		</ul>
 
@@ -369,13 +372,14 @@
 
 		<ul>
 			<li>
-				<a href="https://www.gitcoin.co/">Gitcoin.co</a>
+				<a href="https://www.gitcoin.co/" target="_blank">Gitcoin.co</a>
 			</li>
 		</ul>
 
 		<p>
-			Another slightly different approach is the one of <a href="https://www.gitcoin.co/"
-				>Gitcoin.co.</a
+			Another slightly different approach is the one of <a
+				href="https://www.gitcoin.co/"
+				target="_blank">Gitcoin.co.</a
 			> They come in the form of Grants so to say. You create a project and description where you include
 			links etc and people can fund you with money which then gets replicated via a fund through a quadratic
 			funding formula.
@@ -384,8 +388,8 @@
 		<p>
 			Essentially the more people fund you with amounts, no matter the size, the more funds you
 			receive from a pool of grants for open source projects on the platform. These grants have
-			different rounds during the year. <a href="https://gitcoin.co/grants/">Here</a> is a link to this
-			product.
+			different rounds during the year. <a href="https://gitcoin.co/grants/" target="_blank">Here</a
+			> is a link to this product.
 		</p>
 
 		<figure>
@@ -401,7 +405,7 @@
 		<h3>Bounties for Bugs and Features</h3>
 		<ul>
 			<li>
-				<a href="https://www.blocklancer.net/">Blocklancer.net</a>
+				<a href="https://www.blocklancer.net/" target="_blank">Blocklancer.net</a>
 			</li>
 		</ul>
 
@@ -422,7 +426,7 @@
 
 		<ul>
 			<li>
-				<a href="https://issuehunt.io/">Issuehunt.io</a>
+				<a href="https://issuehunt.io/" target="_blank">Issuehunt.io</a>
 			</li>
 		</ul>
 
@@ -431,7 +435,8 @@
 			repositories and could install an app on your repository. This then allows you to be paid for
 			issues which were requested to be solved. Unfortunately this platform seems to be inactive
 			though one can log in and check it out as to how it functions. Their <a
-				href="https://www.youtube.com/channel/UCZXIlLDDWul-DoRD7wuvA-g">video tutorials</a
+				href="https://www.youtube.com/channel/UCZXIlLDDWul-DoRD7wuvA-g"
+				target="_blank">video tutorials</a
 			> also give you an idea, but they seem outdated.
 		</p>
 
@@ -445,7 +450,7 @@
 
 		<ul>
 			<li>
-				<a href="https://www.gitcoin.co/">Gitcoin.co</a>
+				<a href="https://www.gitcoin.co/" target="_blank">Gitcoin.co</a>
 			</li>
 		</ul>
 
@@ -469,7 +474,7 @@
 		<h3>Tokenization (DevProtocol, SourceCred, CommonStack)</h3>
 		<ul>
 			<li>
-				<a href="https://sourcecred.io/">Sourcecred.io</a>
+				<a href="https://sourcecred.io/" target="_blank">Sourcecred.io</a>
 			</li>
 		</ul>
 
@@ -509,7 +514,7 @@
 
 		<ul>
 			<li>
-				<a href="https://www.devprotocol.xyz/">DevProtocol</a>
+				<a href="https://www.devprotocol.xyz/" target="_blank">DevProtocol</a>
 			</li>
 		</ul>
 
@@ -543,7 +548,7 @@
 
 		<ul>
 			<li>
-				<a href="https://www.commonsstack.org/">CommonsStack</a>
+				<a href="https://www.commonsstack.org/" target="_blank">CommonsStack</a>
 			</li>
 		</ul>
 
@@ -572,7 +577,8 @@
 		<p>
 			Commons standing for your Open Source project and the common good for the community that it
 			represents. The idea from what I have understood is that of creating <a
-				href="https://www.investopedia.com/tech/what-dao/">DAO</a
+				href="https://www.investopedia.com/tech/what-dao/"
+				target="_blank">DAO</a
 			> (Decentralized Autonomous Organization) for each Open Source project.
 		</p>
 
@@ -592,18 +598,20 @@
 
 		<ul>
 			<li>
-				<a href="https://www.kickstarter.com/">Kickstarter.com</a>
+				<a href="https://www.kickstarter.com/" target="_blank">Kickstarter.com</a>
 			</li>
 			<li>
-				<a href="https://www.indiegogo.com/">Indiegogo.com</a>
+				<a href="https://www.indiegogo.com/" target="_blank">Indiegogo.com</a>
 			</li>
 			<li>
-				<a href="https://crowdfunding.lfx.linuxfoundation.org/">Linux Foundation Crowdfunding</a>
+				<a href="https://crowdfunding.lfx.linuxfoundation.org/" target="_blank"
+					>Linux Foundation Crowdfunding</a
+				>
 			</li>
 			<li>
 				<a
 					href="https://github.com/Nautilus-Cyberneering/opensource/blob/main/docs/files/OSS%20Funding%20Options.xlsx%20-%20Filtered%20List%20of%20Options.pdf"
-					>Here is the link to the complete list.</a
+					target="_blank">Here is the link to the complete list.</a
 				>
 			</li>
 		</ul>
@@ -633,10 +641,11 @@
 
 		<p>
 			If you are interested in the Open Source Guide repository we are creating <a
-				href="https://nautilus-cyberneering.github.io/opensource/">here</a
+				href="https://nautilus-cyberneering.github.io/opensource/"
+				target="_blank">here</a
 			>
 			is the link and if you are interested in what projects we are currently working on,
-			<a href="https://nautilus-cyberneering.de/projects/">here</a>.
+			<a href="https://nautilus-cyberneering.dev/" target="_blank">here</a>.
 		</p>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>

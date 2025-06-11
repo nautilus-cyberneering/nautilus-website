@@ -30,11 +30,11 @@
 		<p>
 			You will learn about the technology how it works without much technical “fuzz” and why you can
 			benefit from it, in addition to how it differs from your standard file sharing solutions.
-			Thereafter, I will talk about <a href="https://torrust.com/">Torrust</a>, the new open source
-			project we have started working with.
+			Thereafter, I will talk about <a href="https://torrust.com/" target="_blank">Torrust</a>, the
+			new open source project we have started working with.
 		</p>
 		<p>
-			About <a href="https://torrust.com/">Torrust</a> you will learn four things:
+			About <a href="https://torrust.com/" target="_blank">Torrust</a> you will learn four things:
 		</p>
 		<ol>
 			<li>How it is different from other solutions</li>
@@ -149,17 +149,22 @@
 		<p>If you want to read a little bit more about these uses:</p>
 		<ul>
 			<li>
-				<a href="https://spectrum.ieee.org/how-torrents-can-benefit-businesses-and-users"
-					>https://spectrum.ieee.org/how-torrents-can-benefit-businesses-and-users</a
+				<a
+					href="https://spectrum.ieee.org/how-torrents-can-benefit-businesses-and-users"
+					target="_blank">https://spectrum.ieee.org/how-torrents-can-benefit-businesses-and-users</a
 				>
 			</li>
 			<li>
-				<a href="https://www.makeuseof.com/tag/8-legal-uses-for-bittorrent-youd-be-surprised/"
+				<a
+					href="https://www.makeuseof.com/tag/8-legal-uses-for-bittorrent-youd-be-surprised/"
+					target="_blank"
 					>https://www.makeuseof.com/tag/8-legal-uses-for-bittorrent-youd-be-surprised/</a
 				>
 			</li>
 			<li>
-				<a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTorrent.html"
+				<a
+					href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTorrent.html"
+					target="_blank"
 					>https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTorrent.html</a
 				>
 			</li>
@@ -177,21 +182,21 @@
 			For one, torrents are open source. This means that anyone can develop software that uses the
 			torrent protocol, and there are <strong>no licensing fees</strong> or restrictions on who can
 			use it. This makes torrents a great choice for open source projects that need to distribute
-			large files which brings us to <a href="https://torrust.com/">Torrust</a>.
+			large files which brings us to <a href="https://torrust.com/" target="_blank">Torrust</a>.
 		</p>
 
 		<h2>Torrust – New Open Source Torrent Solution written in Rust</h2>
 		<p>
-			<a href="https://torrust.com/">Torrust</a> is a <a href="https://www.rust-lang.org/">Rust</a> implementation
-			of the torrent protocol. It has the different elements usually found in Torrent Software solutions
-			which are:
+			<a href="https://torrust.com/" target="_blank">Torrust</a> is a
+			<a href="https://www.rust-lang.org/" target="_blank">Rust</a> implementation of the torrent protocol.
+			It has the different elements usually found in Torrent Software solutions which are:
 		</p>
 		<ul>
 			<li>
-				<a href="https://github.com/torrust/torrust-index">Index</a>
+				<a href="https://github.com/torrust/torrust-index" target="_blank">Index</a>
 			</li>
 			<li>
-				<a href="https://github.com/torrust/torrust-tracker">Tracker</a>
+				<a href="https://github.com/torrust/torrust-tracker" target="_blank">Tracker</a>
 			</li>
 		</ul>
 
@@ -214,18 +219,20 @@
 		<p>Also if you are curious about <strong>Rust</strong> here are some articles on it:</p>
 		<ul>
 			<li>
-				<a href="https://thenewstack.io/safer-future-rust/"
+				<a href="https://thenewstack.io/safer-future-rust/" target="_blank"
 					>How Rust Compares to Other Programming Languages</a
 				>
 			</li>
 			<li>
-				<a href="https://blog.logrocket.com/rust-vs-python-could-rust-replace-python/"
-					>Rust vs. Python: Why Rust is gaining in popularity</a
+				<a
+					href="https://blog.logrocket.com/rust-vs-python-could-rust-replace-python/"
+					target="_blank">Rust vs. Python: Why Rust is gaining in popularity</a
 				>
 			</li>
 			<li>
-				<a href="https://thenewstack.io/rust-by-the-numbers-the-rust-programming-language-in-2021/"
-					>Rust by the Numbers: The Rust Programming Language in 2021</a
+				<a
+					href="https://thenewstack.io/rust-by-the-numbers-the-rust-programming-language-in-2021/"
+					target="_blank">Rust by the Numbers: The Rust Programming Language in 2021</a
 				>
 			</li>
 		</ul>
@@ -275,16 +282,17 @@
 		<h2>The team behind it</h2>
 		<p>
 			The team behind <strong>Torrust</strong> at the moment consists of
-			<a href="https://github.com/mickvandijke">Mick van Dijke</a>, several voluntary contributors
-			and the <strong>Nautilus Cyberneering</strong> team which incorporates software security architects,
-			senior developers and other freelance collaborators like UX / UI designers etc.
+			<a href="https://github.com/mickvandijke" target="_blank">Mick van Dijke</a>, several
+			voluntary contributors and the <strong>Nautilus Cyberneering</strong> team which incorporates software
+			security architects, senior developers and other freelance collaborators like UX / UI designers
+			etc.
 		</p>
 		<p>
 			The <strong>Nautilus Cyberneering</strong> team’s experience during the past year has been to
 			build up the necessary skills to automate git code repositories to implement versioning of
 			data sets used in Machine Learning and Data Science. More about the
 			<strong>Nautilus Cyberneering</strong>
-			team <a href="https://nautilus-cyberneering.de/team/">here</a>.
+			team <a href="https://nautilus-cyberneering.dev/about/" target="_blank">here</a>.
 		</p>
 
 		<h2>Torrents Potential use case in the field of data science</h2>
@@ -327,14 +335,19 @@
 				/>
 				<ul>
 					<li>
-						<a href="https://nautilus-cyberneering.de/"> Pioneering OS Ecosystems </a>
+						<a href="https://nautilus-cyberneering.dev/" target="_blank">
+							Pioneering OS Ecosystems
+						</a>
 					</li>
 					<li>
-						<a href="https://github.com/Nautilus-Cyberneering"> GitHub Organization </a>
+						<a href="https://github.com/Nautilus-Cyberneering" target="_blank">
+							GitHub Organization
+						</a>
 					</li>
 					<li>
 						<a
 							href="https://github.com/Nautilus-Cyberneering/.github/blob/main/default_repository_documentation/CONTRIBUTING.md"
+							target="_blank"
 						>
 							Contributing to Nautilus
 						</a>
@@ -348,13 +361,16 @@
 				/>
 				<ul>
 					<li>
-						<a href="https://torrust.com/"> Torrust Website </a>
+						<a href="https://torrust.com/" target="_blank"> Torrust Website </a>
 					</li>
 					<li>
-						<a href="https://github.com/torrust"> GitHub Organization </a>
+						<a href="https://github.com/torrust" target="_blank"> GitHub Organization </a>
 					</li>
 					<li>
-						<a href="https://github.com/torrust/.github/blob/main/info/contributing.md">
+						<a
+							href="https://github.com/torrust/.github/blob/main/info/contributing.md"
+							target="_blank"
+						>
 							Contributing to Torrust
 						</a>
 					</li>

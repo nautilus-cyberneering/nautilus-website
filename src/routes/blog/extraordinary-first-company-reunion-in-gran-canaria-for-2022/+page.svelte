@@ -62,20 +62,23 @@
 		<ul>
 			<li>The relevance of Blockchain for our project and its upcoming challenges.</li>
 			<li>
-				How <a href="https://en.wikipedia.org/wiki/Blockchain">Blockchain</a> works and why Blockchain
-				is important for AI development.
+				How <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank">Blockchain</a> works and
+				why Blockchain is important for AI development.
 			</li>
 			<li>
-				How <a href="https://en.wikipedia.org/wiki/Bitcoin">Bitcoin</a> works and its relevance as an
-				example of Blockchain implementation for the economy.
+				How <a href="https://en.wikipedia.org/wiki/Bitcoin" target="_blank">Bitcoin</a> works and its
+				relevance as an example of Blockchain implementation for the economy.
 			</li>
 			<li>Bitcoin’s development process and which elements make sense to emulate for us.</li>
 			<li>
-				Our Spin-off projects’ (<a href="https://github.com/Nautilus-Cyberneering/git-queue"
-					>Git-Queue</a
+				Our Spin-off projects’ (<a
+					href="https://github.com/Nautilus-Cyberneering/git-queue"
+					target="_blank">Git-Queue</a
 				>
-				and <a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian">Librarian</a>)
-				usefulness to other repositories and which things to focus on.
+				and
+				<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian" target="_blank"
+					>Librarian</a
+				>) usefulness to other repositories and which things to focus on.
 			</li>
 			<li>Our hiring and community building plans.</li>
 			<li>The relevance of Open-Source to AI and software development overall.</li>
@@ -301,7 +304,9 @@
 
 		<p>
 			We look forward to the next meeting in September!!! If you want to know about how to become
-			part of our team, <a href="https://nautilus-cyberneering.de/team/">check this out</a>.
+			part of our team, <a href="https://nautilus-cyberneering.dev/about/" target="_blank"
+				>check this out</a
+			>.
 		</p>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />
 	</Post>

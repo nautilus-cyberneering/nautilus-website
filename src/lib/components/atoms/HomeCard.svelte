@@ -1,6 +1,15 @@
 <script lang="ts">
 	import TagList from '$lib/components/molecules/TagList.svelte';
-	let { title, content, svg, tags = [] } = $props();
+	let {
+		title,
+		content,
+		svg,
+		tags = [],
+		link1 = '',
+		link1Text = '',
+		link2 = '',
+		link2Text = ''
+	} = $props();
 	const SvgComponent = svg;
 </script>
 
@@ -14,6 +23,16 @@
 	<p>{content}</p>
 	{#if tags.length}
 		<TagList {tags} />
+	{/if}
+	{#if link1 && link2}
+		<div class="links">
+			<div>
+				<a href={link1} class="link" target="_blank">{link1Text}</a>
+			</div>
+			<div>
+				<a href={link2} class="link" target="_blank">{link2Text}</a>
+			</div>
+		</div>
 	{/if}
 </div>
 
@@ -36,6 +55,20 @@
 		p {
 			font-size: 18px;
 			color: var(--color--text-secondary);
+		}
+
+		.links {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding-top: 1rem;
+
+			div {
+				color: var(--color--text-tag);
+				padding: 4px 12px;
+				background-color: var(--color--tag-background);
+				border-radius: 50px;
+			}
 		}
 	}
 </style>

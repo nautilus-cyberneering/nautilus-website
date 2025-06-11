@@ -39,11 +39,15 @@
 		</ul>
 
 		<p>
-			Here is the link to out <a href="https://secure-git.guide/">Secure Git Guide</a> if you have
-			suggestions, would like to contribute or are dealing with any specific challenges we are
-			always looking forward to be of help and improve the guide. If any of the above is your case,
+			Here is the link to out <a href="https://secure-git.guide/" target="_blank"
+				>Secure Git Guide</a
+			>
+			if you have suggestions, would like to contribute or are dealing with any specific challenges we
+			are always looking forward to be of help and improve the guide. If any of the above is your case,
 			feel free to create an issue in our GitHub repository
-			<a href="https://github.com/Nautilus-Cyberneering/secure-git-guide/issues/new">here</a>.
+			<a href="https://github.com/Nautilus-Cyberneering/secure-git-guide/issues/new" target="_blank"
+				>here</a
+			>.
 		</p>
 
 		<p>
@@ -73,7 +77,9 @@
 			/>
 		</div>
 
-		<p>More on our company <a href="https://nautilus-cyberneering.de/">here</a>.</p>
+		<p>
+			More on our company <a href="https://nautilus-cyberneering.dev/" target="_blank">here</a>.
+		</p>
 
 		<p>Thank you for reading and we hope that you will learn something new!</p>
 		<PrevNextPost currentPage={currentPost.slug} {allPosts} />

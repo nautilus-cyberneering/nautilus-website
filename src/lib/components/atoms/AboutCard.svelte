@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { title, content, svg = null } = $props();
+	let { title, content, extraContent, svg = null } = $props();
 
 	const SvgComponent = svg;
 </script>
@@ -12,6 +12,9 @@
 	{/if}
 	<h3>{title}</h3>
 	<p>{content}</p>
+	{#if extraContent}
+		<p>{extraContent}</p>
+	{/if}
 </div>
 
 <style lang="scss">

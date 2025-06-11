@@ -127,7 +127,7 @@
 			to for our demo app could not deliver, two of us had to become artists. We used our creativity
 			and drawing skills to create all the visual art for the <a
 				href="https://apps.apple.com/no/app/iakkai-the-curse-of-blood/id1580924283?platform=ipad"
-				>Iakkai Saga: Curse of Blood</a
+				target="_blank">Iakkai Saga: Curse of Blood</a
 			> app listed in the Apple Store.
 		</p>
 
@@ -173,7 +173,8 @@
 
 		<p>
 			If you want to see the public repository <a
-				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood/">here it is</a
+				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood/"
+				target="_blank">here it is</a
 			>.
 		</p>
 
@@ -223,10 +224,11 @@
 
 		<p>
 			If you want to know more about all our projects in brief <a
-				href="https://nautilus-cyberneering.de/projects/">here</a
+				href="https://nautilus-cyberneering.dev/"
+				target="_blank">here</a
 			>
 			you have all the necessary information. Also if you want to check out our GitHub repositories
-			<a href="https://github.com/Nautilus-Cyberneering">here is the link</a>.
+			<a href="https://github.com/Nautilus-Cyberneering" target="_blank">here is the link</a>.
 		</p>
 
 		<h3>Project Atmosphere</h3>
@@ -275,7 +277,7 @@
 					<li>
 						It only allows one pending job at the same time. <a
 							href="https://github.com/Nautilus-Cyberneering/git-queue/issues/6"
-							>Multiple pending jobs feature</a
+							target="_blank">Multiple pending jobs feature</a
 						> is planned.
 					</li>
 					<li>Jobs are done by GitHub workflows intended to create git commits and merge them.</li>
@@ -285,14 +287,16 @@
 						active (not finished) job it will also guarantee the execution order.
 					</li>
 					<li>
-						<a href="https://github.com/Nautilus-Cyberneering/git-queue">Link to our repository</a>
+						<a href="https://github.com/Nautilus-Cyberneering/git-queue" target="_blank"
+							>Link to our repository</a
+						>
 					</li>
 				</ul>
 			</li>
 			<li>
 				<strong>Nautilus Librarian:</strong> A Python Console application to handle media libraries
-				with <a href="https://git-scm.com/">Git</a> and
-				<a href="https://github.com/iterative/dvc">Dvc</a>.
+				with <a href="https://git-scm.com/" target="_blank">Git</a> and
+				<a href="https://github.com/iterative/dvc" target="_blank">Dvc</a>.
 
 				<div class="images">
 					<img
@@ -301,7 +305,7 @@
 					/>
 				</div>
 
-				<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian"
+				<a href="https://github.com/Nautilus-Cyberneering/nautilus-librarian" target="_blank"
 					>Link to our repository</a
 				>
 			</li>

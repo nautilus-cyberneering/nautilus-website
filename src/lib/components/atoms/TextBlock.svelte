@@ -8,7 +8,8 @@
 	</h2>
 	<div class="hero-para">
 		<p>
-			{content}
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			{@html content}
 		</p>
 	</div>
 </div>

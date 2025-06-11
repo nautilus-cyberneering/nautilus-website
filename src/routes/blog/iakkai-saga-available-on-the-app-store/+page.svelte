@@ -28,7 +28,8 @@
 
 		<p>
 			You can find it on the App Store <a
-				href="https://apps.apple.com/app/id1580924283#?platform=ipad">here</a
+				href="https://apps.apple.com/app/id1580924283#?platform=ipad"
+				target="_blank">here</a
 			>
 		</p>
 
@@ -48,17 +49,19 @@
 
 		<p>
 			If you want to use Boken Engine we think you should try first to setup and run Iakkai. You can
-			also follow the instructions on the <a href="https://github.com/boken-engine/boken-engine"
-				>Boken Engine documentation</a
+			also follow the instructions on the <a
+				href="https://github.com/boken-engine/boken-engine"
+				target="_blank">Boken Engine documentation</a
 			>.
 		</p>
 
 		<p>
 			Regarding making it fun, we chose a game topic that some mantainers know very well. In fact,
-			all the application contents were done by <a href="https://github.com/yeraydavidrodriguez"
-				>Yeray</a
+			all the application contents were done by <a
+				href="https://github.com/yeraydavidrodriguez"
+				target="_blank">Yeray</a
 			>
-			and <a href="https://github.com/cgbosse">Constantin</a> including script and graphics.
+			and <a href="https://github.com/cgbosse" target="_blank">Constantin</a> including script and graphics.
 		</p>
 
 		<p>We hope you enjoy it!</p>

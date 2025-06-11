@@ -7,7 +7,7 @@
 <footer class="footer-wrapper">
 	<div class="footer-wrapper-left">
 		<div class="logo-container">
-			<a href="https://nautilus-cyberneering.de/" target="_blank">
+			<a href="https://nautilus-cyberneering.dev/" target="_blank">
 				{#if $theme === 'dark'}
 					<NautilusBigDarkMode />
 				{:else}

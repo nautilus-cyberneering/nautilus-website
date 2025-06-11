@@ -23,7 +23,8 @@
 
 		<p>
 			We are currently collaborating with the Hong Kong Company called <a
-				href="https://www.ethicalsoftware.hk/">Ethical Software Ltd.</a
+				href="https://www.ethicalsoftware.hk/"
+				target="_blank">Ethical Software Ltd.</a
 			>, their team of artists, designers and calligraphers have spent the last two years creating a
 			large amount of artistic imagery and 4 different sets calligraphy of 214 Chinese radicals.
 		</p>
@@ -100,6 +101,7 @@
 			<figcaption>
 				Sample Artwork – Courtesy of Ethical Software Ltd. – <a
 					href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+					target="_blank"
 					>Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)</a
 				>
 			</figcaption>
@@ -156,6 +158,7 @@
 			<figcaption>
 				Sample Calligraphy- Courtesy of Ethical Software Ltd. – <a
 					href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+					target="_blank"
 					>Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)</a
 				>
 			</figcaption>
@@ -170,7 +173,9 @@
 		<p>
 			For one thing technology wise, we strive to interconnect several GitHub repositories and make
 			extensive use of GitHub actions and Python scripts in combination with an Open-Source version
-			control system for machine learning projects called <a href="https://dvc.org/">DVC</a>.
+			control system for machine learning projects called <a href="https://dvc.org/" target="_blank"
+				>DVC</a
+			>.
 		</p>
 
 		<p>
@@ -216,10 +221,12 @@
 
 		<ul>
 			<li>
-				<a href="https://github.com/Nautilus-Cyberneering/chinese-ideographs">Chinese Ideographs</a>
+				<a href="https://github.com/Nautilus-Cyberneering/chinese-ideographs" target="_blank"
+					>Chinese Ideographs</a
+				>
 			</li>
 			<li>
-				<a href="https://github.com/Nautilus-Cyberneering"
+				<a href="https://github.com/Nautilus-Cyberneering" target="_blank"
 					>Nautilus Cyberneering GmbH Github organization</a
 				>
 			</li>

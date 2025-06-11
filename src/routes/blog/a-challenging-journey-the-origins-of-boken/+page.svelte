@@ -46,7 +46,8 @@
 			But before going any further, let’s give you a bit of background information. The groundwork
 			of the project was done a few months ago. In an earlier phase, most of the team worked on the
 			development of a software product that would eventually evolve into <a
-				href="https://github.com/boken-engine/boken-engine">Boken Engine</a
+				href="https://github.com/boken-engine/boken-engine"
+				target="_blank">Boken Engine</a
 			>.
 		</p>
 
@@ -62,7 +63,8 @@
 
 		<p>
 			We managed to develop a fully functioning application called <a
-				href="https://github.com/boken-engine/15-universe-facts">“15 facts of the Universe”</a
+				href="https://github.com/boken-engine/15-universe-facts"
+				target="_blank">“15 facts of the Universe”</a
 			> but in the end could not publish because it was not approved for the Apple Store. The Apple Store’s
 			rejection message: “…the usefulness of your app is limited by the minimal amount of content or
 			features it includes.”.
@@ -97,7 +99,7 @@
 		<p>
 			The whole process is documented and it’s <a
 				href="https://github.com/boken-engine/boken-engine/tree/master/doc"
-				>available on the project’s GitHub repository</a
+				target="_blank">available on the project’s GitHub repository</a
 			>, so that anyone interested in joining us can check how we progressed and the different
 			things that we looked at on this road.
 		</p>
@@ -116,10 +118,12 @@
 
 		<p>
 			At this moment we are working on a <a
-				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood">demo project</a
+				href="https://github.com/boken-engine/iakkai-saga-the-curse-of-blood"
+				target="_blank">demo project</a
 			>
 			to showcase the real power and features of the framework. It is a visual novel styled as a
-			<a href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure">Choose Your Own Adventure</a
+			<a href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure" target="_blank"
+				>Choose Your Own Adventure</a
 			> (CYOA) books, set in an Epic Fantasy world, and geared towards a young adult audience.
 		</p>
 
@@ -127,7 +131,8 @@
 			We are open to receive new contributors interested in participating both in the development
 			and improvement of Boken and in helping us to work on the demo. Are you interested? Go ahead
 			and check our GitHub or Website to know more about it. Also check out our <a
-				href="https://nautilus-cyberneering.de/projects/">company project page</a
+				href="https://nautilus-cyberneering.dev"
+				target="_blank">company page</a
 			> to see more of the things that we do.
 		</p>
 

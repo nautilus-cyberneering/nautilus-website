@@ -3,7 +3,6 @@
 	import HomeCard from '$lib/components/atoms/HomeCard.svelte';
 	import HomeWrapper from '$lib/components/molecules/HomeWrapper.svelte';
 
-	import AiBuddyAssistant from '$lib/icons/aiBuddyAssistant.svelte';
 	import Torrust from '$lib/icons/torrust.svelte';
 </script>
 
@@ -17,16 +16,22 @@
 		</div>
 		<div class="cards">
 			<HomeCard
-				title={'AI Buddy Assistant'}
-				content={'Command line AI assistant base module and the necessary infrastructure to train and expand it, with additional AI modules.'}
-				svg={AiBuddyAssistant}
-				tags={['AI', 'ML', 'Open source', 'In-house project']}
+				title={'Torrust Index'}
+				content={'The Index is a feature-rich torrent indexing site split between an API (backend) built with Rust, and our reference web app that consumes the API, built with Vue 3.'}
+				svg={Torrust}
+				link1={'https://index.torrust-demo.com/torrents'}
+				link1Text={'Live demo'}
+				link2={'https://torrust.com/torrent-index'}
+				link2Text={'Learn more'}
 			/>
 			<HomeCard
-				title={'Torrust'}
-				content={'Highly efficient Torrent indexing and tracking server solution written in Rust for private hosting and operation.'}
+				title={'Torrust Tracker'}
+				content={'A lightweight Rust-based BitTorrent tracker for efficient torrent serving to many peers with high performance, robustness, security, and community support.'}
 				svg={Torrust}
-				tags={['Rust', 'Open source', 'Sponsored project']}
+				link1={'https://index.torrust-demo.com/torrents'}
+				link1Text={'Live demo'}
+				link2={'https://torrust.com/torrent-tracker'}
+				link2Text={'Learn more'}
 			/>
 		</div>
 		<a href="/projects">Learn more about our in-house projects</a>

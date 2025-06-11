@@ -39,7 +39,7 @@
 				alt=""
 			/>
 			<figcaption>
-				<a href="https://opensource.com/article/21/11/technical-writing-open-source"
+				<a href="https://opensource.com/article/21/11/technical-writing-open-source" target="_blank"
 					>https://opensource.com/article/21/11/technical-writing-open-source</a
 				>
 			</figcaption>
@@ -75,7 +75,7 @@
 			the steps to be taken to create our vision for a customizabe AI assistant that will be able to
 			run locally on any of your devices. If you are curious this is <a
 				href="https://github.com/Nautilus-Cyberneering/ai_assistant_roadmap"
-				>the first rough draft of our roadmap</a
+				target="_blank">the first rough draft of our roadmap</a
 			>.
 		</p>
 
@@ -92,22 +92,27 @@
 
 		<ul>
 			<li>
-				<a href="https://planet4.greenpeace.org/tag/community/#partners-open-sourcers">Greenpeace</a
+				<a
+					href="https://planet4.greenpeace.org/tag/community/#partners-open-sourcers"
+					target="_blank">Greenpeace</a
 				>
 			</li>
 			<li>
-				<a href="https://wiki.ecohackerfarm.org/start">Eco Hacker Farm</a>
+				<a href="https://wiki.ecohackerfarm.org/start" target="_blank">Eco Hacker Farm</a>
 			</li>
 			<li>
-				<a href="https://wiki.opensourceecology.org/wiki/Project_needs">Open Source Ecology</a>
+				<a href="https://wiki.opensourceecology.org/wiki/Project_needs" target="_blank"
+					>Open Source Ecology</a
+				>
 			</li>
 		</ul>
 
 		<p>
-			…. and <a href="https://awesomeopensource.com/projects/sustainability">here</a> is an even
-			greater list on this topic, or check out
-			<a href="https://awesomeopensource.com/">awesomeopensource.com</a>, which has sorted and
-			organized over 9 million open-source projects.
+			…. and <a href="https://awesomeopensource.com/projects/sustainability" target="_blank">here</a
+			>
+			is an even greater list on this topic, or check out
+			<a href="https://awesomeopensource.com/" target="_blank">awesomeopensource.com</a>, which has
+			sorted and organized over 9 million open-source projects.
 		</p>
 
 		<p>Why don't you give it a shot?</p>

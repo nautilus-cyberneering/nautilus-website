@@ -17,8 +17,9 @@
 		categories={currentPost.categories}
 	>
 		<p>
-			I did not have a clue about what is meant by <a href="https://gnupg.org/">GPG</a> when I heard
-			it. As it turned out to be it has to do with security.
+			I did not have a clue about what is meant by <a href="https://gnupg.org/" target="_blank"
+				>GPG</a
+			> when I heard it. As it turned out to be it has to do with security.
 		</p>
 
 		<figure>
@@ -33,7 +34,7 @@
 		<p>
 			Our team strives to have good <a
 				href="https://github.com/Nautilus-Cyberneering/nautilus-librarian/issues?q=label%3Asecurity"
-				>security</a
+				target="_blank">security</a
 			> practices. I am no developer but I am contributing to our open-source project where any contribution
 			needs to be signed and verified in GitHub and I had to get my head over how GPG works to understand
 			it.
@@ -54,9 +55,9 @@
 		<p>GPG serves to make your online digital life more secure.</p>
 
 		<p>
-			<a href="https://www.gnupg.org/download/git.html">GnuPG</a> is also known as GPG is an open-source
-			implementation of the PGP (Pretty Good Privacy) standard. It is essentially an asymmetric key standard
-			that works with an interconnected set of keys.
+			<a href="https://www.gnupg.org/download/git.html" target="_blank">GnuPG</a> is also known as GPG
+			is an open-source implementation of the PGP (Pretty Good Privacy) standard. It is essentially an
+			asymmetric key standard that works with an interconnected set of keys.
 		</p>
 
 		<img src="/images/posts-images/what-is-gpg-why-and-how-to-use-it/Gnupg_logo.png" alt="gnupg" />
@@ -65,8 +66,9 @@
 			One private, and secret and the other public, public meaning that it can be shared without any
 			danger of misuse. Fact is, one usually uploads the public key to official online key servers,
 			where everyone can check for someone’s public PGP or GPG keys. Here is an <a
-				href="https://keys.openpgp.org/">example</a
-			>, the <a href="https://keys.openpgp.org/">keys.openpgp.org</a> server.
+				href="https://keys.openpgp.org/"
+				target="_blank">example</a
+			>, the <a href="https://keys.openpgp.org/" target="_blank">keys.openpgp.org</a> server.
 		</p>
 
 		<p>
@@ -84,7 +86,8 @@
 			As Symmetric Keys allow for very fast and efficient they are used extensively within core
 			parts of all cryptographic systems that use encryption. Here the key could be different or
 			identical between two parties. This key is to be transmitted (or mutually derived by <a
-				href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie–Hellman</a
+				href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange"
+				target="_blank">Diffie–Hellman</a
 			>) so that data can be securely transferred.
 		</p>
 
@@ -214,9 +217,10 @@
 		</p>
 
 		<p>
-			<a href="https://www.gnupg.org/index.html">Here</a> is a link to the GnuGPG website where you
-			get access to all you need. I myself am using the <a href="https://gpg4win.org/">GPG4Win</a> it
-			is easy to use. Their documentation is very detailed and helpful.
+			<a href="https://www.gnupg.org/index.html" target="_blank">Here</a> is a link to the GnuGPG
+			website where you get access to all you need. I myself am using the
+			<a href="https://gpg4win.org/" target="_blank">GPG4Win</a> it is easy to use. Their documentation
+			is very detailed and helpful.
 		</p>
 
 		<p>
@@ -227,19 +231,22 @@
 
 		<p>
 			On the other hand, if you prefer the command-line interface here is a very good article for
-			the first steps by Mark Schindel <a href="https://www.markschindel.com/how-to-use-gpg/"
-				>“How to Use GPG”</a
+			the first steps by Mark Schindel <a
+				href="https://www.markschindel.com/how-to-use-gpg/"
+				target="_blank">“How to Use GPG”</a
 			>.
 		</p>
 
 		<p>
 			Nevertheless, you can also have access to a series of screenshots going over this process. We
-			created a <a href="https://github.com/nautilus-cyberneering/secure-git-guide">GPG Bootcamp</a>
+			created a <a href="https://github.com/nautilus-cyberneering/secure-git-guide" target="_blank"
+				>GPG Bootcamp</a
+			>
 			repository for our contributors. Here you will find a step by step guideline to create your first
 			set of GPG Keys using two approaches in our
 			<a
 				href="https://github.com/nautilus-cyberneering/secure-git-guide/blob/main/docs/003-GPG-101-How-to-get-your-first-GPG-Keys.md"
-				>GPG 101</a
+				target="_blank">GPG 101</a
 			>.
 		</p>
 
@@ -265,8 +272,9 @@
 		</p>
 
 		<p>
-			And again a link to Mark Schindel’s <a href="https://www.markschindel.com/how-to-use-gpg/"
-				>“How to Use GPG”</a
+			And again a link to Mark Schindel’s <a
+				href="https://www.markschindel.com/how-to-use-gpg/"
+				target="_blank">“How to Use GPG”</a
 			> which also covers this step.
 		</p>
 
@@ -281,7 +289,7 @@
 		<p>
 			If you want to know more about it here is a link to our step by step guide <a
 				href="https://github.com/nautilus-cyberneering/secure-git-guide/blob/main/docs/003-GPG-101-How-to-get-your-first-GPG-Keys.md"
-				>GPG 101</a
+				target="_blank">GPG 101</a
 			> where there is a section for regenerating your revocation certificate of a specific key.
 		</p>
 
@@ -342,8 +350,9 @@
 		</figure>
 
 		<p>
-			And again a link to Mark Schindel’s <a href="https://www.markschindel.com/how-to-use-gpg/"
-				>“How to Use GPG”</a
+			And again a link to Mark Schindel’s <a
+				href="https://www.markschindel.com/how-to-use-gpg/"
+				target="_blank">“How to Use GPG”</a
 			> which also covers this step.
 		</p>
 
