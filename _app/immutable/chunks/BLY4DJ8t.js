@@ -1,1 +1,0 @@
-import{w as t}from"./bJTCM93j.js";const r=()=>{const e=localStorage.getItem("theme");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")},m=t(r());m.subscribe(e=>{localStorage.setItem("theme",e),document.documentElement.setAttribute("data-theme",e)});export{m as t};
