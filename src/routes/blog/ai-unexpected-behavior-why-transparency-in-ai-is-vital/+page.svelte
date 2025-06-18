@@ -30,12 +30,10 @@
 			One example of AI’s unexpected behavior in the positive sense is the GO contest from 2016,
 			where the <a href="https://en.wikipedia.org/wiki/AlphaGo" target="_blank">AlphaGo</a> AI beat
 			the human champion four out of five times. The AI system did this by making moves that no one
-			had ever seen before. If you are interested to another article making an analysis of this
-			match and expands on the topic of unexpected behavior you can find it
-			<a
-				href="https://www.aitrends.com/ai-insider/novelty-in-the-game-of-go-provides-bright-insights-for-ai-and-autonomous-vehicles/"
-				target="_blank">here</a
-			>.
+			had ever seen before. If you are interested in another article analyzing this match and
+			expanding on the topic of unexpected behavior, you can find it in the AI Trends article
+			<i>“Novelty in the Game of Go Provides Bright Insights for AI and Autonomous Vehicles”</i> (currently
+			unavailable).
 		</p>
 
 		<p>
@@ -166,7 +164,7 @@
 
 		<p>
 			If you would like to read more about Open Source and its importance <a
-				href="https://nautilus-cyberneering.dev/2022/05/24/open-source-why-it-is-so-important-now-and-in-the-future/"
+				href="https://nautilus-cyberneering.dev/blog/open-source-why-it-is-so-important-now-and-in-the-future"
 				target="_blank">here</a
 			> is another of our posts.
 		</p>

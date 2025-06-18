@@ -25,7 +25,7 @@
 		background-image:
 			radial-gradient(circle farthest-corner, var(--radial--gradient-1), var(--radial--gradient-2)),
 			var(--hero-background);
-		background-size: cover;
+		background-size: 2000px auto;
 		background-repeat: no-repeat;
 		background-position: center;
 		display: flex;

@@ -23,7 +23,7 @@
 
 		<p>
 			We are currently collaborating with the Hong Kong Company called <a
-				href="https://www.ethicalsoftware.hk/"
+				href="https://web.archive.org/web/20241106184122/https://www.ethicalsoftware.hk/"
 				target="_blank">Ethical Software Ltd.</a
 			>, their team of artists, designers and calligraphers have spent the last two years creating a
 			large amount of artistic imagery and 4 different sets calligraphy of 214 Chinese radicals.

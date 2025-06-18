@@ -58,9 +58,7 @@
 			Successfully, this led to the open-source proof of concept: <strong
 				>“Iakkai – The Curse of Blood”</strong
 			>
-			being published onto
-			<a href="https://apps.apple.com/app/id1580924283" target="_blank">Apple App-Store</a>, running
-			our open-source game engine:
+			being published onto the Apple App Store, running our open-source game engine:
 			<a href="https://github.com/boken-engine/boken-engine" target="_blank">“Boken Engine”</a>.
 		</p>
 
