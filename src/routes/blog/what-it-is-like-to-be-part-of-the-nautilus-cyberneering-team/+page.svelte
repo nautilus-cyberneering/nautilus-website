@@ -125,10 +125,8 @@
 			We all did what had to be done and we all chipped in when there was some unexpected new
 			hurdle, or a different path had to be taken. For example, when the artist that we had spoken
 			to for our demo app could not deliver, two of us had to become artists. We used our creativity
-			and drawing skills to create all the visual art for the <a
-				href="https://apps.apple.com/no/app/iakkai-the-curse-of-blood/id1580924283?platform=ipad"
-				target="_blank">Iakkai Saga: Curse of Blood</a
-			> app listed in the Apple Store.
+			and drawing skills to create all the visual art for the Iakkai Saga: Curse of Blood app listed
+			in the Apple Store.
 		</p>
 
 		<figure>

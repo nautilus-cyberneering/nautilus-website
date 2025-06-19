@@ -13,7 +13,7 @@
 	@use '$lib/scss/breakpoints.scss' as bp;
 	.svg-container {
 		position: relative;
-		background-size: cover;
+		background-size: 2000px auto;
 		background-repeat: no-repeat;
 		background-position: center;
 		display: flex;
@@ -61,8 +61,7 @@
 	@include bp.for-desktop-up {
 		.dark-theme,
 		.light-theme {
-			background-repeat: repeat;
-			background-size: 200px auto; /* or 2x your original box size */
+			background-repeat: no-repeat;
 		}
 	}
 </style>

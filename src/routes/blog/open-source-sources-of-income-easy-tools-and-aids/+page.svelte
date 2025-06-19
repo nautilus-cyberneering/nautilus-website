@@ -388,8 +388,10 @@
 		<p>
 			Essentially the more people fund you with amounts, no matter the size, the more funds you
 			receive from a pool of grants for open source projects on the platform. These grants have
-			different rounds during the year. <a href="https://gitcoin.co/grants/" target="_blank">Here</a
-			> is a link to this product.
+			different rounds during the year. <a href="https://grants.gitcoin.co/" target="_blank"
+				>Gitcoin Grants</a
+			>
+			is currently being rebuilt.
 		</p>
 
 		<figure>
@@ -405,7 +407,7 @@
 		<h3>Bounties for Bugs and Features</h3>
 		<ul>
 			<li>
-				<a href="https://www.blocklancer.net/" target="_blank">Blocklancer.net</a>
+				<span title="This project’s website is currently under construction.">Blocklancer.net</span>
 			</li>
 		</ul>
 

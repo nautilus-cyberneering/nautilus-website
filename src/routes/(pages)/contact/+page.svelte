@@ -30,12 +30,12 @@
 	<div class="contact-section">
 		<div class="link">
 			<Telegram />
-			<a href="https://t.me/nautilus_cyberneering_en" target="_blank"> Telegram </a>
+			<a href="https://t.me/nautilus_cyberneering_en" target="_blank"><h2>Telegram</h2></a>
 			<QRCodeConnect url={'https://t.me/nautilus_cyberneering_en'} />
 		</div>
 		<div class="link">
 			<Github />
-			<a href="https://github.com/nautilus-cyberneering" target="_blank"> GitHub </a>
+			<a href="https://github.com/nautilus-cyberneering" target="_blank"><h2>GitHub</h2></a>
 			<QRCodeConnect url={'https://github.com/nautilus-cyberneering'} />
 		</div>
 	</div>
@@ -74,8 +74,6 @@
 		}
 
 		a {
-			color: #fff;
-
 			&:hover {
 				color: #ee8661;
 			}

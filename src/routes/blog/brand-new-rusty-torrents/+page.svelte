@@ -149,9 +149,8 @@
 		<p>If you want to read a little bit more about these uses:</p>
 		<ul>
 			<li>
-				<a
-					href="https://spectrum.ieee.org/how-torrents-can-benefit-businesses-and-users"
-					target="_blank">https://spectrum.ieee.org/how-torrents-can-benefit-businesses-and-users</a
+				<a href="https://spectrum.ieee.org/how-torrents-can-benefit-businesses" target="_blank"
+					>https://spectrum.ieee.org/how-torrents-can-benefit-businesses</a
 				>
 			</li>
 			<li>
@@ -292,7 +291,7 @@
 			build up the necessary skills to automate git code repositories to implement versioning of
 			data sets used in Machine Learning and Data Science. More about the
 			<strong>Nautilus Cyberneering</strong>
-			team <a href="https://nautilus-cyberneering.dev/about/" target="_blank">here</a>.
+			team <a href="https://nautilus-cyberneering.dev/about" target="_blank">here</a>.
 		</p>
 
 		<h2>Torrents Potential use case in the field of data science</h2>

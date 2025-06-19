@@ -232,9 +232,12 @@
 		<p>
 			On the other hand, if you prefer the command-line interface here is a very good article for
 			the first steps by Mark Schindel <a
-				href="https://www.markschindel.com/how-to-use-gpg/"
-				target="_blank">“How to Use GPG”</a
-			>.
+				href="https://web.archive.org/web/20231206234148/https://www.markschindel.com/how-to-use-gpg/"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				“How to Use GPG”
+			</a>.
 		</p>
 
 		<p>
@@ -244,9 +247,8 @@
 			>
 			repository for our contributors. Here you will find a step by step guideline to create your first
 			set of GPG Keys using two approaches in our
-			<a
-				href="https://github.com/nautilus-cyberneering/secure-git-guide/blob/main/docs/003-GPG-101-How-to-get-your-first-GPG-Keys.md"
-				target="_blank">GPG 101</a
+			<a href="https://secure-git.guide/003-GPG-101-How-to-get-your-first-GPG-Keys" target="_blank"
+				>GPG 101</a
 			>.
 		</p>
 
@@ -273,8 +275,9 @@
 
 		<p>
 			And again a link to Mark Schindel’s <a
-				href="https://www.markschindel.com/how-to-use-gpg/"
-				target="_blank">“How to Use GPG”</a
+				href="https://web.archive.org/web/20231206234148/https://www.markschindel.com/how-to-use-gpg/"
+				target="_blank"
+				rel="noopener noreferrer">“How to Use GPG”</a
 			> which also covers this step.
 		</p>
 
@@ -351,8 +354,9 @@
 
 		<p>
 			And again a link to Mark Schindel’s <a
-				href="https://www.markschindel.com/how-to-use-gpg/"
-				target="_blank">“How to Use GPG”</a
+				href="https://web.archive.org/web/20231206234148/https://www.markschindel.com/how-to-use-gpg/"
+				target="_blank"
+				rel="noopener noreferrer">“How to Use GPG”</a
 			> which also covers this step.
 		</p>
 

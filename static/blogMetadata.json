@@ -32,6 +32,22 @@
     ]
   },
   {
+    "title": "Brand New Rusty Torrents?",
+    "slug": "brand-new-rusty-torrents",
+    "contributor": "Constantin Bosse",
+    "contributorSlug": "constantin-bosse",
+    "date": "2022-07-21T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/torrust-header.jpg",
+    "excerpt": "What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents. If you haven’t, torrents are a file sharing technology. Torrents allow users to share large files quickly and easily in a decentralized manner.",
+    "tags": [
+      "Torrust"
+    ],
+    "categories": [
+      "Open Source",
+      "Products"
+    ]
+  },
+  {
     "title": "AI unexpected behavior – Why transparency in AI is vital",
     "slug": "ai-unexpected-behavior-why-transparency-in-ai-is-vital",
     "contributor": "Constantin Bosse",
@@ -47,37 +63,6 @@
     "categories": [
       "AI",
       "Open Source"
-    ]
-  },
-  {
-    "title": "A Personal Retrospective: Feedback and Thoughts",
-    "slug": "a-personal-retrospective-feedback-and-thoughts",
-    "contributor": "Yeray Rodriguez",
-    "contributorSlug": "yeray-rodriguez",
-    "date": "2022-06-30T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
-    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
-    "tags": [
-      "Feedback",
-      "Projects"
-    ],
-    "categories": [
-      "Team"
-    ]
-  },
-  {
-    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
-    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
-    "contributor": "Constantin Bosse",
-    "contributorSlug": "constantin-bosse",
-    "date": "2022-05-02T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
-    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
-    "tags": [
-      "Meeting"
-    ],
-    "categories": [
-      "Team"
     ]
   },
   {
@@ -98,19 +83,34 @@
     ]
   },
   {
-    "title": "Brand New Rusty Torrents?",
-    "slug": "brand-new-rusty-torrents",
+    "title": "Extraordinary First Company Reunion in Gran Canaria for 2022",
+    "slug": "extraordinary-first-company-reunion-in-gran-canaria-for-2022",
     "contributor": "Constantin Bosse",
     "contributorSlug": "constantin-bosse",
-    "date": "2022-07-21T00:00:00.000Z",
-    "coverImage": "/images/posts-cover-images/torrust-header.jpg",
-    "excerpt": "What has Rusty to do with Brand New? If you’re a geek, chances are you’ve heard of torrents. If you haven’t, torrents are a file sharing technology. Torrents allow users to share large files quickly and easily in a decentralized manner.",
+    "date": "2022-05-02T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/extraordinary-first-company-reunion.jpg",
+    "excerpt": "Beginning of last month we had two intensive weeks of in person meetings and activities with the visit of our CEO and CTO, Cameron Garnham.",
     "tags": [
-      "Torrust"
+      "Meeting"
     ],
     "categories": [
-      "Open Source",
-      "Products"
+      "Team"
+    ]
+  },
+  {
+    "title": "A Personal Retrospective: Feedback and Thoughts",
+    "slug": "a-personal-retrospective-feedback-and-thoughts",
+    "contributor": "Yeray Rodriguez",
+    "contributorSlug": "yeray-rodriguez",
+    "date": "2022-06-30T00:00:00.000Z",
+    "coverImage": "/images/posts-cover-images/a-personal-retrospective.jpg",
+    "excerpt": "This post is the retrospective and the personal feedback report I wrote to the management of Nautilus Cyberneering on my experience of working with Nautilus Cyberneering's team as an external contributor.",
+    "tags": [
+      "Feedback",
+      "Projects"
+    ],
+    "categories": [
+      "Team"
     ]
   },
   {

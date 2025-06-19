@@ -304,7 +304,7 @@
 
 		<p>
 			We look forward to the next meeting in September!!! If you want to know about how to become
-			part of our team, <a href="https://nautilus-cyberneering.dev/about/" target="_blank"
+			part of our team, <a href="https://nautilus-cyberneering.dev/about" target="_blank"
 				>check this out</a
 			>.
 		</p>
