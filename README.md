@@ -2,18 +2,84 @@
 
 ## Overview
 
-This is the official website for **Nautilus Cyberneering**, built with **SvelteKit** and styled using **Sass** and **Tailwind CSS**.
+This is the official website for **Nautilus Cyberneering**, built with **SvelteKit** and styled using **Sass** and **Tailwind CSS**.  
+The website provides information about our projects, technologies, educational resources, and opportunities for developers and creators.
 
 ## Features
 
-- Information about Nautilus Cyberneering and our mission.
-- Details on projects and technologies.
-- Educational resources, blog posts, and guides.
-- Contribution opportunities for developers and creators.
+- Information about Nautilus Cyberneering and our mission
+- Details on projects and technologies
+- Educational resources, blog posts, and guides
+- Contribution opportunities for developers and creators
+
+## Testing
+
+Testing is an important part of this project. All testing is documented in the [Testing Guide](docs/testing.md).
+
+The project uses:
+
+### Unit Tests (Vitest)
+
+- Run tests once:
+
+```bash
+npx vitest
+```
+
+- Watch mode (re-run on file changes):
+
+```bash
+npx vitest --watch
+```
+
+- Generate coverage report:
+
+```bash
+npx vitest --coverage
+```
+
+### End-to-End Tests (Playwright)
+
+Make sure the dev server is running before running E2E tests:
+
+```bash
+npm run dev
+npx playwright test
+```
+
+- Run a single test file:
+
+```bash
+npx playwright test tests/header.spec.ts
+```
+
+See the full [Testing Guide](docs/testing.md) for detailed instructions, file organization, and examples.
 
 ## Contributing
 
-We welcome contributions! Fork the repository, create a branch, make changes, and submit a pull request.
+We welcome contributions! Here’s how to get started:
+
+1. Fork the repository and create a new branch with a descriptive name:
+
+   ```
+   git checkout -b feature/new-page
+   ```
+
+2. Make your changes.
+3. Run tests locally to ensure nothing is broken:
+
+   ```bash
+   npx vitest
+   npx playwright test
+   ```
+
+4. Commit your changes and submit a pull request.
+
+**Tips for contributors:**
+
+- Use descriptive commit messages.
+- Keep unit tests and E2E tests separate.
+- Follow the existing code style and component structure.
 
 ## License
 
@@ -27,4 +93,4 @@ For a detailed explanation of how these licenses apply to this project, see the 
 
 ## Get Involved
 
-Join us and be part of the **Cyberneering movement**!
+Join us and be part of the **Cyberneering movement**! Share your ideas, contribute code or content, and help us build a strong open-source community.
