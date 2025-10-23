@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Header logo is visible and links to home', async ({ page }) => {
-	await page.goto('http://localhost:5173/');
+	await page.goto('/');
 
 	// The logo link should be visible and have the correct aria-label
 	const logo = page.getByRole('link', { name: /site logo/i });
@@ -12,11 +12,11 @@ test('Header logo is visible and links to home', async ({ page }) => {
 
 	// Clicking the logo should navigate to the homepage
 	await logo.click();
-	await expect(page).toHaveURL('http://localhost:5173/');
+	await expect(page).toHaveURL('/');
 });
 
 test('Header navigation links are visible and work', async ({ page }) => {
-	await page.goto('http://localhost:5173/');
+	await page.goto('/');
 
 	// Navigation links
 	const navLinks = [
@@ -30,12 +30,12 @@ test('Header navigation links are visible and work', async ({ page }) => {
 		const link = page.getByRole('link', { name, exact: true });
 		await expect(link).toBeVisible();
 		await link.click();
-		await expect(page).toHaveURL(`http://localhost:5173${path}`);
+		await expect(page).toHaveURL(path);
 	}
 });
 
 test('Header theme toggle is visible and switches theme', async ({ page }) => {
-	await page.goto('http://localhost:5173/');
+	await page.goto('/');
 
 	// Find the theme toggle button (adjust selector if needed)
 	const themeToggle = page.getByRole('button', { name: /theme|toggle/i });
@@ -62,7 +62,7 @@ test('Header theme toggle is visible and switches theme', async ({ page }) => {
 //   // Set viewport to mobile size
 //   await page.setViewportSize({ width: 375, height: 800 });
 
-//   await page.goto('http://localhost:5173/');
+//   await page.goto('/');
 
 //   // Hamburger menu button should be visible
 //   const hamburger = page.getByRole('button', { name: /toggle menu/i });

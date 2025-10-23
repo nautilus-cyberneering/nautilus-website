@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('homepage loads and shows key sections', async ({ page }) => {
-	await page.goto('http://localhost:5173/');
+	await page.goto('/');
 
 	await expect(
 		page.getByRole('heading', { name: /pioneering open source ecosystems/i })
@@ -12,7 +12,7 @@ test('homepage loads and shows key sections', async ({ page }) => {
 });
 
 test('homepage shows three latest articles and article links work', async ({ page }) => {
-	await page.goto('http://localhost:5173/');
+	await page.goto('/');
 
 	const articles = page.locator('.article-wrapper .card');
 	await expect(articles).toHaveCount(3);
@@ -26,7 +26,7 @@ test('homepage shows three latest articles and article links work', async ({ pag
 });
 
 test('TechAndProjects HomeCards have working links', async ({ page }) => {
-	await page.goto('http://localhost:5173/');
+	await page.goto('/');
 
 	// Locate the HomeCards in the TechAndProjects section
 	// Adjust selector if needed to be more specific to TechAndProjects
@@ -49,7 +49,7 @@ test('TechAndProjects HomeCards have working links', async ({ page }) => {
 });
 
 test('ExplorationAndEduction RepoCards have working links', async ({ page }) => {
-	await page.goto('http://localhost:5173/');
+	await page.goto('/');
 
 	// Locate the RepoCards in the ExplorationAndEduction section
 	const repoCards = page.locator('.repo-wrapper .card');
