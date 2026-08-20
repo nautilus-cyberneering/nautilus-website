@@ -25,7 +25,6 @@
 			<li>Our name: NAUTILUS CYBERNEERING, S.L.</li>
 			<li>Our main activity: Software development and consulting.</li>
 			<li>Our address: C/ FERNANDO GUANARTEME, N.º 12, CP 35310, SANTA BRÍGIDA (Las Palmas)</li>
-			<li>Our contact telephone number: +34 637.20.03.79</li>
 			<li>
 				Our contact e-mail address: <a href="mailto:info@nautilus-cyberneering.dev"
 					>info@nautilus-cyberneering.dev</a
